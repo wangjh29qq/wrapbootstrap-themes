@@ -1,0 +1,125 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+
+<title>Proshow - Product Introduction Template</title> 
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="css/responsive-tables.css" rel="stylesheet" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Dosis|Snippet' rel='stylesheet' type='text/css'>
+<link href="css/joyride-2.0.3.css" rel="stylesheet" media="screen">
+<link href="css/orbit-1.2.3.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-lightbox.min.css" rel="stylesheet" media="screen">
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/style-custom.css" rel="stylesheet" media="screen">
+<link href="css/style-responsive.css" rel="stylesheet" media="screen">
+
+<meta name="description" content="Show your awesome product by Proshow template">
+<meta name="author" content="boostbob.github.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/modernizr.mq.js"></script>
+<script src="js-webshim/extras/modernizr-custom.js"></script>
+<script src="js-webshim/polyfiller.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mobilemenu.min.js"></script>
+<script src="js/responsive-tables.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.joyride-2.0.3.js"></script>
+<script src="js/jquery.orbit-1.2.3.min.js"></script>
+<script src="js/bootstrap-lightbox.min.js"></script>
+<script src="js/faq.js"></script>
+<!--[if lte IE 8]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="main_wrapper">
+<header>
+	<div class="container-fluid bg-transparent">
+		<div class="row-fluid" id="top-bar">
+			<div class="span4">
+				<div id="logo">
+					<!-- <h1 class="brand"><i class="icon-screenshot"></i> logo here</h1> -->
+					<img src="img/logo.png" alt="">
+				</div>
+			</div>
+			<div class="span8">
+				<ul id="menu-bar" class="pull-right">
+					<li><a href="#latest-news">News</a></li>
+					<li><a href="#features-start">Features</a></li>
+					<li><a href="#guide-tour">Guide</a></li>
+					<li><a href="#screenshots">Screenshots</a></li>
+					<li><a href="#pricing">Pricing</a></li>
+					<li><a href="#faq">Faq</a></li>
+					<li><a href="#contact-modal" data-toggle="modal">Contact</a></li> 
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>	
+
+<!--content goes here-->
+<%=yield%>
+<!--/content-->
+
+<div class="container-fluid">
+	<div id="contact-modal" class="modal hide fade" role="dialog" tabindex="-1">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<form>
+	      <h3 id="contact">
+	      	<a href="javascript:void(0)"><i class="icon-twitter"></i></a>
+	      	<a href="javascript:void(0)"><i class="icon-facebook"></i></a>
+	      </h3>
+	      <h4>Or, Leave Message for Us</h4>
+	      <div>
+	        <label>First Name</label>
+	        <input type="text" class="span3" placeholder="Your First Name">
+	        <label>Last Name</label>
+	        <input type="text" class="span3" placeholder="Your Last Name">
+	        <label>Email Address</label>
+	        <input type="text" class="span3" placeholder="Your email address">
+	      </div>
+	      <div>
+	        <label>Message</label>
+	        <textarea class="span6 google-keep-warning" name="message" id="message" rows="6"></textarea>
+	      </div>
+	      <br>
+	      <button type="submit" class="btn btn-info"><i class="icon-edit"></i> Send Message</button>
+	  </form>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div id="text-modal" class="modal hide fade" role="dialog" tabindex="-1">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3>About Us</h3>
+			<p>Lorem ipsum aute reprehenderit Excepteur pariatur id in in tempor ullamco est amet incididunt occaecat reprehenderit officia labore nostrud tempor ex dolor quis aute dolor voluptate dolor proident ad cupidatat consectetur proident nostrud labore laborum do amet consectetur sint quis irure sint ex exercitation et cillum ullamco Ut anim dolore dolore et Duis laboris aute Excepteur tempor veniam adipisicing id sit irure exercitation in eu nostrud Excepteur sed adipisicing sint aliquip ullamco sit aliquip occaecat incididunt in Excepteur ut amet incididunt ullamco Ut fugiat dolore est cillum Ut tempor fugiat anim amet Duis cupidatat quis Excepteur fugiat non reprehenderit occaecat veniam Excepteur dolore ut eu ut consequat dolor cupidatat occaecat fugiat incididunt fugiat magna ex nostrud aute aute magna sed id fugiat veniam Excepteur deserunt ad officia laboris. </p>
+		</div>	
+	</div>
+</div>	
+
+<footer>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				Copyright&copy; 2013. All rights reserved.
+			</div>
+			<div>
+				<a href="#"><i class="icon-arrow-up"></i></a>
+				<a href="#text-modal" data-toggle="modal">Privacy policy</a>
+				<a href="#text-modal" data-toggle="modal">Terms of use</a>
+				<a href="#text-modal" data-toggle="modal">About us</a>
+			</div>
+		</div>
+	</div>
+</footer>  
+</div>
+
+<script src="js/common.js"></script>
+
+</body>
+</html>

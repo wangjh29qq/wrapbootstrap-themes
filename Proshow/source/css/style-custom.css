@@ -1,0 +1,42 @@
+/*------------------------------------------------------------------
+
+[Custom Responsive Stylesheet]
+
+    Project:        Custom Proshow Responsive
+    Version:        1.0
+    Last change:    03/20/2013
+    Assigned to:    Bob Wang
+
+[Table of contents]
+
+    1. Global
+    2. Miscs
+
+-------------------------------------------------------------------*/
+
+@charset "UTF-8"
+
+#logo .brand {
+	/*Custom logo shadow and colors
+	text-shadow: 0.1em 0.1em 0.3em #fff;
+	color: #000;*/
+}
+
+#sub-container {
+	/*Custom your background
+	background-color: #969696;
+	background-color: rgba(150, 150, 150, 0.3);
+	*/
+} 
+
+#features div, .orbit div { 
+	/*Custom slide size
+	width: 450px;
+	height: 200px;
+	background: url("../img/bg-slide.png") repeat;*/
+}
+
+#contact-modal {
+	/*Custom Leave Message background
+	background-color: #f5f2e6;*/
+}

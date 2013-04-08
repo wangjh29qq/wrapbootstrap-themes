@@ -1,0 +1,203 @@
+/*------------------------------------------------------------------
+
+[Responsive Stylesheet]
+
+    Project:        Gappro Responsive
+    Version:        1.0
+    Last change:    03/18/2013
+    Assigned to:    Bob Wang
+
+-------------------------------------------------------------------*/
+
+@media (max-width: 320px) {
+    .icon-menu ul li {
+        margin-right: 0px !important;
+        line-height: 12px;
+    }
+
+    .icon-menu ul li a {
+        width: 80px !important;
+        font-size: 10px !important;
+    }
+
+    .icon-menu ul li a:hover { 
+        padding-left: 10px;
+    }
+
+    .quick-widget, .sub-menus {
+        display: none !important;
+    }
+}
+
+@media (max-width: 360px) { 
+
+}
+
+@media (max-width: 480px) {
+    
+}
+
+@media (max-width: 600px) { 
+
+}
+
+@media (max-width: 640px) { 
+    #main_wrapper {
+        margin: 0px;
+    }
+
+    .user-item .avatar { 
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .icon-menu ul {
+        margin-left: 0px !important;
+    }
+
+    .icon-menu ul li {
+        width: 100px;
+        float: left;
+        display: inline-block;
+        line-height: 20px;
+    }
+
+    .icon-menu .sub-menus {
+        width: 280px !important;
+    }
+
+    .icon-menu .sub-menus li {
+        margin-top: 0px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-box, .menu-controller, .navbar,
+    .icon-menu > ul > li > a > i {
+        display: none !important;
+    }
+
+    #main_wrapper {
+        margin: 0px;
+        margin-bottom: 10px !important;
+    }
+
+    .user-item .avatar { 
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .icon-menu ul li {
+        width: 100px;
+        float: left;
+        display: inline-block;
+        line-height: 20px;
+    }
+
+    .icon-menu .sub-menus li {
+        margin-top: 0px !important;
+    }
+
+    #workspace {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    #main_wrapper {
+        margin: 0px;
+    }
+
+    .user-item .avatar { 
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .navbar-inner .form-search .search-query {
+        margin-bottom: 10px;
+    }
+
+    .icon-menu {
+        box-shadow: none;
+    }
+
+    .icon-menu > ul {
+        margin-top: 6px;
+        margin-left: -20px;
+    }
+
+    .icon-menu > ul > li, .icon-menu ul > li > .sub-menus > li {
+        float: left;
+        margin: 8px;
+        margin-top: -8px;
+        margin-bottom: 10px;
+    }
+
+    #workspace {
+        margin-left: -12px;
+        margin-right: -8px;
+    }
+
+    .icon-menu > ul > li > a, .icon-menu ul > li > .sub-menus > li > a {
+        font-size: 12px;
+    }
+
+    .icon-menu ul li a {
+        border: 1px solid #2a2a2a;
+        -o-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .icon-menu > ul > li.circle {
+        display: none;
+    }
+
+    .icon-menu ul li:hover, .icon-menu ul li a:hover, 
+    .icon-menu .current span, .icon-menu .current a {
+        color: #658018;
+
+        -o-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .icon-menu .sub-menus {
+        width: 138px;
+        margin-top: 10px;
+    }
+
+    .icon-menu .sub-menus, .icon-menu .quick-widget {
+        margin-left: -8px;
+    }
+
+    .icon-menu .sub-menus li a {
+        margin-top: 8px;
+        margin-bottom: -2px;
+
+        -o-border-radius: 4px !important;
+        -ms-border-radius: 4px !important;
+        -moz-border-radius: 4px !important;
+        -webkit-border-radius: 4px !important;
+        border-radius: 4px !important;
+    }
+
+    #breadcrumbs {
+        display: none;
+    }
+
+    #workspace {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1024px) { 
+    .icon-menu > ul > li > a, .icon-menu .sub-menus > li > a {
+        font-size: 12px;
+    }
+}

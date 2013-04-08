@@ -1,0 +1,30 @@
+/*------------------------------------------------------------------
+
+[Responsive Stylesheet]
+
+    Project:        WeddingDress Responsive
+    Version:        1.0
+    Last change:    03/20/2013
+    Assigned to:    Bob Wang
+
+
+[Table of contents]
+
+    1. Max Width: 480px
+    2. Max Width: 768px
+
+-------------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+	
+}
+
+@media (max-width: 768px) {
+ 	.split-column p {
+	  -o-column-count: 1;
+	  -ms-column-count: 1;
+	  -moz-column-count: 1;
+	  -webkit-column-count: 1;
+	  column-count: 1;
+	}
+}
