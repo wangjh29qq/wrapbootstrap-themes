@@ -8,6 +8,8 @@
 <meta name="author" content="boostbob.github.com">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link href="css/prettify/doxy.css" rel="stylesheet" media="screen">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/prettify/prettify.js"></script>
 </head>
 <body>
@@ -42,15 +44,16 @@ If you have any questions, please feel free to contact me via contact link or em
 
 <hr>
 <h2><i class="icon-question-sign"></i> Table of contents</h2>
-<ol>
-	<li><h3>File Structure</h3></li>
-	<li><h3>Html Structure</h3></li>
-	<li><h3>Page Header</h3></li>
-	<li><h3>Page Footer</h3></li>
-	<li><h3>Google Web Fonts</h3></li>
-	<li><h3>Using Less</h3></li>
+<ol id="toc">
+	<li><h3><a href="#file_struture">File Structure</a></h3></li>
+	<li><h3><a href="#html_struture">Html Structure</a></h3></li>
+	<li><h3><a href="#google_web_fonts">Google Web Fonts</a></h3></li>
+	<li><h3><a href="#basic_document">Basic Document</a></h3></li>
+	<li><h3><a href="#using_less">Using Less</a></h3></li>
+	<li><h3><a href="#top_bar">Top Bar</a></h3></li>
+	<li><h3><a href="#messages_container">Messages Container</a></h3></li>
 	<li>
-		<h3>Menu</h3>
+		<h3><a href="#menu">Menu</a></h3>
 		<ul>
 			<li>Structure</li>
 			<li>Avatar</li>
@@ -63,7 +66,7 @@ If you have any questions, please feel free to contact me via contact link or em
 		</ul>
 	</li>
 	<li>
-		<h3>Widget</h3>
+		<h3><a href="#widget">Widget</a></h3>
 		<ul>
 			<li>Structure</li>
 			<li>Header</li>
@@ -74,29 +77,587 @@ If you have any questions, please feel free to contact me via contact link or em
 			<li>Header Tabs</li>
 			<li>Widget Accordion</li>
 			<li>Widget Table</li>
-			<li>Widget FAQ</li>
 			<li>Header Background</li>
 		</ul>
 	</li>
-	<li><h3>Circle Link</h3></li>
-	<li><h3>VMap &amp; Leaderboard</h3></li>
-	<li><h3>Merge Box</h3></li>
-	<li><h3>Comapre Box</h3></li>
-	<li><h3>Forms</h3></li>
-	<li><h3>Tables</h3></li>
-	<li><h3>Timeline</h3></li>
-	<li><h3>Buttons</h3></li>
-	<li><h3>Charts</h3></li>
-	<li><h3>Other Interfaces</h3></li>
-	<li><h3>Plugins External Docs</h3></li>
-	<li><h3>Special Thanks</h3></li>
+	<li>
+		<h3><a href="#quick_link">Quick Link</a></h3>
+	</li>
+	<li>
+		<h3><a href="#vmap_leaderboard">VMap &amp; Leaderboard</a></h3>
+		<ul>
+			<li>VMap</li>
+			<li>Leaderboard</li>
+		</ul>
+	</li>
+	<li><h3><a href="#merge_box">Merge Box</a></h3></li>
+	<li><h3><a href="#compare_box">Compare Box</a></h3></li>
+	<li><h3><a href="#interfaces">Interfaces List</a></h3></li>
+	<li><h3><a href="#plugin_docs">Plugins External Docs</a></h3></li>
+	<li><h3><a href="#special_thanks">Special Thanks</a></h3></li>
 </ol>
+
+<div id="file_struture" class="well">
+	<h4>File Structure <a href="#top">TOP</a></h4> 
+	<ul>
+		<li>*.html - html documents</li>
+		<li>css - stylesheets</li>
+		<li>font - Awesome fonts and google web fonts</li>
+		<li>img - background, icons, pictures</li>
+		<li>js - javascript files, plugins js</li>
+		<li>docs - Documentation</li>
+	</ul>
+	<!--codes-->
+	<pre class="prettyprint lang-html linenums">
+drwxr-xr-x   8 bob  staff   272B  4  9 12:11 docs
+drwxr-xr-x   9 bob  staff   306B  4  8 22:28 font
+drwxr-xr-x@ 33 bob  staff   1.1K  4  8 22:28 img
+drwxr-xr-x@ 41 bob  staff   1.4K  4  9 12:11 css
+drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
+	</pre>
+
+</div>
+
+<div id="html_struture" class="well">
+	<h4>Html Structure <a href="#top">TOP</a></h4>
+	<ul>
+		<li>Header</li>
+		<li>Menu</li>
+		<li>Workspace</li>
+		<li>Breadcrumb</li>
+		<li>Main Section</li>
+		<li>Footer</li>
+	</ul>
+	<!--codes-->	
+	<pre class="prettyprint lang-html linenums">
+<div class="navbar navbar-inverse">
+	<!--top header-->
+</div>	
+<div class="container-fluid" id="main_wrapper">
+	<div class="icon-menu">
+		<!-- content -->
+	</div>
+	<hr>
+	<div id="workspace">
+		<!-- content -->
+	</div>	
+	<div id="main">
+		<ul id="breadcrumbs">
+			<!-- content -->
+		</ul>	
+		<!-- content -->
+	</div>	
+</div>
+<div class="copyright">
+	<!-- content -->
+</div>
+	</pre>
+</div>	
+
+<div id="google_web_fonts" class="well">
+	<h4>Google Web Fonts - Sintony</h4>
+	<!--codes-->	
+	<pre class="prettyprint lang-css linenums">
+@font-face {
+  font-family: 'Sintony';
+  src: url('../font/Sintony-Regular.ttf');
+  font-weight: 400;
+}		
+	</pre>
+</div>
+
+<div id="basic_document" class="well">
+	<h4>Basic Document <a href="#top">TOP</a></h4>
+	There are two basic documents for you.
+	<ul>
+		<li>basic.html</li>
+		<li>starter.html</li>
+	</ul>	
+</div>
+
+<div id="using_less" class="well">
+	<h4>Less is a dynamic stylesheet language. <a href="#top">TOP</a></h4></h4>
+	<blockquote>
+		LESS extends CSS with dynamic behavior such as variables, mixins, operations and functions. 
+	</blockquote>	
+	<p>You can edit style.less, or edit style.css if you won't using less.</p>
+</div>	
+
+<div id="top_bar" class="well">
+	<h4>Top Bar <a href="#top">TOP</a></h4>
+	<ul>
+		<li>logo</li>
+		<li>search box</li>
+		<li>favourite links, you can draggable menuitem to place here</li>
+	</ul>
+</div>
+
+<div id="messages_container" class="well">
+	<h4>Messages Container <a href="#top">TOP</a></h4>
+	<pre class="prettyprint lang-html linenums">
+<div class="btn-group">
+	<!--trigger message button-->
+    <a class="btn dropdown-toggle btn-warning" data-toggle="dropdown" href="#">
+    	<span><i class="icon-bell"></i></span>
+    </a>
+    <ul class="dropdown-menu" id="messages-box">
+    	<!--place your messages here-->
+    	<li>
+    		<img src="img/avatar2.jpg" alt="">
+    		<span class="time">6 mintues ago</span><br>
+    		<span class="content">Lorem ipsum et consectetur officia veniam... </span>
+    	</li>
+    	<!--more...-->
+    </ul>
+</div>		
+	</pre>	
+</div>
+
+<div id="menu" class="well">
+	<h4>Menu <a href="#top">TOP</a></h4>
+	<h5>Structure</h5>
+	<pre class="prettyprint lang-html linenums">
+<div class="icon-menu">
+	<ul>
+		<!--menu items here-->
+		<li></li>
+	</ul>	
+</div>			
+	</pre>	
+
+	<h5>Avatar, or place your site logo here</h5>
+	<pre class="prettyprint lang-html linenums">
+<li class="circle">
+	<a href="profile.html" title="Profile">
+		<img src="img/user.png" alt="">		
+	</a>
+</li>		
+	</pre>	
+	
+	<h5>Filter by input keywords</h5>
+	<pre class="prettyprint lang-html linenums">
+<li class="filter-box">
+	<input type="text" id="menuitem-filter" placeholder="filter items, e.g. widget">
+</li>		
+<li keywords="widget,window,block,ui">
+	<a href="widget.html" title="Widget">
+		<i class="icon-th-large"></i> <span>Widget</span>
+	</a>
+</li>		
+	</pre>		
+
+	<h5>Expand/Collapse Menu</h5>
+	<pre class="prettyprint lang-html linenums">
+<li class="menu-controller">
+	<a id="btn-menu-controller" href="javascript:void(0)">
+		<span><i class="icon-angle-up"></i></span>
+	</a>
+</li>
+	</pre>	
+
+	<h5>Icons, Using font icons</h5>	
+	<pre class="prettyprint lang-html linenums">
+<li class="current"  keywords="home,dashboard,index,default,entry">
+	<a href="index.html" title="Dashboard">
+		<!--icons-->
+		<i class="icon-home"></i> 
+		<!--text-->
+		<span>Home</span>
+	</a>
+</li>		
+	</pre>	
+
+	<h5>Draggable</h5>	
+	<pre class="prettyprint lang-html linenums">
+<!--just include gappro.js-->
+	</pre>
+
+	<h5>Sub Menus</h5>
+	<pre class="prettyprint lang-html linenums">
+<li keywords="forms,editor,wizard,validate,editable,slider,ui">
+	<a href="forms.html" title="Forms">
+		<i class="icon-credit-card"></i> <span>Forms</span>
+	</a>
+	<ul class="sub-menus">
+		<li><a href="forms.html" title="Forms"> <span>Elements</span> </a> </li>
+		<li><a href="editor.html" title="Editor"> <span>Editor</span> </a> </li>
+		<li><a href="wizard.html" title="Wizard"> <span>Wizard</span> </a> </li>
+		<li><a href="validator.html" title="Validator"> <span>Validator</span> </a> </li>
+		<li><a href="editable.html" title="Editable"> <span>Editable</span> </a> </li>
+		<li><a href="javascript:void(0)" title="Sub Link"> <span>Sub Link</span> </a> </li>
+	</ul>
+</li>		
+	</pre>	
+
+	<h5>Quick Widget</h5>
+	<pre class="prettyprint lang-html linenums">
+<li keywords="widget,post,quick,forms">
+	<a href="javascript:void(0)">
+		<i class="icon-plane"></i> <span>Quick Post</span>
+	</a>
+	<div class="quick-widget">
+		<div class="widget">
+			<div class="widget-header">
+				<img src="img/icons/smiley.png" alt="">
+				<h3>Quick Widget</h3>
+			</div>
+			<div class="widget-content">
+				<input type="text" placeholder="nick usernames" value="@joe, @lisa, @kity"><br>
+				<textarea rows="2" cols="120" id="message" name="message">The quick brown fox jump over the lazy dog.</textarea><br>
+				<a href="javascript:void(0)" id="btn-send" class="btn"><i class="icon-flag"></i> Send Messages</a> 
+			</div>
+		</div>
+	</div>
+</li>		
+	</pre>		
+</div>
+
+<div id="widget" class="well">
+	<h4>Widget <a href="top">TOP</a></h4>
+	<h5>Structure</h5>
+	<pre class="prettyprint lang-html linenums">
+<div class="widget">
+	<div class="widget-header">
+		<!--header, optional-->
+	</div>
+	<div class="widget-content">
+		<!--content, required-->
+	</div>
+
+	<div class="widget-footer">
+		<!--footer, optional-->
+	</div>
+</div>		
+	</pre>	
+
+	<h5>Header, include icons and actions buttons</h5>
+	<pre class="prettyprint lang-html linenums">
+<div class="widget-header">
+	<!--icons-->
+	<i class="icon-th-list"></i>
+	<!--actions, or toggle buttons, or image, or others-->
+	<a href="#"></a>
+</div>		
+	</pre>	
+
+	<h5>Content, Container</h5>
+	<pre class="prettyprint lang-html linenums">
+<div class="widget-content">
+	<!-- everything here -->
+</div>		
+	</pre>	
+
+	<h5>Footer, Container</h5>
+	<pre class="prettyprint lang-html linenums">
+<div class="widget-footer">
+	<!-- something here -->
+</div>		
+	</pre>		
+	
+	<h5>Actions, you won't need write any javascript code.</h5>
+	<pre class="prettyprint lang-html linenums">
+<!--remove from dom tree-->
+<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
+<!--hide or show widget-->
+<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
+<!--show code-->
+<a class="pull-right" href="javascript:void(0)" rel="control" action="code"></a>
+<!--toggle fullscreen-->
+<a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
+<!--show help modal box, need define modal box speratly-->
+<a class="pull-right" href="javascript:void(0)" rel="control" action="help"></a>
+<!--show config modal box, need define modal box speratly-->
+<a class="pull-right" href="javascript:void(0)" rel="control" action="config"></a>
+<!--place widget to workspace, you can retore it when it has finished long task-->
+<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+	</pre>	
+
+	<h5>Header Tabs</h5>
+	<pre class="prettyprint lang-html linenums">
+<div class="widget-header widget-tabbed">	
+	<ul class="nav nav-tabs widget-right-header-tabs">
+		<!--tabs here-->
+		<li></li>
+	</ul>	
+</div>
+	</pre>
+	
+	<h5>Widget Accordion</h5>
+	<pre class="prettyprint lang-html linenums">
+<div class="widget-content">
+	<div class="accordion widget-accordion">
+		<!--accordion items-->
+	</div>
+</div>		
+	</pre>
+
+	<h5>Widget Table</h5>
+	<pre class="prettyprint lang-html linenums">
+<div class="widget-header widget-tabbed">
+	<!---->
+</div>	
+	</pre>
+
+	<h5>Header Background</h5>
+	<pre class="prettyprint lang-html linenums">
+<!--pink-->		
+<div class="widget-header pink-bg-linear">
+</div>	
+<!--green-->		
+<div class="widget-header green-bg-linear">
+</div>	
+<!--white-->		
+<div class="widget-header white-bg-linear">
+</div>	
+<!--grey-->		
+<div class="widget-header grey-bg-linear">
+</div>	
+<!--blue-->		
+<div class="widget-header blue-bg-linear">
+</div>	
+<!--orange-->		
+<div class="widget-header orange-bg-linear">
+</div>	
+<!--brown-->		
+<div class="widget-header brown-bg-linear">
+</div>	
+	</pre>
+</div>
+
+<div id="quick_link" class="well">
+	<h4>Quick Link <a href="#top">TOP</a></h4>
+	<pre class="prettyprint lang-html linenums">			
+<div class="circle-link-container">
+	<!--popover-->
+	<a href="javascript:void(0)" class="circle-link" title="lock" data-toggle="popover" data-content="more description here" data-placement="top">
+		<i class="icon-lock"></i>
+	</a>
+</div>		
+	</pre>	
+</div>
+
+<div id="vmap_leaderboard" class="well">
+	<h4>VMap &amp; Leaderboard <a href="#top">TOP</a></h4>
+	<pre class="prettyprint lang-html linenums">
+<!--vmap container-->
+<div id="sales_vmap" style="width: 100%; height: 350px;"></div>
+<!--leaderboard table-->
+<div class="leaderboard">
+	<ul>
+		<li class="title">Product A Sales</li>
+		<li data-rel="US" data-value="845"><span class="name">United States</span><span class="value">$845</span></li>
+	</ul>
+	<!--more-->
+</div>	
+	</pre>	
+
+	<pre class="prettyprint lang-js linenums">
+// jqvmap
+jQuery('#sales_vmap').vectorMap({
+    map: 'world_en',
+    backgroundColor: '#272727',
+    color: '#999',
+    hoverOpacity: 0.7,
+    selectedColor: '#fff',
+    enableZoom: true,
+    showTooltip: true,
+    scaleColors: ['#C8EEFF', '#006491'],
+    normalizeFunction: 'linear',
+    onRegionOver: function(event, code, region)
+    {
+        $(".leaderboard ul li").not(".title").each(function() {
+            if($(this).attr('data-rel') == code.toUpperCase()) 
+                $(this).toggleClass("hover");
+            else 
+                $(this).removeClass("hover");
+        });
+    },
+    onRegionClick: function(element, code, region) {
+        var total = 0;
+
+        $(".leaderboard ul li").not(".title").each(function() {
+            if($(this).attr('data-rel') == code.toUpperCase()) {
+                $(this).toggleClass("selected");
+                total += $(this).attr('data-value') * 1;
+            } else {
+                $(this).removeClass("selected");
+            }
+        });
+
+        $("$.leaderboard .total").html("Total: $" +  total);
+    }
+});
+
+// leaderboard
+    $(".leaderboard ul").each(function() {
+        $(this).find("li").not(".title").tsort({attr: 'data-value', order: 'desc'});
+    });
+});
+	</pre>	
+</div>
+
+<div id="merge_box" class="well">
+	<h4>Merge Box, Summary informations <a href="#top">TOP</a></h4>
+	<ul>
+		<li>Title</li>
+		<li>Trends</li>
+		<li>Chart</li>
+		<li>Text</li>
+		<li>Link</li>
+	</ul>
+	<pre class="prettyprint lang-js linenums">
+<!--nice, bad style-->		
+<div class="merge-box span4 nice">
+	<!--title-->
+	<span class="text">
+		Orders <sup>24h</sup>
+	</span>
+	<span class="number">7005</span>
+	<i class="icon-arrow-up"></i>
+	<br>
+	<span class="dau_line">
+		<!--speakline here-->
+		2800,2000,2000,3000,2800,2800,3600,2200,3000,2800,3000,2600,3200,3600,3000,2000,3200,3400,3600,2400,3000,3000,3400,3800
+	</span>
+	<hr>
+	<!--trends-->
+	<span class="number">+3005</span>
+	<span class="nice">+6%</span>
+
+	<!--links-->
+	<div class="pull-right dropdown">
+		<a href="#" class="link dropdown-toggle" title="actions" role="button" data-toggle="dropdown" data-target="#"><i class="icon-plus"></i></a>
+		<ul class="pull-right dropdown-menu" role="menu">
+			<li><a href="javascript:void(0)"><i class="icon-share-alt"></i> Full Reports </a></li>
+			<li><a href="javascript:void(0)"><i class="icon-download"></i>  Export Excel </a></li>
+		</ul>
+	</div>
+</div>		
+	</pre>	
+</div>
+
+<div id="compare_box" class="well">
+	<h4>Compare Box <a href="#top">TOP</a></h4>
+	<pre class="prettyprint lang-js linenums">
+<!--nice,bad styles-->		
+<div class="status-box nice">
+	<strong>-3%</strong>
+	<div class="progress">
+		<div class="bar" style="width: 30%"></div>
+	</div>
+</div>		
+	</pre>
+</div>
+
+<div id="interfaces" class="well">
+	<h4>Interfaces List <a href="#top">TOP</a></h4>
+
+	<h5>Forms</h5>
+	<ul>
+		<li>Form Elements, see forms.html</li>
+		<li>Editor(WYSIHTML5 editor,markdown editor), see editor.html</li>
+		<li>Wizard, see wizard.html</li>
+		<li>Validator, see validator.html</li>
+		<li>Editable, see editable.html</li>
+	</ul>
+	
+	<h5>Tables</h5>
+	<ul>
+		<li>static tables, see tables.html</li>
+		<li>dyanamic tables, see tables.html</li>
+		<li>rowlink, see tables.html</li>
+	</ul>
+
+	<h5>Others</h5>
+	<ul>
+		<li>Bootstrap UI, see ui.html</li>
+		<li>Buttons, see buttons.html</li>
+		<li>Grid, see grid.html</li>
+		<li>jQuery, see ui.html</li>
+		<li>Growl Message, see ui.html</li>
+		<li>Dynamic Progress, see ui.html</li>
+		<li>Timeline, see timeline.html</li>
+		<li>Calendar, see ui.html</li>
+		<li>Clock Face, see ui.html</li>
+		<li>Color Picker, see ui.html</li>
+		<li>Date Picker, see ui.html</li>
+		<li>Lightbox, see ui.html</li>
+		<li>Modal Box, see ui.html</li>
+		<li>QRCode, see ui.html</li>
+		<li>Mailbox, see index.html</li>
+		<li>Words Clouds, see index.html</li>
+		<li>TODO, see index.html</li>
+		<li>Chat, see index.html</li>
+		<li>Tickets, see tickets.html</li>
+		<li>jPages Gallery, see gallery.html</li>
+		<li>Smart Tab, Smart Wizard, see ui.html</li>
+		<li>Tag Manager</li>
+		<li>More...</li>
+	</ul>
+</div>
+
+<div id="plugin_docs" class="well">
+	<h4>Plugin External Docs <a href="#top">TOP</a></h4>
+	<ul>
+		<li>Autosize, <a href="http://www.jacklmoore.com/autosize/">http://www.jacklmoore.com/autosize/</a></li>
+		<li>bootstrap fileupload, <a href="http://jasny.github.com/bootstrap/javascript.html">http://jasny.github.com/bootstrap/javascript.html</a></li>
+		<li>bootstrap growl, <a href="https://github.com/ifightcrime/bootstrap-growl">https://github.com/ifightcrime/bootstrap-growl</a></li>
+		<li>bootstrap inputmask, <a href="http://jasny.github.io/bootstrap/javascript.html">http://jasny.github.io/bootstrap/javascript.html</a></li>
+		<li>bootstrap select, <a href="http://jasny.github.io/bootstrap/javascript.html">http://jasny.github.io/bootstrap/javascript.html</a></li>
+		<li>bootstrap switch, <a href="https://github.com/nostalgiaz/bootstrap-switch">https://github.com/nostalgiaz/bootstrap-switch</a></li>
+		<li>clockface, <a href="http://github.com/vitalets/clockface">http://github.com/vitalets/clockface</a></li>
+		<li>color picker, <a href="http://www.eyecon.ro/bootstrap-colorpicker">http://www.eyecon.ro/bootstrap-colorpicker</a></li>
+		<li>data tables, <a href="http://www.datatables.net">http://www.datatables.net</a></li>
+		<li>datepicker, <a href="http://www.improvely.com/">http://www.improvely.com/</a></li>
+		<li>daterange picker, <a href="http://www.improvely.com/">http://www.improvely.com/</a></li>
+		<li>dual listbox, <a href="http://www.meadmiracle.com">http://www.meadmiracle.com</a></li>
+		<li>jqcloud, <a href="https://github.com/lucaong/jQCloud">https://github.com/lucaong/jQCloud</a></li>
+		<li>jqtimeline, <a href="https://github.com/boostbob/jqtimeline">https://github.com/boostbob/jqtimeline</a></li>
+		<li>jqvmap, <a href="http://jqvmap.com">http://jqvmap.com</a></li>
+		<li>justgage, <a href="http://www.justgage.com">http://www.justgage.com</a></li>
+		<li>lightbox, <a href="http://leandrovieira.com/projects/jquery/lightbox/">http://leandrovieira.com/projects/jquery/lightbox/</a></li>
+		<li>Custom Scrollbar, <a href="http://manos.malihu.gr/jquery-custom-content-scroller/">http://manos.malihu.gr/jquery-custom-content-scroller/</a></li>
+		<li>morris, <a href="http://www.oesmith.co.uk/morris.js/">http://www.oesmith.co.uk/morris.js/</a></li>
+		<li>easy pie chart, <a href="http://github.com/rendro/easy-pie-chart/">http://github.com/rendro/easy-pie-chart/</a></li>
+		<li>editable, <a href="http://github.com/vitalets/x-editable">http://github.com/vitalets/x-editable</a></li>
+		<li>full calendar, <a href="http://arshaw.com/fullcalendar/">http://arshaw.com/fullcalendar/</a></li>
+		<li>peity, <a href="http://benpickles.github.com/peity">http://benpickles.github.com/peity</a></li>
+		<li>flot, <a href="http://www.flotcharts.org/">http://www.flotcharts.org/</a></li>
+		<li>jPages, <a href="http://luis-almeida.github.com/jPages">http://luis-almeida.github.com/jPages</a></li>
+		<li>qrcode, <a href="http://jeromeetienne.github.io/jquery-qrcode/">http://jeromeetienne.github.io/jquery-qrcode/</a></li>
+		<li>responsive tables, <a href="http://www.zurb.com/playground/responsive-tables">http://www.zurb.com/playground/responsive-tables</a></li>
+		<li>rowlink, <a href="http://jasny.github.com/bootstrap/javascript.html">http://jasny.github.com/bootstrap/javascript.html</a></li>
+		<li>select2, <a href="http://ivaynberg.github.io/select2/">http://ivaynberg.github.io/select2/</a></li>
+		<li>smart tab, <a href="http://techlaboratory.net/smarttab">http://techlaboratory.net/smarttab</a></li>
+		<li>smart wizard, <a href="http://www.techlaboratory.net">http://www.techlaboratory.net</a></li>
+		<li>sparkline, <a href="http://omnipotent.net/jquery.sparkline/">http://omnipotent.net/jquery.sparkline/</a></li>
+		<li>stepy, <a href="http://wbotelhos.com/stepy">http://wbotelhos.com/stepy</a></li>
+		<li>tag manager, <a href="http://welldonethings.com/tags/manager">http://welldonethings.com/tags/manager</a></li>
+		<li>tsort, <a href="http://tinysort.sjeiti.com/">http://tinysort.sjeiti.com/</a></li>
+		<li>jquery validate, <a href="https://github.com/jzaefferer/jquery-validation">https://github.com/jzaefferer/jquery-validation</a></li>
+		<li>wysihtml5, <a href="https://github.com/xing/wysihtml5">https://github.com/xing/wysihtml5</a></li>
+	</ul>
+</div>
+
+<div id="special_thanks" class="well">
+	<h4>Special Thanks <a href="#top">TOP</a></h4>
+	<ul>
+		<li>Wrapbootstrap.com</li>
+		<li>jQuery</li>
+		<li>Twitter Bootstrap</li>
+	</ul>
+</div>
 
 <hr>
 <p>Thank you Again. I'd be glad to help you if you have any questions relating to this theme, I will do my best to do it.</p>
 <p><a href="#" class="btn btn-info"><i class="icon-arrow-up"></i></a></p>
 
 <script>
+	$("pre").each(function() {
+		var html = $(this).html();
+		html = html.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+		$(this).html(html);
+	});
 	prettyPrint();
 </script>
 </body>
