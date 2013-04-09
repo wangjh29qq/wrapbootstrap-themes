@@ -292,7 +292,7 @@ function add_to_favlinks(menuitem) {
 	menuitem.draggable({
 		start: function(){$(this).remove();save_fav_menus();}
 	});
-	$.bootstrapGrowl("<img src='img/icons/heart.png' alt='' /> You can drag again to remove me.", {align: 'center'});
+	$.bootstrapGrowl("<img src='img/icons/heart.png' alt='' /> I'm persistent, you can drag again to remove me.", {align: 'center'});
 	$(".navbar-inner form.form-search").append(menuitem);
 
 	var outer_html = $('<div></div>').append(menuitem.clone()).html();
@@ -331,5 +331,5 @@ function save_fav_menus() {
 	if(array.length > 0)
 		localStorage.fav_menus_str = array.join("@");
 	else
-		localStorage.fav_menus_str.clear();
+		localStorage.fav_menus_str = undefined;
 }
