@@ -92,7 +92,7 @@ If you have any questions, please feel free to contact me via contact link or em
 	</li>
 	<li><h3><a href="#merge_box">Merge Box</a></h3></li>
 	<li><h3><a href="#compare_box">Compare Box</a></h3></li>
-	<li><h3><a href="#interfaces">Interfaces List</a></h3></li>
+	<li><h3><a href="#interfaces">Other Interfaces List</a></h3></li>
 	<li><h3><a href="#plugin_docs">Plugins External Docs</a></h3></li>
 	<li><h3><a href="#special_thanks">Special Thanks</a></h3></li>
 </ol>
@@ -550,7 +550,7 @@ jQuery('#sales_vmap').vectorMap({
 </div>
 
 <div id="interfaces" class="well">
-	<h4>Interfaces List <a href="#top">TOP</a></h4>
+	<h4>Other Interfaces List <a href="#top">TOP</a></h4>
 
 	<h5>Forms</h5>
 	<ul>
@@ -653,12 +653,22 @@ jQuery('#sales_vmap').vectorMap({
 <p><a href="#" class="btn btn-info"><i class="icon-arrow-up"></i></a></p>
 
 <script>
-	$("pre").each(function() {
-		var html = $(this).html();
-		html = html.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-		$(this).html(html);
+$('#toc > li > h3 > a').each(function() {
+	$(this).bind("click", function(e) {
+		var anchor = $(this);
+		$('html, body').stop().animate({
+		  scrollTop: $(anchor.attr('href')).offset().top
+		}, 1000);
+		e.preventDefault();
 	});
-	prettyPrint();
+}); 
+
+$("pre").each(function() {
+	var html = $(this).html();
+	html = html.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+	$(this).html(html);
+});
+prettyPrint();
 </script>
 </body>
 </html>
