@@ -26,7 +26,8 @@
     15. Main Wrapper Breadcrumb    
     16. Typograpgy Items
     17. JQTimeline
-    18. Footer, Copyright
+    18. Leaderboard
+    19. Footer, Copyright
 
 -------------------------------------------------------*/
 
@@ -673,6 +674,18 @@ input[type="checkbox"]:checked:after {
 .popover-title {background-color: #1b1b1b;border-bottom: 1px solid #202020;}
 .popover.top .arrow:after {
     border-top: none;
+}
+
+.popover.right .arrow:after {
+    border-top: none;
+}
+
+.popover.left .arrow:after {
+    border-left: none;
+}
+
+.popover.bottom .arrow:after {
+    border-bottom: none;
 }
 
 /* Main Wrapper */
@@ -1993,6 +2006,59 @@ div .grey-text, p .grey-text {color: grey;}
 
 .timeline.autosize {
     overflow: hidden;
+}
+
+/* leaderboard */
+.leaderboard {
+    .background-black(#272727, 0.1);
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.leaderboard .total {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #336699;
+}
+
+.leaderboard h3, .leaderboard h4{ 
+    text-align: center;
+}
+
+.leaderboard ul {
+    float: left;
+    width: 20%;
+    max-width: 20%;
+    list-style-type: none;
+    border-left: 2px solid #1b1b1b;
+    padding-left: 4px;
+}
+
+.leaderboard ul li.title {
+    font-weight: bold;
+    list-style: none;
+    border-bottom: 2px solid #1b1b1b;
+}
+
+.leaderboard ul li.hover {
+    // .background-black(#202020, 0.2);
+    color: #ffffff;
+}
+
+.leaderboard ul li.selected {
+    .background-black(#1b1b1b, 0.4);
+    color: #336699;
+}
+
+.leaderboard ul li .name {
+    text-transform: capitalize;
+}
+
+.leaderboard ul li .value {
+    float: right;
+    font-size: 16px;
 }
 
 /* copyright */

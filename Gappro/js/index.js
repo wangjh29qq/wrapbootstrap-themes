@@ -313,12 +313,35 @@ $(function () {
         selectedColor: '#fff',
         enableZoom: true,
         showTooltip: true,
-        values: sample_data,
         scaleColors: ['#C8EEFF', '#006491'],
         normalizeFunction: 'linear',
+        onRegionOver: function(event, code, region)
+        {
+            $(".leaderboard ul li").not(".title").each(function() {
+                if($(this).attr('data-rel') == code.toUpperCase()) 
+                    $(this).toggleClass("hover");
+                else 
+                    $(this).removeClass("hover");
+            });
+        },
         onRegionClick: function(element, code, region) {
-            var message = 'You clicked "'+ region + '" which has the code: '+ code.toUpperCase();
-            alert(message);
+            var total = 0;
+
+            $(".leaderboard ul li").not(".title").each(function() {
+                if($(this).attr('data-rel') == code.toUpperCase()) {
+                    $(this).toggleClass("selected");
+                    total += $(this).attr('data-value') * 1;
+                } else {
+                    $(this).removeClass("selected");
+                }
+            });
+
+            $("$.leaderboard .total").html("Total: $" +  total);
         }
+    });
+
+    // leaderboard
+    $(".leaderboard ul").each(function() {
+        $(this).find("li").not(".title").tsort({attr: 'data-value', order: 'desc'});
     });
 });
