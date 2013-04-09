@@ -216,7 +216,8 @@ $("#menuitem-filter").bind('keyup', function(e) {
 	}
 
 	$(".icon-menu > ul > li:nth-child(n+4)").each(function() {
-		console.debug(($(this).find("a > span").html() || "").toLowerCase().indexOf(input));
+		// console.debug(($(this).find("a > span").html() || "").toLowerCase().indexOf(input));
+		
 		if(
 			input.length > 0 &&
 		  	(($(this).attr("keywords") || "").toLowerCase().indexOf(input) == -1) &&
@@ -309,7 +310,7 @@ function load_fav_menus() {
 	if(localStorage.fav_menus_str && localStorage.fav_menus_str.length > 0) {
 		var array = localStorage.fav_menus_str.split("@");
 		for(idx in array) {
-			console.debug(menuitem);
+			// console.debug(menuitem);
 			var menuitem = $(array[idx]);
 			menuitem.appendTo(".navbar-inner form.form-search");
 			menuitem.draggable({
