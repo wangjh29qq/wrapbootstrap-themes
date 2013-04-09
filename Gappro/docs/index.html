@@ -49,7 +49,7 @@ If you have any questions, please feel free to contact me via contact link or em
 	<li><h3><a href="#html_struture">Html Structure</a></h3></li>
 	<li><h3><a href="#google_web_fonts">Google Web Fonts</a></h3></li>
 	<li><h3><a href="#basic_document">Basic Document</a></h3></li>
-	<li><h3><a href="#using_less">Using Less</a></h3></li>
+	<li><h3><a href="#using_less">Using Less or Not</a></h3></li>
 	<li><h3><a href="#top_bar">Top Bar</a></h3></li>
 	<li><h3><a href="#messages_container">Messages Container</a></h3></li>
 	<li>
@@ -73,7 +73,6 @@ If you have any questions, please feel free to contact me via contact link or em
 			<li>Content</li>
 			<li>Footer</li>
 			<li>Actions</li>
-			<li>Workspace</li>
 			<li>Header Tabs</li>
 			<li>Widget Accordion</li>
 			<li>Widget Table</li>
@@ -91,7 +90,9 @@ If you have any questions, please feel free to contact me via contact link or em
 		</ul>
 	</li>
 	<li><h3><a href="#merge_box">Merge Box</a></h3></li>
+	<li><h3><a href="#status_box">Status Box</a></h3></li>
 	<li><h3><a href="#compare_box">Compare Box</a></h3></li>
+	<li><h3><a href="#timeline">Timeline</a></h3></li>
 	<li><h3><a href="#interfaces">Other Interfaces List</a></h3></li>
 	<li><h3><a href="#plugin_docs">Plugins External Docs</a></h3></li>
 	<li><h3><a href="#special_thanks">Special Thanks</a></h3></li>
@@ -536,8 +537,8 @@ jQuery('#sales_vmap').vectorMap({
 	</pre>	
 </div>
 
-<div id="compare_box" class="well">
-	<h4>Compare Box <a href="#top">TOP</a></h4>
+<div id="status_box" class="well">
+	<h4>Status Box <a href="#top">TOP</a></h4>
 	<pre class="prettyprint lang-js linenums">
 <!--nice,bad styles-->		
 <div class="status-box nice">
@@ -546,6 +547,56 @@ jQuery('#sales_vmap').vectorMap({
 		<div class="bar" style="width: 30%"></div>
 	</div>
 </div>		
+	</pre>
+</div>
+
+
+<div id="compare_box" class="well"></div>
+	<h4>Compare Box <a href="#top">TOP</a></h4>
+	<pre class="prettyprint lang-js linenums">
+<div class="compare-box">
+	<div class="master" style="width: 55%">New York 55%</div>
+	<div class="slave" style="width: 25%">25%</div>
+	<div>&nbsp;</div>
+</div>		
+	</pre>
+
+
+<div id="timeline" class="well">
+	<h4>Timeline <a href="#top">TOP</a></h4>
+	<ul>
+		<li>Fixed Timeline</li>
+		<li>Autosize Timeline</li>
+	</ul>
+	<pre class="prettyprint lang-js linenums">
+<!--fixed-->
+<div id="fixed_timeline" class="timeline fixed"></div>
+<!--autosize-->	
+<div id="autosize_timeline" class="timeline autosize"></div>	
+	</pre>
+
+	<h5>Fixed js code</h5>
+	<pre class="prettyprint lang-js linenums">
+$('#fixed_timeline').jqtimeline( {
+	events: events, numYears: 4, 
+	gap: gap, startYear: 2011,
+	click:function(e,event){ 
+	  // event.name;
+	}
+});		
+	</pre>	
+
+	<h5>Autosize js code</h5>
+	<pre class="prettyprint lang-js linenums">
+$('#autosize_timeline').jqtimeline( {
+	events: events, numYears: 4, 
+	gap: gap, startYear: 2011,
+	// autosize arguments, null, empty for fixed timeline
+	max_width: $("#autosize_timeline").parent().width() * 0.95,
+	click:function(e,event){
+	  // event.name;
+	}
+});
 	</pre>
 </div>
 
@@ -576,7 +627,6 @@ jQuery('#sales_vmap').vectorMap({
 		<li>jQuery, see ui.html</li>
 		<li>Growl Message, see ui.html</li>
 		<li>Dynamic Progress, see ui.html</li>
-		<li>Timeline, see timeline.html</li>
 		<li>Calendar, see ui.html</li>
 		<li>Clock Face, see ui.html</li>
 		<li>Color Picker, see ui.html</li>
@@ -649,7 +699,7 @@ jQuery('#sales_vmap').vectorMap({
 </div>
 
 <hr>
-<p>Thank you Again. I'd be glad to help you if you have any questions relating to this theme, I will do my best to do it.</p>
+<p>Thank you Again. I'd be glad to help you if you have any questions relating to this theme, I will do my best.</p>
 <p><a href="#" class="btn btn-info"><i class="icon-arrow-up"></i></a></p>
 
 <script>
