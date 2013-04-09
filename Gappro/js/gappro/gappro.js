@@ -252,15 +252,18 @@ $(".icon-menu > ul > li > a").each(function(){
 	});
 });
 
+// load fav menus
+load_fav_menus();
+
 // tooltip
 $("a[data-toggle=tooltip]").tooltip().click(function(e) {
 	e.preventDefault();
-})
+});
   
 // popover 
 $("a[data-toggle=popover]").popover().click(function(e) {
   	e.preventDefault();
-})
+});
 
 // place widget to workspace
 function add_to_sidebar(widget, title, pos) {
@@ -287,8 +290,46 @@ function add_to_sidebar(widget, title, pos) {
 function add_to_favlinks(menuitem) {
 	menuitem.addClass("btn").css({'left': 0, 'top': 0, 'margin-right': '4px'});
 	menuitem.draggable({
-		start: function(){$(this).remove();}
+		start: function(){$(this).remove();save_fav_menus();}
 	});
 	$.bootstrapGrowl("<img src='img/icons/heart.png' alt='' /> You can drag again to remove me.", {align: 'center'});
 	$(".navbar-inner form.form-search").append(menuitem);
+
+	var outer_html = $('<div></div>').append(menuitem.clone()).html();
+
+	// cross pages persist
+	if(!localStorage.fav_menus_str || localStorage.fav_menus_str.length == 0)
+		localStorage.fav_menus_str = outer_html;
+	else 
+		localStorage.fav_menus_str += "@" + outer_html;
+}
+
+// load fav menus
+function load_fav_menus() {
+	if(localStorage.fav_menus_str && localStorage.fav_menus_str.length > 0) {
+		var array = localStorage.fav_menus_str.split("@");
+		for(idx in array) {
+			console.debug(menuitem);
+			var menuitem = $(array[idx]);
+			menuitem.appendTo(".navbar-inner form.form-search");
+			menuitem.draggable({
+				start: function(){$(this).remove();save_fav_menus();}
+			});
+		}
+	}
+}
+
+// reset fav menus str
+function save_fav_menus() {
+	var array = [];
+
+	$(".navbar-inner form.form-search .ui-draggable").each(function() {
+		var outer_html = $('<div></div>').append($(this).clone()).html();
+		array.push(outer_html);
+	});
+
+	if(array.length > 0)
+		localStorage.fav_menus_str = array.join("@");
+	else
+		localStorage.fav_menus_str.clear();
 }
