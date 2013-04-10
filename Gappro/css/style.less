@@ -101,9 +101,9 @@
     border-bottom-right-radius: @radius;
 }
 
-.border-bottom (@color: #202020, @alpha: 0.3) {
-    border-bottom: 1px solid @color;
-    border-bottom: 1px solid rgba(0, 0, 0, @alpha);
+.border-bottom (@color: #202020, @alpha: 0.3, @width: 1px) {
+    border-bottom: @width solid @color;
+    border-bottom: @width solid rgba(0, 0, 0, @alpha);
 }
 
 .border-top (@color: #202020, @alpha: 0.3) {
@@ -164,7 +164,11 @@ a {color: #1e90ff}
 a:hover,a:focus {text-decoration: none;}
 
 /* navbar */
-.navbar { margin-bottom: 0px; }
+.navbar { 
+    margin-bottom: 0px; 
+    .border-bottom(#1b1b1b, 0.4, 100px);
+}
+
 .navbar-inverse .brand {
     color: #000;
     font-size: 30px;
@@ -510,11 +514,11 @@ form .success {color: #54a954;}
     .border-black;
     text-shadow: none;
     
-    -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    -ms-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // -ms-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
 }
 
 .alert .close { 
@@ -694,16 +698,19 @@ input[type="checkbox"]:checked:after {
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../img/main.png");
     
     margin: 10px;
+    margin-top: -80px;
     padding-top: 20px;
     padding-bottom: 20px;
 
-    -o-box-shadow: inset 1px 1px 5px #000, inset -1px -1px 5px #000;
-    -ms-box-shadow: inset 1px 1px 5px #000, inset -1px -1px 5px #000;
-    -moz-box-shadow: inset 1px 1px 5px #000, inset -1px -1px 5px #000;
-    -webkit-box-shadow: inset 1px 1px 5px #000, inset -1px -1px 5px #000;
-    box-shadow:  1px 1px 5px #000, -1px -1px 5px #000;
+    // -o-box-shadow: inset 1px 1px 5px #000, inset -1px -1px 5px #000;
+    // -ms-box-shadow: inset 1px 1px 5px #000, inset -1px -1px 5px #000;
+    // -moz-box-shadow: inset 1px 1px 5px #000, inset -1px -1px 5px #000;
+    // -webkit-box-shadow: inset 1px 1px 5px #000, inset -1px -1px 5px #000;
+    // box-shadow:  1px 1px 5px #000, -1px -1px 5px #000;
 
-    .rounded-corners;
+    .rounded-corners(4px);
+    border: 1px solid #272727;
+    border-top: 2px solid #222222;
 }
 
 #workspace {
@@ -1042,7 +1049,6 @@ input[type="checkbox"]:checked:after {
 
 .widget-header {
     .border-black;
-    border-bottom: none;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     height: 40px;
@@ -1058,11 +1064,11 @@ input[type="checkbox"]:checked:after {
     background-image: -o-linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.02));
     background-image: linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.02));
     
-    -o-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.06) inset, 0px 0px 2px #000000;
-    -ms-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.06) inset, 0px 0px 2px #000000;
-    -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.06) inset, 0px 0px 2px #000000;
-    -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.06) inset, 0px 0px 2px #000000;
-    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.06) inset, 0px 0px 2px #000000;
+    // -o-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.06) inset, 0px 0px 2px #000000;
+    // -ms-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.06) inset, 0px 0px 2px #000000;
+    // -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.06) inset, 0px 0px 2px #000000;
+    // -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.06) inset, 0px 0px 2px #000000;
+    // box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.06) inset, 0px 0px 2px #000000;
 
     // enable draggable
     // cursor: move;
@@ -1335,11 +1341,11 @@ input[type="checkbox"]:checked:after {
     font-size: 20px;
     margin-bottom: 20px;
 
-    -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    -ms-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // -ms-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
     
     .rounded-corners;
 }
@@ -1769,15 +1775,15 @@ ul#breadcrumbs
     margin-left: 0px;
     overflow: hidden;
     list-style: none;
-    border: 1px solid #000;
+    .border-black(#202020, 0.2);
     .rounded-corners(5px);
     .background-black;
     
-    -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    -ms-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // -ms-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
+    // box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
 }
 
 ul#breadcrumbs li:first-child
