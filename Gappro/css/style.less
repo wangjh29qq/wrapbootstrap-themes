@@ -265,8 +265,6 @@ a:hover {text-decoration: none;}
 
 .dropdown-menu {
     .border-black;
-    // background-color: #020202;
-    // background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
     background-color: #202020;
 }
 
@@ -282,12 +280,7 @@ a[class*="btn"], button[class*="btn"],
 span[class="btn btn-file"] {
     color: #999;
     text-shadow: none;
-    // background-color: #202020;
-    // background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.016)), to(rgba(0, 0, 0, 0.02)));
-    // background: -webkit-linear-gradient(center top, rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.02));
-    // background: -moz-linear-gradient(center top, rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.02));
-    // background: -o-linear-gradient(center top, rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.02));
-    // background: linear-gradient(center top, rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.02));
+    border-bottom-color: #202020;
 
     background-color: #2a2a2a;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.016)), to(rgba(0, 0, 0, 0.02)));
@@ -295,6 +288,11 @@ span[class="btn btn-file"] {
     background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.02));
     background-image: -o-linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.02));
     background-image: linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.02));
+}
+
+a[class*="btn"]:focus, button[class*="btn"]:focus,
+span[class="btn btn-file"]:focus {
+    background-color: #2a2a2a;
 }
 
 .btn-group.open .btn.dropdown-toggle {
@@ -460,12 +458,33 @@ form .success {color: #54a954;}
     border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.nav-tabs > .active > a, .nav-tabs > .active > a:hover,
-.tabs-below > .nav-tabs > .active > a, .tabs-below > .nav-tabs > .active > a:hover,
-.tabs-left > .nav-tabs .active > a, .tabs-left > .nav-tabs .active > a:hover,
-.tabs-right > .nav-tabs .active > a, .tabs-right > .nav-tabs .active > a:hover {
+.nav-tabs > .active > a, 
+.nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a, 
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-left > .nav-tabs .active > a, 
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a, 
+.tabs-right > .nav-tabs .active > a:hover {
     .border-black;
     .background-black(#202020, 0.3);
+}
+
+.nav-tabs > .active > a, 
+.nav-tabs > .active > a:hover, 
+.nav-tabs > .active > a:focus,
+.tabs-left > .nav-tabs .active > a, 
+.tabs-left > .nav-tabs .active > a:hover, 
+.tabs-left > .nav-tabs .active > a:focus,
+.tabs-below > .nav-tabs .active > a, 
+.tabs-below > .nav-tabs .active > a:hover, 
+.tabs-below > .nav-tabs .active > a:focus,
+.tabs-right > .nav-tabs .active > a, 
+.tabs-right > .nav-tabs .active > a:hover, 
+.tabs-right > .nav-tabs .active > a:focus,
+ {
+    .border-black;
+    .background-black(#1b1b1b, 0.4);
 }
 
 .nav.nav-pills li.active a {
@@ -2018,6 +2037,8 @@ div .grey-text, p .grey-text {color: grey;}
 }
 
 .leaderboard .total {
+    clear: both;
+    display: block;
     text-align: center;
     font-size: 18px;
     margin-bottom: 10px;

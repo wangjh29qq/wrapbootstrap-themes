@@ -1,27 +1,30 @@
-Gappro is a admin template that can be used for any backed applications. It coming with black style and beautiful menus, including plenty of useful items, and all the plugin CSS file has cover to fit the current style. It's compatible with Bootstrap 2.2.x, 2.3.x.
+Gappro is a admin template that can be used for any backed applications. It's not just a simple replacement of the user interface skins, but strengthen the uitilies of some basic in order to use conveniently. It's coming with black style and beautiful menus, including plenty of useful items, and all the plugin css file has cover to fit the current style. It's building based the bootstrap 2.3, but compatible with the bootstrap 2.2.
 
 #Menu Features
 
-* Filter
-* Expand/Collapse
-* Draggable icons to create persistent favorites menus
+* Filter by keywords
+* Expand/Collapse menu
+* Drag icons to persist favorite menus
 * Sub Menus
+* Sub quick post
 * Sub quick widget
-* 7 Menu theme colors
+* 7 menu theme colors
 
 #Widget Features
 
-* Place to workspace
-* Show/hide
-* Fullscreen
-* Help modal Box
-* Config modal Box
-* Remove from DOM
-* Show code
+* Defined actions by markup
+* Action - Place to workspace
+* Action - Show/hide
+* Action - Fullscreen
+* Action - Help modal Box
+* Action - Config modal Box
+* Action - Remove from DOM tree
+* Action - Show code
 * Custom background
 * Widget accordion
 * Widget table
 * Widget header tabs
+* Widget footer
 
 #Forms Features
 
@@ -37,8 +40,10 @@ Gappro is a admin template that can be used for any backed applications. It comi
 
 #Tables Features
 
+* Leaderboard tables
 * Static tables
 * Bordered tables
+* Condensed tables
 * Striped tables
 * Dynamic tables
 * Rowlink tables
@@ -57,9 +62,8 @@ Gappro is a admin template that can be used for any backed applications. It comi
 * Well documented
 * Hard code
 * Google webfonts
-* 20+ uniqe pages
+* 27+ uniqe pages
 * Upgrade free
-* Email support
 
 #Resolution
 
