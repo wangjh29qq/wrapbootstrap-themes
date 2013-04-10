@@ -1,0 +1,21 @@
+.icon-menu > ul > li > a, .icon-menu > ul > li > span { 
+    color: #999;
+}
+
+
+.icon-menu > ul > li.circle a img {
+	-o-box-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
+    -ms-box-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
+    -moz-box-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
+    -webkit-box-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
+    box-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
+}
+
+.navbar {
+	border-bottom: 100px solid #1b1b1b;
+	border-bottom: 100px solid rgba(0,0,0, 0.4);
+}
+
+#main_wrapper {
+	border-top: 1px solid #222222;
+}
