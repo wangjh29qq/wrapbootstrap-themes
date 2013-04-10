@@ -39,10 +39,22 @@ $(document).ready(function() {
     $('.chart').easyPieChart({
        animate: 2000,
        lineWidth: 10,
-       barColor: '#1E90FF'
+       barColor: '#369'
     });
 
-    var updatingChart = $(".updating-chart").peity("line", { width: 64 });
+    $('.chart-info').easyPieChart({
+       animate: 2000,
+       lineWidth: 10,
+       barColor: '#f29b36'
+    });
+
+    $('.chart-success').easyPieChart({
+       animate: 2000,
+       lineWidth: 10,
+       barColor: '#54a954'
+    });
+
+    var updatingChart = $(".updating-chart").peity("line", { colour: '#f29b36', width: 100, height: 38 });
 
     setInterval(function() {
       var random = Math.round(Math.random() * 10)
