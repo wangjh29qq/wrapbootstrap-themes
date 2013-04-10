@@ -29,6 +29,7 @@ $(document).ready(function() {
 		});
 	});
 
+	$("#tour").css('display', 'none');
 	$("#btn-tour").bind("click", function(e) {
 		$("#tour").joyride({
 			'tipLocation': 'top'

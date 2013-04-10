@@ -121,68 +121,142 @@
           <li class="filter-box">
             <input type="text" id="menuitem-filter" placeholder="filter items, e.g. widget">
           </li>
-          <li>
+          <li class="menu-controller">
             <a id="btn-menu-controller" href="javascript:void(0)">
               <span><i class="icon-angle-up"></i></span>
             </a>
           </li>
-          <li>
+          <li keywords="home,dashboard,index,default,entry">
             <a href="index.html" title="Dashboard">
               <i class="icon-home"></i> <span>Home</span>
             </a>
           </li>
-          <li>
-            <a href="widget.html" title="Widget">
+          <li keywords="widget,window,block,ui">
+            <a href="widget.html" title="Widget" id="widget-menu">
               <i class="icon-th-large"></i> <span>Widget</span>
             </a>
           </li>
-          <li>
+          <li keywords="table,data,rowlink,list,ui">
             <a href="tables.html" title="Tables">
               <i class="icon-th-list"></i> <span>Tables</span>
             </a>
           </li>
-          <li>
+          <li keywords="chart,pie,bar,line,speakline,dynamic,donut,stacked">
             <a href="charts.html" title="Charts">
               <i class="icon-bar-chart"></i> <span>Charts</span>
             </a>
           </li>
-          <li>
+          <li keywords="forms,editor,wizard,validate,editable,slider,ui">
             <a href="forms.html" title="Forms">
-              <i class="icon-credit-card"></i> <span>Forms</span>
-            </a>
-          </li>
-          <li>
-            <a href="buttons.html" title="Buttons">
-              <i class="icon-download"></i> <span>Buttons</span>
-            </a>
-          </li>
-          <li class="current">
-            <a href="ui.html" title="Interfaces">
-              <i class="icon-camera"></i> <span>Interfaces</span>
+              <i class="icon-credit-card"></i> <span>Forms (6)</span>
             </a>
             <ul class="sub-menus">
-              <li><a href="ui.html" title="UI">UI Elements</a></li>
+              <li><a href="forms.html" title="Forms"> <span>Elements</span> </a> </li>
+              <li><a href="editor.html" title="Editor"> <span>Editor</span> </a> </li>
+              <li><a href="wizard.html" title="Wizard"> <span>Wizard</span> </a> </li>
+              <li><a href="validator.html" title="Validator"> <span>Validator</span> </a> </li>
+              <li><a href="editable.html" title="Editable"> <span>Editable</span> </a> </li>
+              <li><a href="javascript:void(0)" title="Sub Link">Sub Link</a></li>
+            </ul>
+          </li>
+          <li class="current" keywords="ui,table,interface,gallery,box,block,widget,timeline,grid">
+            <a href="ui.html" title="UI">
+              <i class="icon-camera"></i> <span>UI (12)</span>
+            </a>
+            <ul class="sub-menus">
+              <li><a href="ui.html" title="UI"> <span>Elements</span> </a> </li>
               <li><a href="attr.html" title="Attr Box"> <span>Attr Box</span> </a></li>
-              <li><a href="editor.html" title="Editor"> <span>Editor</span> </a></li>
+              <li><a href="gallery.html" title="Gallery"> <span>Gallery</span> </a> </li>
+              <li><a href="buttons.html" title="Buttons"> <span>Buttons</span> </a> </li>
+              <li><a href="grid.html" title="Grid"> <span>Grid</span> </a> </li>
+              <li><a href="timeline.html" title="jQuery Timeline"><span>Timeline</span></a></li>
+              <li><a href="tabs.html" title="Tab">Tabs</a></li>
+              <li><a id="btn-tour" href="javascript:void(0)" title="Tour Guide">Guide Tour</a></li>
+              <li><a href="sliders.html" title="Sliders">Sliders</a></li>
+              <li><a href="noty.html" title="Notifications">Notifications</a></li>
+              <li><a href="accordion.html" title="Accordion">Accordion</a></li>
+              <li><a href="modals.html" title="Modals">Modals</a></li>
             </ul> 
           </li>
-          <li>
+          <li keywords="wizard,typo,text,font">
             <a href="typography.html" title="Typegraphy">
               <i class="icon-font"></i> <span>Typography</span>
             </a>
-          </li>
-          <li>
+          </li>         
+          <li keywords="gallery,login,profile,403,404,error,starter">
             <a href="javascript:void(0)" title="Extra">
               <i class="icon-legal"></i> <span>Extra</span>
             </a>
             <ul class="sub-menus">
-              <li><a href="gallery.html" title="Gallery"><i class="icon-cog"></i> Gallery</a></li>  
+              <li><a href="gallery.html" title="Gallery"><i class="icon-picture"></i> Gallery</a></li>  
               <li><a href="login.html" title="login"><i class="icon-user"></i> Login</a></li> 
               <li><a href="profile.html" title="profile"><i class="icon-cog"></i> Profile</a></li>  
               <li><a href="404.html" title="404"><i class="icon-eye-close"></i> 404</a></li>  
               <li><a href="tickets.html" title="Tickets"><i class="icon-list"></i> Tickets</a></li>
               <li><a href="starter.html" title="Starter"><i class="icon-question-sign"></i> Starter</a></li>
             </ul>
+          </li>
+          <li keywords="faq,questions">
+            <a href="faq.html">
+              <i class="icon-question-sign"></i>
+              <span>FAQ</span>
+            </a>
+          </li>
+          <li keywords="profile,settings,custom,modal,personal">
+            <a href="#settings" role="button" data-toggle="modal" data-target="#settings">
+              <i class="icon-cog"></i> <span>Settings</span>
+            </a>
+            <div id="settings" class="modal hide fade" tabindex="-1" role="dialog"> 
+              <div class="modal-header"> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> 
+                <h3 id="myModalLabel">Config Box
+                </h3> 
+              </div> 
+              <div class="modal-body"> 
+                <form class="form-horizontal" id="basic-form" method="get" action="">
+
+                    <div class="control-group">
+                      <label class="control-label">Firstname (required)</label>
+                      <div class="controls">
+                        <input type="text" name="firstname" id="firstname" placeholder="lisa" minlength="2" required>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label">lastname (required)</label>
+                      <div class="controls">
+                        <input type="text" name="lastname" id="lastname" placeholder="joe" minlength="2" required>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label">email (required)</label>
+                      <div class="controls">
+                        <input type="text" name="email" id="email" type="email" placeholder="lisa@abc.com" required>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label">Comment (requied)</label>
+                      <div class="controls">
+                        <textarea type="text" name="comment" id="comment" placeholder="balbal blala..." required></textarea>  
+                      </div>
+                    </div>
+
+                    <div class="form-actions">
+                      <button type="submit" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Save changes</button>
+                      <button type="button" class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    </div>
+
+                  </form>           
+              </div> 
+            </div>
+          </li>
+          <li keywords="login,signin,profile,entry">
+            <a href="login.html">
+              <i class="icon-user"></i>
+              <span>Login</span>
+            </a>
           </li>
         </ul>
       </div>
