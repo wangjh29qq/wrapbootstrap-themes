@@ -1452,8 +1452,8 @@ hr {
 /* Chat Message */
 
 .msg-items-container {
-    height: 300px;
-    overflow-y: hidden;
+    // height: 300px;
+    // overflow-y: hidden;
 }
 
 .msg-items-container .nav-tabs {
@@ -1473,9 +1473,7 @@ hr {
     margin-bottom: 0px;
 }
 
-.msg-item .username {
-    color: orange;
-}
+.msg-item .username {color: orange; }
 
 .msg-item .avatar {
     width: 30px;
@@ -1483,42 +1481,29 @@ hr {
     .rounded-corners(200px);
 }
 
-.msg-item {
-    .rounded-corners;
-}
+.msg-item {.rounded-corners; }
+.user-item {margin-top: 10px; }
 
-.user-item {
-    margin-top: 10px;
-}
-
-.user-item .avatar {
-    width: 35px;
-    height: 35px;
-
-    margin-right: 7px;
-    margin-top: 5px;
-}
-
-.received {
+.msg-item.received {
     .background-black;
     margin: 10px;
     margin-left: 0px;
     padding: 4px;
 }
 
-.sent {
+.msg-item.sent {
     text-align: right;
     .background-black(#202020, 0.3);
     margin: 10px;
     padding: 4px;
 }
 
-.status_switch {
-    margin-top: 6px;
-}
-
-.words-cloud {
-    height: 150px;
+.msg-item.offline {
+    border: 1px dashed #202020;
+    .background-black(#272727, 0.1);
+    margin: 10px;
+    margin-left: 0px;
+    padding: 4px;
 }
 
 /* Circle Link */

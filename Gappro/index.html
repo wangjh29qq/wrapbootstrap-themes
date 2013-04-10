@@ -14,6 +14,11 @@
 <link href="css/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" media="screen">
 <link href="css/jqvmap/jqvmap.css" rel="stylesheet" media="screen">
 <link href="css/prettify/sons-of-obsidian.css" rel="stylesheet" media="screen">
+<style>
+	.words-cloud {
+    	height: 150px;
+	}
+</style>
 <!--[if lte IE 8]>
 <script src="js/fix/respond.min.js"></script>
 <![endif]-->
@@ -954,165 +959,93 @@
 						</div>
 						<!-- /widget-header -->
 						<div class="widget-content">
-							<div class="container-fluid">
+							<div class="msg-items-container">
 
-								<div class="span3">
-									<div class="user-item well">
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar4.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar2.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar2.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar4.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
+								<ul class="nav nav-tabs">
+								  <li class="active online">
+								  	<a href="#lisa-joe" data-toggle="tab" title="online">Lisa Joe</a>
+								  </li>
+								  <li class="offline">
+								  	<a href="#lisa-kity" data-toggle="tab" title="offline">Lisa Kity</a>
+								  </li>
+								</ul>
+
+								<div class="tab-content">
+									<div class="tab-pane active" id="lisa-joe">
+										<div class="msg-item received">
 											<img class="avatar" src="img/avatar6.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar6.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar7.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar8.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar4.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar2.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar8.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar4.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar2.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar8.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar4.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar2.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar8.jpg" alt="" />
-										</a>
-										<a href="javascript:void(0)">
-											<img class="avatar" src="img/avatar4.jpg" alt="" />
-										</a>
-									</div>
-								</div>
+											<span class="username">@Lisa Joe</span>
+											<span class="muted">Jul 25, 2012 11:09</span>
 
-								<div class="span9 msg-items-container">
-
-									<ul class="nav nav-tabs">
-									  <li class="active online">
-									  	<a href="#lisa-joe" data-toggle="tab" title="online">Lisa Joe</a>
-									  </li>
-									  <li class="offline">
-									  	<a href="#lisa-kity" data-toggle="tab" title="offline">Lisa Kity</a>
-									  </li>
-									</ul>
-
-									<div class="tab-content">
-										<div class="tab-pane active" id="lisa-joe">
-											<div class="msg-item received">
-												<img class="avatar" src="img/avatar6.jpg" alt="" />
-												<span class="username">@Lisa Joe</span>
-												<span class="muted">Jul 25, 2012 11:09</span>
-
-												<p>
-													Lorem ipsum sunt veniam Duis ut eu.Lorem ipsum aliqua dolor nisi aute.
-												</p>
-											</div>
-
-											<div class="msg-item sent">
-
-												<span class="muted">Jul 25, 2012 11:09</span>
-
-												<img class="avatar" src="img/avatar9.jpg" alt="" />
-
-												<p>
-													Lorem ipsum sunt veniam Duis ut eu.Lorem ipsum aliqua dolor nisi aute.
-												</p>
-											</div>
-
-											<div class="msg-item received">
-												<img class="avatar" src="img/avatar6.jpg" alt="" />
-												<span class="username">@Lisa Joe</span>
-												<span class="muted">Jul 25, 2012 11:09</span>
-
-												<p>
-													Lorem ipsum sunt veniam Duis ut eu.Lorem ipsum aliqua dolor nisi aute.
-												</p>
-											</div>
-
-											<br>
-											<form class="form-search">
-												<input type="text" class="input-xlarge search-query" placeholder="Lorem ipsum pariatur tempor exercitation ut officia. ">
-												<button class="btn btn-success" type="submit">
-													<i class="icon-edit"></i>
-													Send
-												</button>
-												<a href="javascript:void(0)" class="btn">
-													<i class="icon-save"></i>
-													Save history
-												</a>
-											</form>
+											<p>
+												Lorem ipsum sunt veniam Duis ut eu.Lorem ipsum aliqua dolor nisi aute.
+											</p>
 										</div>
-										
-										<div class="tab-pane" id="lisa-kity">
-											<div class="msg-item received">
-												<img class="avatar" src="img/avatar6.jpg" alt="" />
-												<span class="username">@Lisa Kity</span>
-												<span class="muted">Jul 25, 2012 11:09</span>
 
-												<p>
-													Lorem ipsum sunt veniam Duis ut eu.Lorem ipsum aliqua dolor nisi aute.
-												</p>
-											</div>
+										<div class="msg-item sent">
+											<span class="muted">Jul 25, 2012 11:09</span>
+											<img class="avatar" src="img/avatar9.jpg" alt="" />
+											<p>
+												Lorem ipsum sunt veniam Duis ut eu.Lorem ipsum aliqua dolor nisi aute.
+											</p>
+										</div>
 
-											<div class="msg-item sent">
+										<div class="msg-item received">
+											<img class="avatar" src="img/avatar6.jpg" alt="" />
+											<span class="username">@Lisa Joe</span>
+											<span class="muted">Jul 25, 2012 11:09</span>
 
-												<span class="muted">Jul 25, 2012 11:09</span>
+											<p>
+												Lorem ipsum sunt veniam Duis ut eu.Lorem ipsum aliqua dolor nisi aute.
+											</p>
+										</div>
 
-												<img class="avatar" src="img/avatar9.jpg" alt="" />
+										<div class="msg-item sent">
+											<span class="muted">Jul 25, 2012 11:09</span>
+											<img class="avatar" src="img/avatar9.jpg" alt="" />
+											<p>
+												Lorem ipsum sunt veniam Duis ut eu.Lorem ipsum aliqua dolor nisi aute.
+											</p>
+										</div>
+									</div>
+									
+									<div class="tab-pane" id="lisa-kity">
+										<div class="msg-item received">
+											<img class="avatar" src="img/avatar6.jpg" alt="" />
+											<span class="username">@Lisa Kity</span>
+											<span class="muted">Jul 25, 2012 11:09</span>
 
-												<p>
-													Lorem ipsum sunt veniam Duis ut eu.Lorem ipsum aliqua dolor nisi aute.
-												</p>
-											</div>
+											<p>
+												Lorem ipsum sunt veniam Duis ut eu.Lorem ipsum aliqua dolor nisi aute.
+											</p>
+										</div>
 
-											<br>
-											<form class="form-search">
-												<input type="text" class="input-xlarge search-query" placeholder="Lorem ipsum pariatur tempor exercitation ut officia. ">
-												<button class="btn btn-success" type="submit">
-													<i class="icon-edit"></i>
-													Send
-												</button>
-												<a href="javascript:void(0)" class="btn">
-													<i class="icon-save"></i>
-													Save history
-												</a>
-											</form>
+										<div class="msg-item sent">
+											<span class="muted">Jul 25, 2012 11:09</span>
+											<img class="avatar" src="img/avatar9.jpg" alt="" />
+											<p>
+												Lorem ipsum sunt veniam Duis ut eu.Lorem ipsum aliqua dolor nisi aute.
+											</p>
+										</div>
+
+										<div class="msg-item offline">
+											<img src="img/icons/info.png" alt=""> Lisa kity is disconnect...
 										</div>
 									</div>
 								</div>
-
 							</div>
 
+							<form class="form-search ">
+								<input type="text" class="input-xlarge search-query" placeholder="Lorem ipsum pariatur tempor exercitation ut officia. ">
+								<button class="btn btn-success" type="submit"
+									<i class="icon-edit"></i>
+									Send
+								</button>
+								<a href="javascript:void(0)" class="btn">
+									<i class="icon-save"></i>
+									Save history
+								</a>
+							</form>
 						</div>
 						<!-- /widget-content -->
 					</div>
