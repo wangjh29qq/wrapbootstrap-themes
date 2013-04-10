@@ -7,10 +7,11 @@
 <link href="css/main.css" rel="stylesheet">
 <meta name="author" content="boostbob.github.com">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link href="css/prettify/doxy.css" rel="stylesheet" media="screen">
+<link href="css/prettify/sons-of-obsidian.css" rel="stylesheet" media="screen">
 <script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/prettify/prettify.js"></script>
+<script src="js/format/html-format.js"></script>
 </head>
 <body>
 
@@ -557,7 +558,7 @@ jQuery('#sales_vmap').vectorMap({
 </div>
 
 
-<div id="compare_box" class="well"></div>
+<div id="compare_box" class="well">
 	<h4>Compare Box <a href="#top">TOP</a></h4>
 	<pre class="prettyprint lang-js linenums">
 <div class="compare-box">
@@ -566,7 +567,7 @@ jQuery('#sales_vmap').vectorMap({
 	<div>&nbsp;</div>
 </div>		
 	</pre>
-
+</div>
 
 <div id="timeline" class="well">
 	<h4>Timeline <a href="#top">TOP</a></h4>
@@ -620,25 +621,30 @@ $('#autosize_timeline').jqtimeline( {
 	
 	<h5>Tables</h5>
 	<ul>
+		<li>Leaderboard tables</li>
 		<li>static tables, see tables.html</li>
 		<li>dyanamic tables, see tables.html</li>
+		<li>Bordered tables</li>
+		<li>Condensed tables</li>
+		<li>Striped tables</li>
 		<li>rowlink, see tables.html</li>
 	</ul>
 
 	<h5>Others</h5>
 	<ul>
 		<li>Bootstrap UI, see ui.html</li>
+		<li>Guide Tour, see tour.html</li>
 		<li>Buttons, see buttons.html</li>
 		<li>Grid, see grid.html</li>
 		<li>jQuery, see ui.html</li>
-		<li>Growl Message, see ui.html</li>
+		<li>Growl Messages, see noty.html</li>
 		<li>Dynamic Progress, see ui.html</li>
 		<li>Calendar, see ui.html</li>
 		<li>Clock Face, see ui.html</li>
 		<li>Color Picker, see ui.html</li>
 		<li>Date Picker, see ui.html</li>
 		<li>Lightbox, see ui.html</li>
-		<li>Modal Box, see ui.html</li>
+		<li>Modal Box, see modals.html</li>
 		<li>QRCode, see ui.html</li>
 		<li>Mailbox, see index.html</li>
 		<li>Words Clouds, see index.html</li>
@@ -646,8 +652,8 @@ $('#autosize_timeline').jqtimeline( {
 		<li>Chat, see index.html</li>
 		<li>Tickets, see tickets.html</li>
 		<li>jPages Gallery, see gallery.html</li>
-		<li>Smart Tab, Smart Wizard, see ui.html</li>
-		<li>Tag Manager</li>
+		<li>Smart Tab, Smart Wizard, see tabs.html</li>
+		<li>Tag Manager, see ui.html</li>
 		<li>More...</li>
 	</ul>
 </div>
@@ -655,6 +661,7 @@ $('#autosize_timeline').jqtimeline( {
 <div id="plugin_docs" class="well">
 	<h4>Plugin External Docs <a href="#top">TOP</a></h4>
 	<ul>
+		<li>Bootstrap, <a href="http://twitter.github.com/bootstrap/">http://twitter.github.com/bootstrap/</a></li>
 		<li>Autosize, <a href="http://www.jacklmoore.com/autosize/">http://www.jacklmoore.com/autosize/</a></li>
 		<li>bootstrap fileupload, <a href="http://jasny.github.com/bootstrap/javascript.html">http://jasny.github.com/bootstrap/javascript.html</a></li>
 		<li>bootstrap growl, <a href="https://github.com/ifightcrime/bootstrap-growl">https://github.com/ifightcrime/bootstrap-growl</a></li>
@@ -698,9 +705,10 @@ $('#autosize_timeline').jqtimeline( {
 <div id="special_thanks" class="well">
 	<h4>Special Thanks <a href="#top">TOP</a></h4>
 	<ul>
-		<li>Wrapbootstrap.com</li>
-		<li>jQuery</li>
-		<li>Twitter Bootstrap</li>
+		<li><a href="http://wrapbootstrap.com">Wrapbootstrap</a></li>
+		<li><a href="http://jquery.com/">jQuery</a></li>
+		<li><a href="http://jqueryui.com/">jQuery UI</a></li>
+		<li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
 	</ul>
 </div>
 

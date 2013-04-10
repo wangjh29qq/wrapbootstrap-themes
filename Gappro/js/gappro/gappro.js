@@ -114,6 +114,7 @@ $(".widget .widget-header > a[rel='control']").each(function() {
 				html = html.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 				var id = new Date().getTime().toString();
 				$('<div id="' + id + '" class="modal hide fade" tabindex="-1" role="dialog"><div class="modal-body"><pre class="prettyprint lang-html linenums"></pre></div></div>').appendTo("body");
+				html = style_html(html, 2, " ",  80);
 				$("#" + id + " pre.prettyprint").html(html);
 				prettyPrint();
 				$("#" + id).modal();
@@ -283,6 +284,8 @@ function add_to_sidebar(widget, title, pos) {
 	$("#workspace").append("<a rel='widget-thumb' class='btn' id='thumb" + id + "' target-id='" + id + "' href='javascript:void(0)'><i class='icon-arrow-right'></i> " + title + "</a>");
 	$("#thumb" + id).bind('click', function() {
 		$("#" + $(this).attr("target-id")).fadeIn();
+		// scroll to the widget's position
+		$("html,body").animate({scrollTop: $("#" + $(this).attr("target-id")).offset().top}, 1000);
 		$(this).remove();
 	});
 }
