@@ -147,26 +147,6 @@ html {overflow-y: scroll;}
 ::-webkit-scrollbar-track-piece { background-color: #1b1b1b;}   
 ::-webkit-scrollbar-thumb{height: 50px; background-color: #999; -webkit-border-radius: 3px;}
 
-/* FF */
-@-moz-document url-prefix(http://),url-prefix(https://) {   
-    /* 滚动条颜色 */  
-    scrollbar {   
-       -moz-appearance: none !important;   
-       background-color: #1b1b1b !important;
-    }
-
-    thumb,scrollbarbutton {   
-       -moz-appearance: none !important;   
-       background-color: rgb(0,0,255) !important;   
-    } 
-}
-
-/* IE */
-HTML {   
-    scrollbar-track-color : #1b1b1b; 
-    scrollbar-base-color: #999;
-} 
-
 body {
     font-family: 'Sintony', sans-serif;
     font-weight: 400;
@@ -181,7 +161,7 @@ body {
 }
 
 a {color: #1e90ff}
-a:hover {text-decoration: none;}
+a:hover,a:focus {text-decoration: none;}
 
 /* navbar */
 .navbar { margin-bottom: 0px; }
@@ -1703,17 +1683,18 @@ hr {
 /* FAQ */
 .faq-toc {
     border: none;
-    margin-left: -8px;
+    margin-left: 26px;
     padding: 0px;
 }
 
-.faq-toc ol {
+.faq-toc ol, .faq-toc ol a {
     list-style: none;
+    color: #999;
 }
 
 .faq-search {
     margin-top: 0px;
-    margin-left: 18px;
+    margin-left: 50px;
 }
 
 .faq-list {
@@ -1730,10 +1711,10 @@ hr {
 }
 
 .faq-number {
-    background: none repeat scroll 0 0 #1e90ff;
-    border: 2px solid #FFFFFF;
+    background-color: #272727;
+    border: 2px solid #1b1b1b;
     
-    .rounded-corners(10px);
+    .rounded-corners(200px);
 
     -o-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
     -ms-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
@@ -1741,7 +1722,7 @@ hr {
     -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
     
-    color: #FFFFFF;
+    color: #999;
     font-size: 16px;
     font-weight: 600;
     height: 32px;
