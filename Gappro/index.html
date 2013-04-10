@@ -14,10 +14,10 @@
 <link href="css/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" media="screen">
 <link href="css/jqvmap/jqvmap.css" rel="stylesheet" media="screen">
 <link href="css/prettify/sons-of-obsidian.css" rel="stylesheet" media="screen">
+<link href="css/joyride/joyride-2.0.3.css" rel="stylesheet" media="screen">
 <style>
-	.words-cloud {
-    	height: 150px;
-	}
+	.words-cloud {height: 150px; }
+	#tour {display: none; }
 </style>
 <!--[if lte IE 8]>
 <script src="js/fix/respond.min.js"></script>
@@ -120,7 +120,7 @@
 						</a>
 					</li>
 					<li keywords="widget,window,block,ui">
-						<a href="widget.html" title="Widget">
+						<a href="widget.html" title="Widget" id="widget-menu">
 							<i class="icon-th-large"></i> <span>Widget</span>
 						</a>
 					</li>
@@ -144,7 +144,7 @@
 							<li><a href="wizard.html" title="Wizard"> <span>Wizard</span> </a> </li>
 							<li><a href="validator.html" title="Validator"> <span>Validator</span> </a> </li>
 							<li><a href="editable.html" title="Editable"> <span>Editable</span> </a> </li>
-							<li><a href="upload.html" title="File Upload">Upload</a></li>
+							<li><a href="javascript:void(0)" title="Sub Link">Sub Link</a></li>
 						</ul>
 					</li>
 					<li keywords="ui,table,interface,gallery,box,block,widget,timeline,grid">
@@ -159,7 +159,7 @@
 							<li><a href="grid.html" title="Grid"> <span>Grid</span> </a> </li>
 							<li><a href="timeline.html" title="jQuery Timeline"><span>Timeline</span></a></li>
 							<li><a href="tabs.html" title="Tab">Tabs</a></li>
-							<li><a href="tour.html" title="Tour Guide">Tour</a></li>
+							<li><a id="btn-tour" href="javascript:void(0)" title="Tour Guide">Guide Tour</a></li>
 							<li><a href="sliders.html" title="Sliders">Sliders</a></li>
 							<li><a href="noty.html" title="Notifications">Notifications</a></li>
 							<li><a href="accordion.html" title="Accordion">Accordion</a></li>
@@ -294,18 +294,6 @@
 				                  </form> 					
 							</div> 
 						</div>
-					</li>
-					<li keywords="cal,calendar,events,plans">
-						<a href="calendar.html">
-							<i class="icon-calendar"></i>
-							<span>Calendar</span>
-						</a>
-					</li>
-					<li keywords="invoice,bills">
-						<a href="invoice.html">
-							<i class="icon-money"></i>
-							<span>Invoice</span>
-						</a>
 					</li>
 					<li keywords="login,signin,profile,entry">
 						<a href="login.html">
@@ -518,7 +506,7 @@
 					<div class="widget">
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
-							<h3>Task</h3>
+							<h3>Running Task</h3>
 							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
 							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
 							<a class="pull-right" href="javascript:void(0)" rel="control" action="config" target-box="config"></a>
@@ -1319,6 +1307,38 @@
 	<p>Copyright &copy; Your Company 2012. All rights reserved.</p>
 </div>
 
+<ol id="tour">
+	<li data-class="filter-box" data-text="Next Please">
+		<h5>Welcome to gappro!</h5>
+		<p>Follow me please, type 'widget' to filter menu.</p>
+	</li>
+
+	<li data-class="filter-box" data-text="Next Please">
+		<h5>Did you see?</h5>
+		<p>Focus input box, then press 'ESC' key please.</p>
+	</li>	
+
+	<li data-class="menu-controller" data-text="Next Please">
+		<h5>Hide menu items.</h5>
+		<p>Click now, you can working with workspace.</p>
+	</li>	
+
+	<li data-class="menu-controller" data-text="Next Please">
+		<h5>Redo it.</h5>
+		<p>Click again to show menu.</p>
+	</li>	
+
+	<li data-id="widget-menu" data-text="Next Please">
+		<h5>Move mouse to widget icon.</h5>
+		<p>Drag widget-icon to top bar, then drop it.</p>
+	</li>
+
+	<li data-id="messages-box" data-text="Finish Tour" data-options="tipLocation:right">
+		<h5>You have created a persistent fav-link.</h5>
+		<p>Jump to another page to test it, or drag again to remove it.</p>
+	</li>
+</ol>
+
 <script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-ui-1.10.2.min.js"></script>
@@ -1334,7 +1354,10 @@
 <script src="js/morris/morris.min.js"></script>
 <script src="js/bootstrap_switch/bootstrapSwitch.js"></script>
 <script src="js/lightbox/bootstrap-lightbox.min.js"></script>
-<script src="js/gappro/application.js"></script>
+<script src="js/application.js"></script>
+<script src="js/prettify/prettify.js"></script>
+<script src="js/prettify/prettify.js"></script>
+<script src="js/format/html-format.js"></script>
 <script src="js/responsive_tables/responsive-tables.js"></script>
 <script src="js/mCustomScrollbar/jquery.mousewheel.min.js"></script>
 <script src="js/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
@@ -1342,8 +1365,9 @@
 <script src="js/jqvmap/jquery.vmap.min.js"></script>
 <script src="js/jqvmap/maps/jquery.vmap.world.js"></script>
 <script src="js/tsort/jquery.tinysort.min.js"></script>
+<script src="js/joyride/jquery.joyride-2.0.3.js"></script>
 <script src="js/gappro/gappro.js"></script>
-<script src="js/gappro/application.js"></script>
+<script src="js/application.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>

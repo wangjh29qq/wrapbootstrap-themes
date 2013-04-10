@@ -28,4 +28,11 @@ $(document).ready(function() {
 			load_css("css/menu_styles/" + $(this).attr("color") + ".css");
 		});
 	});
+
+	$("#btn-tour").bind("click", function(e) {
+		$("#tour").joyride({
+			'tipLocation': 'top'
+		});
+		e.preventDefault();
+	});
 });
