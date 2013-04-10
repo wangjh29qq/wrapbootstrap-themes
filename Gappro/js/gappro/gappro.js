@@ -109,7 +109,6 @@ $(".widget .widget-header > a[rel='control']").each(function() {
 		case 'code':
 			$(this).html("<i class='icon-legal'></i>");
 			$(this).bind('click', function() {
-				// alert($(this).parent().parent().html().trim());
 				var html = $(this).parent().parent().parent().html().trim();
 				html = html.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 				var id = new Date().getTime().toString();
@@ -233,7 +232,6 @@ $("#menuitem-filter").bind('keyup', function(e) {
 });
 
 // fix position for quick widget and sub-menus
-// $(".icon-menu .quick-widget, .icon-menu .sub-menus").each(function(){
 $(".icon-menu > ul > li > a").each(function(){
 	$(this).bind('mouseover', function() {
 		var sidebar_margin = $("#main_wrapper").css("margin-left");
@@ -292,10 +290,14 @@ function add_to_sidebar(widget, title, pos) {
 
 // clone menuitems and place to topbar
 function add_to_favlinks(menuitem) {
+	// change id
+	menuitem.attr('id', new Date().getTime().toString());
+
 	menuitem.addClass("btn").css({'left': 0, 'top': 0, 'margin-right': '4px'});
 	menuitem.draggable({
 		start: function(){$(this).remove();save_fav_menus();}
 	});
+
 	$.bootstrapGrowl("<img src='img/icons/heart.png' alt='' /> I'm persistent, you can drag again to remove me.", {align: 'center'});
 	$(".navbar-inner form.form-search").append(menuitem);
 
