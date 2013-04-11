@@ -217,4 +217,30 @@ $(document).ready(function() {
       formatter: function (x) { return x + "%"}
     });
 
+    // vmap
+    var areas = ['usa', 'russia', 'germany', 'france', 'europe', 'world'];
+    var maps = ['usa_en', 'russia_en', 'germany_en', 'france_fr', 'europe_en', 'world_en'];
+    
+    for(idx in maps) {
+      var id = "#" + areas[idx] + "_vmap";
+      $(id).css('width', $(id).parent().parent().width());
+      $(id).vectorMap({
+        map: maps[idx],
+        backgroundColor: '#272727',
+        borderColor: '#202020',
+        borderOpacity: 0.25,
+        borderWidth: 1,
+        color: '#999',
+        enableZoom: true,
+        hoverColor: '#666',
+        hoverOpacity: null,
+        normalizeFunction: 'linear',
+        selectedColor: '#fff',
+        onRegionClick: function(element, code, region)
+        {
+            var message = 'You clicked "'+ region + '" which has the code: '+ code.toUpperCase();
+            $("#desc").html(message);
+        }
+      });
+    }
 });

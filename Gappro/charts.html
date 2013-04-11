@@ -8,6 +8,7 @@
 <link href="css/style-responsive.css" rel="stylesheet" media="screen">
 <link href="css/easy_pie_chart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
 <link href="css/font_awesome/font-awesome.min.css" rel="stylesheet" media="screen">
+<link href="css/jqvmap/jqvmap.css" rel="stylesheet" media="screen">
 <style>
   .chart,.chart-info, .chart-success{float: left;}
 </style>
@@ -288,9 +289,54 @@
           <div class="widget-header">
             <i class="icon-th-list"></i>
             <h3>VMaps</h3>
+            <ul class="nav nav-tabs widget-right-header-tabs">
+              <li class="active">
+                <a data-toggle="tab" href="#usa">USA</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#russia">Russia</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#germany">Germany</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#france">France</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#europe">Europe</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#world">World</a>
+              </li>
+            </ul>
           </div>
           <div class="widget-content">
-            // 
+            <div class="tab-content">
+              <div id="usa" class="tab-pane active">
+                <div id="usa_vmap" style="width: 100%; height: 350px;"></div>
+              </div>
+              
+              <div id="russia" class="tab-pane">
+                <div id="russia_vmap" style="width: 100%; height: 350px;"></div>
+              </div>
+              
+              <div id="germany" class="tab-pane">
+                <div id="germany_vmap" style="width: 100%; height: 350px;"></div>
+              </div>
+              
+              <div id="france" class="tab-pane">
+                <div id="france_vmap" style="width: 100%; height: 350px;"></div>
+              
+              </div><div id="europe" class="tab-pane">
+                <div id="europe_vmap" style="width: 100%; height: 350px;"></div>
+              </div>
+
+              <div id="world" class="tab-pane">
+                <div id="world_vmap" style="width: 100%; height: 350px;"></div>
+              </div>
+            </div>
+            <hr>
+            <div id="desc"></div>
           </div>
         </div>
       </div>
@@ -544,9 +590,16 @@
 <script src="js/easy_pie_chart/jquery.easy-pie-chart.js"></script>
 <script src="js/morris/raphael.2.1.0.min.js"></script>
 <script src="js/morris/morris.min.js"></script>
-<script src="js/charts-chart.js"></script>
+<script src="js/jqvmap/jquery.vmap.min.js"></script>
+<script src="js/jqvmap/maps/jquery.vmap.world.js"></script>
+<script src="js/jqvmap/maps/jquery.vmap.usa.js"></script>
+<script src="js/jqvmap/maps/jquery.vmap.russia.js"></script>
+<script src="js/jqvmap/maps/jquery.vmap.germany.js"></script>
+<script src="js/jqvmap/maps/jquery.vmap.france.js"></script>
+<script src="js/jqvmap/maps/jquery.vmap.europe.js"></script>
 <script src="js/bootstrap_growl/jquery.bootstrap-growl.min.js"></script>
 <script src="js/gappro/gappro.js"></script>
 <script src="js/application.js"></script>
+<script src="js/charts-chart.js"></script>
 </body>
 </html>

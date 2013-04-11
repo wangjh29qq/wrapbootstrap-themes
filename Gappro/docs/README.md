@@ -8,7 +8,7 @@ Gappro is a admin template that can be used for any backed applications. It's no
 * Sub Menus
 * Sub quick post
 * Sub quick widget
-* 7 menu theme colors
+* 7+ menu theme colors
 
 #Widget Features
 
@@ -67,14 +67,15 @@ Gappro is a admin template that can be used for any backed applications. It's no
 
 #Resolution
 
-* 320 x 480
-* 360 x 640
-* 768 x 1024
-* 800 x 1280
-* 980 x 1280
+* 480 x 320
+* 640 x 360
+* 1024 x 768
+* 1280 x 800
+* 1280 x 980
 * 1280 x 600
+* 1440 x 900
 * 1920 x 900
-* 1080 x 1920
+* 1920 x 1080
 
 #plugins
 

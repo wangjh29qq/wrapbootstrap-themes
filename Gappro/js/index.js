@@ -45,7 +45,7 @@ var word_list = [
     {text: "Sed", weight: 1}
 ];
 
-$(function () {
+$(document).ready(function() {
     var auto_updating_chart;
 
     $(".dau_line").peity("line", {width: 120, height: 45, colour: 'green'});
@@ -309,6 +309,7 @@ $(function () {
         map: 'world_en',
         backgroundColor: '#272727',
         color: '#999',
+        borderColor: '#2a2a2a',
         hoverOpacity: 0.7,
         selectedColor: '#fff',
         enableZoom: true,
@@ -336,12 +337,16 @@ $(function () {
                 }
             });
 
-            $("$.leaderboard .total").html("Total: $" +  total);
+            $(".leaderboard .total").html("Total: $" +  total);
         }
     });
 
     // leaderboard
     $(".leaderboard ul").each(function() {
         $(this).find("li").not(".title").tsort({attr: 'data-value', order: 'desc'});
+    });
+
+    $(".leaderboard ul li").not(".title").each(function() {
+        $(this).append('<span class="value">' + $(this).attr("data-value") + '</span>');
     });
 });
