@@ -10,6 +10,7 @@
     attention here please:
    		you should inlucde this file for using gappro uitilities.
 
+	0. polyfill
     1. widget drag-drop
     2. menuitem drag-drop
     3. widget actions
@@ -18,6 +19,9 @@
     6. functions
 
 -----------------------------------------------------*/
+
+// webshims
+$.webshims.polyfill();
 
 // widget drag features
 /*
@@ -85,7 +89,7 @@ $(".navbar-inner form.form-search").droppable({
 
 // widget action controller
 $(".widget .widget-header > a[rel='control']").each(function() {
-	var action_name = $(this).attr("action").trim().toLowerCase();
+	var action_name = $(this).attr("action");//.trim().toLowerCase();
 
 	switch(action_name) {
 		case 'close':
@@ -308,16 +312,18 @@ function add_to_favlinks(menuitem) {
 	var outer_html = $('<div></div>').append(menuitem.clone()).html();
 
 	// cross pages persist
-	if(!localStorage.fav_menus_str || localStorage.fav_menus_str.length == 0)
-		localStorage.fav_menus_str = outer_html;
+	var fav_menus_str = $.jStorage.get("fav_menus_str");
+	if(!fav_menus_str || fav_menus_str.length == 0)
+		$.jStorage.set("fav_menus_str", outer_html);
 	else 
-		localStorage.fav_menus_str += "@" + outer_html;
+		$.jStorage.set("fav_menus_str", fav_menus_str + "@" + outer_html);
 }
 
 // load fav menus
 function load_fav_menus() {
-	if(localStorage.fav_menus_str && localStorage.fav_menus_str.length > 0) {
-		var array = localStorage.fav_menus_str.split("@");
+	var fav_menus_str = $.jStorage.get("fav_menus_str");
+	if(fav_menus_str && fav_menus_str.length > 0) {
+		var array = $.jStorage.get("fav_menus_str").split("@");
 		for(idx in array) {
 			// console.debug(menuitem);
 			var menuitem = $(array[idx]);
@@ -339,7 +345,7 @@ function save_fav_menus() {
 	});
 
 	if(array.length > 0)
-		localStorage.fav_menus_str = array.join("@");
+		$.jStorage.set("fav_menus_str", array.join("@"));
 	else
-		localStorage.fav_menus_str = undefined;
+		$.jStorage.deleteKey("fav_menus_str");
 }

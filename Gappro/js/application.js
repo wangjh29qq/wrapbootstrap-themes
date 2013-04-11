@@ -24,15 +24,16 @@ function load_widget_bg(el, color_name) {
 
 $(document).ready(function() {
 	// load menu style
-	if(localStorage.menu_css_file && localStorage.menu_css_file.length > 0) {
-		load_css(localStorage.menu_css_file);
+	var menu_css_file = $.jStorage.get("menu_css_file");
+	if(menu_css_file && menu_css_file.length > 0) {
+		load_css(menu_css_file);
 	}
 
 	$("#menu_colors li a").each(function() { 
 		$(this).click(function() {
 			var css_file = "css/menu_styles/" + $(this).attr("color") + ".css";
 			load_css(css_file);
-			localStorage.menu_css_file = css_file;
+			$.jStorage.set("menu_css_file", css_file);
 		});
 	});
 
