@@ -311,11 +311,12 @@ $(document).ready(function() {
         color: '#999',
         borderColor: '#2a2a2a',
         hoverOpacity: 0.7,
-        selectedColor: '#fff',
+        selectedColor: '#666',
         enableZoom: true,
         showTooltip: true,
         scaleColors: ['#C8EEFF', '#006491'],
         normalizeFunction: 'linear',
+        selectedRegion: 'RU',
         onRegionOver: function(event, code, region)
         {
             $(".leaderboard ul li").not(".title").each(function() {

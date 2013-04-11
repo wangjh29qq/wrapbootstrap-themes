@@ -17,7 +17,7 @@
   border: 0px solid #CCC;
   font-family: "Segoe UI",Tahoma,arial,sans-serif;
   font-size: 100%;
-  width: 600px;
+  width: 100%;
 }
 .stContainer {
   display:block;
@@ -73,7 +73,7 @@
   margin-right: -1px;
   padding:5px;  
   height:50px;
-  width:120px;
+  width:180px;
   font-size: 18px;
   color:#999;
   text-decoration: none;

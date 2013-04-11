@@ -14,7 +14,7 @@
   border: 0px solid #CCC;
   overflow:visible;
   float:left;
-  width: 240;
+  width: 100%;
 }
 .swMain .stepContainer {
   display:block;
@@ -24,7 +24,7 @@
   border: 0px solid #CCC;    
   overflow:hidden;
   clear:both;
-  height:200px;
+  height: 200px;
 }
 
 .swMain .stepContainer div.content {

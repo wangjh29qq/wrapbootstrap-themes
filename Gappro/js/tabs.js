@@ -4,4 +4,9 @@ $(document).ready(function() {
 
   // smart wizard
   $('#wizard').smartWizard();
+
+  // button actions
+  $("#btn-top, #btn-bottom, #btn-horizontal, #btn-vertical").bind('click', function() { 
+  	load_css($(this).attr('data-css'));
+  });
 });  
