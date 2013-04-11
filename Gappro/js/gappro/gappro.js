@@ -147,8 +147,12 @@ $(".widget .widget-header > a[rel='control']").each(function() {
 	    case 'full':
 			$(this).html('<i class="icon-fullscreen"></i>');
 			$(this).bind('click', function() {
-				var width = screen.width - 20;
-				var height = screen.height;
+				// safari bug when your using 2 monitors 
+				// it get the master but your safari browser is on salve
+				// var width = screen.width - 20;
+				// var height = screen.height;
+				var width = $(window).width();
+				var height = $(window).height();
 
 				if(!$(this).data('full')) {
 					// save to restrore
