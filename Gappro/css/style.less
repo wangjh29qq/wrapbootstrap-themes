@@ -227,12 +227,13 @@ a:hover,a:focus {text-decoration: none;}
 }
 
 .modal, .modal-footer {
+    // .background-black(#272727, 0.1);
     background-color: #272727;
     color: #999
 }
 
 .modal-body {
-    line-height: 24px;
+    line-height: 20px;
 }
 
 .modal-header {
@@ -602,11 +603,8 @@ input[type="tel"],
 .uneditable-input {
     color: #999;
     background-color: none;
-
     .border-black;
-
-    background: url('../img/main.png') no-repeat #2a2a2a;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../img/main.png");
+    background: #2a2a2a;
 }
 
 option {
@@ -696,7 +694,7 @@ input[type="checkbox"]:checked:after {
 
 #main_wrapper {
     background: url("../img/main.jpg");
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../img/main.png");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../img/main.jpg");
     
     margin: 10px;
     margin-top: -80px;
@@ -904,15 +902,15 @@ input[type="checkbox"]:checked:after {
     background: -o-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09));
     background: linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09));
 
-    -webkit-transition: all .25s;
-    -moz-transition: all .25s;
-    -ms-transition: all .25s;
-    -o-transition: all .25s;
-    transition: all .25s;
+    // -webkit-transition: all .25s;
+    // -moz-transition: all .25s;
+    // -ms-transition: all .25s;
+    // -o-transition: all .25s;
+    // transition: all .25s;
 }
 
 .icon-menu > ul > li:nth-child(n+4) > a:hover {
-    background: url('../img/arrow-right.png') no-repeat left center;
+    // background: url('../img/arrow-right.png') no-repeat left center;
 }
 
 .icon-menu > ul > li.circle > a {
@@ -1300,11 +1298,12 @@ input[type="checkbox"]:checked:after {
 }
 
 .accordion-group .accordion-heading a i[class^="icon-"] {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
     .background-black(#1b1b1b, 0.4);
-    .rounded-corner(200px);
+    .rounded-corners(200px);
 }
 
 .widget-content .widget-carousel {

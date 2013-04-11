@@ -23,9 +23,16 @@ function load_widget_bg(el, color_name) {
 }
 
 $(document).ready(function() {
+	// load menu style
+	if(localStorage.menu_css_file && localStorage.menu_css_file.length > 0) {
+		load_css(localStorage.menu_css_file);
+	}
+
 	$("#menu_colors li a").each(function() { 
 		$(this).click(function() {
-			load_css("css/menu_styles/" + $(this).attr("color") + ".css");
+			var css_file = "css/menu_styles/" + $(this).attr("color") + ".css";
+			load_css(css_file);
+			localStorage.menu_css_file = css_file;
 		});
 	});
 

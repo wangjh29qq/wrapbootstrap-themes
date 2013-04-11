@@ -98,7 +98,7 @@
               </ul>
             </div>
 
-            <a href="profile.html" class="btn"> <i class="icon-user"></i>
+            <a href="profile.html" class="btn" id="btn-profile"> <i class="icon-user"></i>
               Lisa Joe
             </a>
           </form>
@@ -354,21 +354,7 @@
             <div class="widget-content">
                 
               <form class="form-horizontal" id="editable-form" method="get" action="">
-                
-                <div class="control-group">
-                  <label for="" class="control-label">First Name (label editable field):</label>
-                  <div class="controls">
-                    <a data-original-title="Enter firstname" data-pk="1" data-type="text" id="firstname" href="#" class="editable editable-click" style="display: inline;">Lisa</a>
-                  </div>
-                </div>
-
-                <div class="control-group">
-                  <label for="" class="control-label">Last Name (label editable field):</label>
-                  <div class="controls">
-                    <a data-original-title="Enter lastname" data-pk="1" data-type="text" id="lastname" href="#" class="editable editable-click" style="display: inline;">Joe</a>
-                  </div>
-                </div>
-
+                <h4>Inline Edit</h4>
                 <div class="control-group">
                   <label for="" class="control-label">Nick Name (label editable field):</label>
                   <div class="controls">
@@ -382,6 +368,7 @@
                     <a data-original-title="Select sex" data-value="" data-pk="1" data-type="select" id="sex" href="#" class="editable editable-click" style="color: gray; display: inline;">not selected</a>
                   </div>
                 </div>
+                <h4>Popover Edit</h4>
                 
                 <div class="control-group">
                   <label for="" class="control-label">Born (Datepicker editable field):</label>
@@ -450,7 +437,7 @@
     <p>Drag widget-icon to top bar, then drop it.</p>
   </li>
 
-  <li data-id="messages-box" data-text="Finish Tour" data-options="tipLocation:right">
+  <li data-id="btn-profile" data-text="Finish Tour" data-options="tipLocation:right">
     <h5>You have created a persistent fav-link.</h5>
     <p>Jump to another page to test it, or drag again to remove it.</p>
   </li>
@@ -468,10 +455,7 @@
 <script src="js/application.js"></script>
 <script>
   $.fn.editable.defaults.mode = 'inline';
-  $('#firstname').editable();
-  $('#lastname').editable();
   $('#username').editable();
-  $('#empty_field').editable();
 
   $('#sex').editable({
     value: 1,
@@ -482,6 +466,8 @@
       {value: 4, text: 'Middle'},
       ]
     });
+
+  $.fn.editable.defaults.mode = '';
 
   $('#dob').editable({
     format: 'yyyy-mm-dd',
