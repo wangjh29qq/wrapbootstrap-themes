@@ -198,14 +198,14 @@
 
 .sexybutton,
 .sexybutton.sexysilver {
-	color: #666 !important;
+	color: #999 !important;
 }
 	
 .sexybutton:hover,
 .sexybutton:focus,
 .sexybutton.sexysilver:hover,
 .sexybutton.sexysilver:focus {
-	color: #333 !important;
+	color: #666 !important;
 }
 	
 .sexybutton span,
@@ -273,9 +273,10 @@
 	font-size: 13px !important;
 	font-style: normal !important; 
 	font-weight: bold !important; 
-	color: #fff !important;
+	color: #999 !important;
 	line-height: 1; 
-	background-image: url(../../img/sexy_buttons/skins/simple/awesome-overlay-sprite.png);
+	border: 1px solid #2a2a2a;
+	/*background-image: url(../../img/sexy_buttons/skins/simple/awesome-overlay-sprite.png);*/
 	background-repeat: repeat-x;
 	background-position: 0 0;
 	
@@ -313,6 +314,7 @@
 .sexybutton.sexysimple:focus {
 	background-position: 0 -50px; 
 	color: #fff !important;
+	background-image: url(../../img/sexy_buttons/skins/simple/awesome-overlay-sprite.png);
 }
 
 .sexybutton.sexysimple:active { 

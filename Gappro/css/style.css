@@ -185,6 +185,8 @@ input[type="checkbox"]:checked:after{content:'\2714';font-size:12px;position:abs
 .widget-content .widget-carousel{margin-top:-21px;margin-bottom:-16px;margin-left:-17px;margin-right:-17px;}
 .widget-content .widget-carousel .carousel-caption{background-color:#0a0a0a;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.7);}
 .widget-content .widget-carousel .carousel-caption h4{color:#FFF;text-shadow:1px 1px 2px rgba(255, 255, 255, 0.5);}
+.todo form{text-align:center;margin-bottom:0px;}
+.todo .summary{text-align:center;}
 .todo .check{float:left;width:16px;height:16px;background-color:#383838;-o-border-radius:200px;-ms-border-radius:200px;-moz-border-radius:200px;-webkit-border-radius:200px;border-radius:200px;border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);}
 .todo .check:hover{cursor:pointer;}
 .todo .check.checked{background-color:#1b1b1b;}
@@ -313,4 +315,5 @@ div .grey-text,p .grey-text{color:grey;}
 .leaderboard ul li.selected{background-color:#1b1b1b;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.4);color:#336699;}
 .leaderboard ul li .name{text-transform:capitalize;}
 .leaderboard ul li .value{float:right;font-size:16px;}
+div[class^="gauge"]{text-align:center;}
 .copyright{color:#fff;font-size:14px;text-align:center;width:100%;}

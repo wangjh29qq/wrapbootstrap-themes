@@ -508,53 +508,89 @@
 			</div>
 
 			<div class="row-fluid">
-				<div class="span6">
-					<div class="widget">
+				<div class="span6" id="widget_todo">
+					<div class="widget widget-table">
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
-							<h3>Running Task</h3>
+							<h3>TODO List</h3>
 							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
 							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="config" target-box="config"></a>
-							<div id="config" class="modal hide fade" tabindex="-1" role="dialog"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> <h3 id="myModalLabel">Config Demo Box <i class="icon-github"></i> <i class="icon-facebook"></i> </h3> </div> <div class="modal-body"> <p><img src="img/icons/settings.png" alt=""> Lorem ipsum Magna Ut deserunt consequat dolor ea incididunt ut eu nostrud ex aliquip aliquip eu do sint exercitation quis reprehenderit.</p> </div> <div class="modal-footer"> <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button> <button class="btn btn-primary">Save changes</button> </div> </div>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="help" target-box="help"></a>
-							<div id="help" class="modal hide fade" tabindex="-1" role="dialog"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> <h3 id="myModalLabel">Help Demo Box <i class="icon-github"></i> <i class="icon-facebook"></i> </h3> </div> <div class="modal-body"> <p><img src="img/icons/help.png" alt=""> Lorem ipsum Ea in tempor ex fugiat qui nostrud consequat esse proident id voluptate do aliqua nostrud mollit ullamco fugiat exercitation quis sint id veniam do adipisicing eiusmod laboris non qui nostrud deserunt Duis laborum adipisicing reprehenderit do ea culpa elit.</p> </div> <div class="modal-footer"> <button class="btn" data-dismiss="modal" aria-hidden="true">Okay</button></div> </div>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
 							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
 						</div>
+						<!-- /widget-header -->
+
 						<div class="widget-content">
-							<div class="config-box" style="display: none">
-								config
-							</div>
-							<i class="icon-bell"></i> Clear Zombies (dynamic)
-							<span class="pull-right">20%</span>
-							<div class="progress progress-info" id="dynamic-progresses">
-								<div style="width: 20%" class="bar"></div>
-							</div>
+							<table class="table todo">
+								<tr>
+									<td>
+										<form class="form-search">
+											<div class="input-append">
+												<input type="text" class="search-query input-xlarge" placeholder="Hey, Admin a task">
+												<button class="btn" type="submit">
+													<i class="icon-plus"></i>
+												</button>
+											</div>
+										</form>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="check">&nbsp;</div>
+										<span class="time">Mar 28</span>
+										<span class="content">Lorem ipsum nisi do ad irure.</span>
+										<a href="javascript:void(0)" class="level"><i class="icon-star"></i></a>
+									</td>
+								</tr>
 
-							<i class="icon-filter"></i> Clear Zombies (pink bg)
-							<span class="pull-right">40%</span>
-							<div class="progress progress-success pink-bg-linear">
-								<div style="width: 40%" class="bar"></div>
-							</div>
+								<tr>
+									<td>
+										<div class="check checked">&nbsp;</div>
+										<span class="time done">Mar 28</span>
+										<span class="content done">Lorem ipsum nisi do ad irure.</span>
+										<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
+									</td>
+								</tr>
 
-							<i class="icon-map-marker"></i> Clear Zombies (green bg)
-							<span class="pull-right">60%</span>
-							<div class="progress progress-warning green-bg-linear">
-								<div style="width: 60%" class="bar"></div>
-							</div>
+								<tr>
+									<td>
+										<div class="check">&nbsp;</div>
+										<span class="time">Mar 28</span>
+										<span class="content">Lorem ipsum nisi do ad irure.</span>
+										<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
+									</td>
+								</tr>
 
-							<i class="icon-beaker"></i> Clear Zombies (default bg)
-							<span class="pull-right">80%</span>
-							<div class="progress progress-info progress-striped">
-								<div style="width: 80%" class="bar"></div>
-							</div>
+								<tr>
+									<td>
+										<div class="check checked">&nbsp;</div>
+										<span class="time done">Mar 28</span>
+										<span class="content done">Lorem ipsum nisi do ad irure.</span>
+										<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<div class="check">&nbsp;</div>
+										<span class="time">Mar 28</span>
+										<span class="content">Lorem ipsum nisi do ad irure.</span>
+										<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
+									</td>
+								</tr>
 
-							<i class="icon-beer"></i> Clear Zombies (orange bg)
-							<span class="pull-right">90%</span>
-							<div class="progress progress-success progress-striped orange-bg-linear">
-								<div style="width: 90%" class="bar"></div>
-							</div>
+								<tr>
+									<td>
+										<div class="check checked">&nbsp;</div>
+										<span class="time done">Mar 28</span>
+										<span class="content done">Lorem ipsum nisi do ad irure.</span>
+										<a href="javascript:void(0)" class="level"><i class="icon-star"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="summary">60 completed items.</td>
+								</tr>
+							</table>
+
 						</div>
 					</div>
 				</div>
@@ -576,6 +612,12 @@
 						</button>
 					</div>
 
+					<div class="alert alert-success">
+						<button data-dismiss="alert" class="close" type="button"><i class="icon-thumbs-up"></i></button>
+						<h4>Server Success!</h4>
+						Lorem ipsum cillum dolore et culpa sunt officia.
+					</div>
+					
 					<div class="alert alert-info">
 						<button data-dismiss="alert" class="close" type="button">×</button>
 						<h4>Server Info!</h4>
@@ -585,11 +627,6 @@
 							<span class="download2">Save</span>
 						</button>
 						<br>
-					</div>
-
-					<div class="alert alert-success">
-						<button data-dismiss="alert" class="close" type="button"><i class="icon-thumbs-up"></i></button>
-						Lorem ipsum cillum dolore et culpa sunt officia.
 					</div>
 				</div>
 			</div>
@@ -768,24 +805,6 @@
 
 			<div class="row-fluid">
 				<div class="span6">
-					<div class="widget">
-						<div class="widget-header">
-							<i class="icon-th-list"></i>
-							<h3>Statistics</h3>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
-						</div>
-						<div class="widget-content">
-							<div class="row-fluid">
-								<div id="mobile_device" class="morris_pie span6"></div>
-								<div id="area_orders" class="morris_pie span6"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="span6">
 					<div class="widget widget-table">
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
@@ -842,6 +861,24 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="span6">
+					<div class="widget">
+						<div class="widget-header">
+							<i class="icon-th-list"></i>
+							<h3>Statistics</h3>
+							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
+							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
+							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+						</div>
+						<div class="widget-content">
+							<div class="row-fluid">
+								<div id="mobile_device" class="morris_pie span6"></div>
+								<div id="area_orders" class="morris_pie span6"></div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="row-fluid">
@@ -849,93 +886,73 @@
 					<div class="widget">
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
-							<h3>Orders &amp; Visitors</h3>
+							<h3>Gauge Chart</h3>
 							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
 							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
 							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
 						</div>
 						<div class="widget-content">
-							<div id="gauge_orders" class="gauge"></div>
-							<div id="gauge_task" class="gauge"></div>
-							<div id="gauge_visited" class="gauge"></div>
-							<div id="gauge_events" class="gauge"></div>
+							<div id="gauge_orders" class="gauge">Product Orders</div>
+							<div id="gauge_task" class="gauge">Task Progress</div>
+							<hr>
+							<div id="gauge_visited" class="gauge">Visitors</div>
+							<div id="gauge_request" class="gauge">Server Request</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="span6" id="widget_todo">
-					<div class="widget widget-table">
+				<div class="span6">
+					<div class="widget">
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
-							<h3>TODO List</h3>
+							<h3>Running Task</h3>
 							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
 							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
+							<a class="pull-right" href="javascript:void(0)" rel="control" action="config" target-box="config"></a>
+							<div id="config" class="modal hide fade" tabindex="-1" role="dialog"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> <h3 id="myModalLabel">Config Demo Box <i class="icon-github"></i> <i class="icon-facebook"></i> </h3> </div> <div class="modal-body"> <p><img src="img/icons/settings.png" alt=""> Lorem ipsum Magna Ut deserunt consequat dolor ea incididunt ut eu nostrud ex aliquip aliquip eu do sint exercitation quis reprehenderit.</p> </div> <div class="modal-footer"> <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button> <button class="btn btn-primary">Save changes</button> </div> </div>
+							<a class="pull-right" href="javascript:void(0)" rel="control" action="help" target-box="help"></a>
+							<div id="help" class="modal hide fade" tabindex="-1" role="dialog"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> <h3 id="myModalLabel">Help Demo Box <i class="icon-github"></i> <i class="icon-facebook"></i> </h3> </div> <div class="modal-body"> <p><img src="img/icons/help.png" alt=""> Lorem ipsum Ea in tempor ex fugiat qui nostrud consequat esse proident id voluptate do aliqua nostrud mollit ullamco fugiat exercitation quis sint id veniam do adipisicing eiusmod laboris non qui nostrud deserunt Duis laborum adipisicing reprehenderit do ea culpa elit.</p> </div> <div class="modal-footer"> <button class="btn" data-dismiss="modal" aria-hidden="true">Okay</button></div> </div>
+							<a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
 							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
 						</div>
-						<!-- /widget-header -->
-
 						<div class="widget-content">
+							<div class="config-box" style="display: none">
+								config
+							</div>
+							<i class="icon-bell"></i> Clear Zombies (dynamic)
+							<span class="pull-right">20%</span>
+							<div class="progress progress-info" id="dynamic-progresses">
+								<div style="width: 20%" class="bar"></div>
+							</div>
 
-							<table class="table todo">
-								<tr>
-									<td>
-										<div class="check">&nbsp;</div>
-										<span class="time">Mar 28</span>
-										<span class="content">Lorem ipsum nisi do ad irure.</span>
-										<a href="javascript:void(0)" class="level"><i class="icon-star"></i></a>
-									</td>
-								</tr>
+							<i class="icon-filter"></i> Clear Zombies (pink linear bg)
+							<span class="pull-right">40%</span>
+							<div class="progress progress-success pink-bg-linear">
+								<div style="width: 40%" class="bar"></div>
+							</div>
 
-								<tr>
-									<td>
-										<div class="check checked">&nbsp;</div>
-										<span class="time done">Mar 28</span>
-										<span class="content done">Lorem ipsum nisi do ad irure.</span>
-										<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
-									</td>
-								</tr>
+							<i class="icon-map-marker"></i> Clear Zombies (green bg)
+							<span class="pull-right">60%</span>
+							<div class="progress progress-warning green-bg-linear">
+								<div style="width: 60%" class="bar"></div>
+							</div>
+							<div class="progress progress-warning green-bg">
+								<div style="width: 60%" class="bar"></div>
+							</div>
 
-								<tr>
-									<td>
-										<div class="check">&nbsp;</div>
-										<span class="time">Mar 28</span>
-										<span class="content">Lorem ipsum nisi do ad irure.</span>
-										<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
-									</td>
-								</tr>
+							<i class="icon-beaker"></i> Clear Zombies (default bg)
+							<span class="pull-right">80%</span>
+							<div class="progress progress-info progress-striped">
+								<div style="width: 80%" class="bar"></div>
+							</div>
 
-								<tr>
-									<td>
-										<div class="check checked">&nbsp;</div>
-										<span class="time done">Mar 28</span>
-										<span class="content done">Lorem ipsum nisi do ad irure.</span>
-										<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<div class="check">&nbsp;</div>
-										<span class="time">Mar 28</span>
-										<span class="content">Lorem ipsum nisi do ad irure.</span>
-										<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
-									</td>
-								</tr>
-
-								<tr>
-									<td>
-										<form class="form-search">
-											<div class="input-append">
-												<input type="text" class="search-query" placeholder="Hey, Add a task">
-												<button class="btn" type="submit">
-													<i class="icon-plus"></i>
-												</button>
-											</div>
-										</form>
-									</td>
-								</tr>
-							</table>
-
+							<i class="icon-beer"></i> Clear Zombies (orange bg)
+							<span class="pull-right">90%</span>
+							<div class="progress progress-success progress-striped orange-bg-linear">
+								<div style="width: 90%" class="bar"></div>
+							</div>
+							<div class="progress progress-success progress-striped orange-bg">
+								<div style="width: 70%" class="bar"></div>
+							</div>
 						</div>
 					</div>
 				</div>

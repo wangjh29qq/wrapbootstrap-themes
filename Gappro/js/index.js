@@ -121,11 +121,11 @@ $(function () {
     }); 
 
     var g2 = new JustGage({
-        id: "gauge_events",
+        id: "gauge_request",
         value: getRandomInt(60, 100),
         min: 0,
         max: 100,
-        title: "Events",
+        title: "Request",
         shadowOpacity: 1,
         shadowSize: 0,
         labelFontColor: '#999',
