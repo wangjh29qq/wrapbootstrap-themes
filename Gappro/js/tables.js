@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	  $(".leaderboard ul").each(function() {
+	$(".leaderboard ul").each(function() {
       $(this).find("li").not(".title, .rank").tsort({attr: 'data-value', order: 'desc'});
   });
 
