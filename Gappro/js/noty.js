@@ -20,53 +20,41 @@ function show_growl_default() {
 };
 
 function show_growl_success() {
-  setTimeout(function() {
-      $.bootstrapGrowl("<img src='img/icons/lock.png' alt='' /> This is success message.", { type: 'success' });
-  }, 1000);
+  $.bootstrapGrowl("<img src='img/icons/lock.png' alt='' /> This is success message.", { type: 'success' });
 }
 
 function show_growl_error() {
-  setTimeout(function() {
-      $.bootstrapGrowl("<img src='img/icons/heart.png' alt='' /> Error message, danger, no dismiss!", {
-          type: 'error',
-          allow_dismiss: false
-      });
-  }, 1000);
+  $.bootstrapGrowl("<img src='img/icons/heart.png' alt='' /> Error message, danger, no dismiss!", {
+      type: 'error',
+      allow_dismiss: false
+  });
 }
 
 function show_growl_info() {  
-  setTimeout(function() {
-      $.bootstrapGrowl("<img src='img/icons/exclamation.png' alt='' /> Info message, align right!", {
-          type: 'info'
-      });
-  }, 1000);
+  $.bootstrapGrowl("<img src='img/icons/exclamation.png' alt='' /> Info message, align right!", {
+      type: 'info'
+  });
 }
 
 function show_growl_left() {  
-  setTimeout(function() {
-      $.bootstrapGrowl("<img src='img/icons/exclamation.png' alt='' /> Info message, align left!", {
-          type: 'info',
-          align: 'left'
-      });
-  }, 1000);
+  $.bootstrapGrowl("<img src='img/icons/exclamation.png' alt='' /> Info message, align left!", {
+      type: 'info',
+      align: 'left'
+  });
 }
 
 function show_growl_center() {  
-  setTimeout(function() {
-      $.bootstrapGrowl("<img src='img/icons/exclamation.png' alt='' /> Info message, align center!", {
-          type: 'info',
-          align: 'center'
-      });
-  }, 1000);
+  $.bootstrapGrowl("<img src='img/icons/exclamation.png' alt='' /> Info message, align center!", {
+      type: 'info',
+      align: 'center'
+  });
 }
 
 function show_growl_right() {  
-  setTimeout(function() {
-      $.bootstrapGrowl("<img src='img/icons/exclamation.png' alt='' /> Info message, align right!", {
-          type: 'info',
-          align: 'right'
-      });
-  }, 1000);
+  $.bootstrapGrowl("<img src='img/icons/exclamation.png' alt='' /> Info message, align right!", {
+      type: 'info',
+      align: 'right'
+  });
 }
 
 function show_growl_1() {  

@@ -265,7 +265,10 @@ $(".icon-menu > ul > li > a").each(function(){
 			global_hover = $(this);
 		});
 
-		e.preventDefault();
+		// cancel parent link
+		if($(this).next(".sub-menus, .quick-widget").length > 0) {
+			e.preventDefault();
+		}
 	});
 });
 

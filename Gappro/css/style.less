@@ -814,7 +814,7 @@ input[type="checkbox"]:checked:after {
     list-style: none;
     margin-left: 0px;
     margin-bottom: 0px; 
-    margin-top: 50px;
+    margin-top: 65px;
     min-width: 120px;
 
     -o-box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
@@ -973,6 +973,11 @@ input[type="checkbox"]:checked:after {
 
 .icon-menu > ul .sub-menus li:last-child a {
     .bottom-right-rounded-corners;
+}
+
+.icon-menu > ul .sub-menus li:nth-child(3n+1),
+.icon-menu > ul .sub-menus li:nth-child(3n+2) {
+    .rounded-corners(0px);
 }
 
 .icon-menu .sub-menus li { 
@@ -2050,7 +2055,8 @@ div .grey-text, p .grey-text {color: grey;}
     font-size: 14px;
     line-height: 24px;
     text-align: center;
-    color: #336699;
+    color: #f8941c;
+    // color: #336699;
     .rounded-corners(200px);
     .background-black(#202020, 0.2);
     display: none;
