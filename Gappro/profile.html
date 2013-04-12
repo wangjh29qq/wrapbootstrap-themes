@@ -77,13 +77,13 @@
                       <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" id="menu_colors">
-                      <li><a href="#" color="pink">PINK</a></li>
-                      <li><a href="#" color="green">GREEN</a></li>
-                      <li><a href="#" color="grey">GREY</a></li>
-                      <li><a href="#" color="white">WHITE</a></li>
-                      <li><a href="#" color="orange">ORANGE</a></li>
-                      <li><a href="#" color="blue">BLUE</a></li>
-                      <li><a href="#" color="brown">BROWN</a></li>
+                      <li><a href="#" data-color="pink">PINK</a></li>
+                      <li><a href="#" data-color="green">GREEN</a></li>
+                      <li><a href="#" data-color="grey">GREY</a></li>
+                      <li><a href="#" data-color="white">WHITE</a></li>
+                      <li><a href="#" data-color="orange">ORANGE</a></li>
+                      <li><a href="#" data-color="blue">BLUE</a></li>
+                      <li><a href="#" data-color="brown">BROWN</a></li>
                     </ul>
                 </div>
         </div>
@@ -111,27 +111,27 @@
               <span><i class="icon-angle-up"></i></span>
             </a>
           </li>
-          <li  keywords="home,dashboard,index,default,entry">
+          <li data-keywords="home,dashboard,index,default,entry">
             <a href="index.html" title="Dashboard">
               <i class="icon-home"></i> <span>Home</span>
             </a>
           </li>
-          <li keywords="widget,window,block,ui">
+          <li data-keywords="widget,window,block,ui">
             <a href="widget.html" title="Widget" id="widget-menu">
               <i class="icon-th-large"></i> <span>Widget</span>
             </a>
           </li>
-          <li keywords="table,data,rowlink,list,ui">
+          <li data-keywords="table,data,rowlink,list,ui">
             <a href="tables.html" title="Tables">
               <i class="icon-th-list"></i> <span>Tables</span>
             </a>
           </li>
-          <li keywords="chart,pie,bar,line,speakline,dynamic,donut,stacked">
+          <li data-keywords="chart,pie,bar,line,speakline,dynamic,donut,stacked">
             <a href="charts.html" title="Charts">
               <i class="icon-bar-chart"></i> <span>Charts</span>
             </a>
           </li>
-          <li keywords="forms,editor,wizard,validate,editable,slider,ui">
+          <li data-keywords="forms,editor,wizard,validate,editable,slider,ui">
             <a href="forms.html" title="Forms">
               <i class="icon-credit-card"></i> <span>Forms</span>
             </a>
@@ -144,7 +144,7 @@
               <li><a href="javascript:void(0)" title="Sub Link">Sub Link</a></li>
             </ul>
           </li>
-          <li keywords="ui,table,interface,gallery,box,block,widget,timeline,grid">
+          <li data-keywords="ui,table,interface,gallery,box,block,widget,timeline,grid">
             <a href="ui.html" title="UI">
               <i class="icon-camera"></i> <span>Interfaces</span>
             </a>
@@ -163,12 +163,12 @@
               <li><a href="javascript:void(0)" title="Sub Link">Sub Link</a></li>
             </ul> 
           </li>
-          <li keywords="wizard,typo,text,font">
+          <li data-keywords="wizard,typo,text,font">
             <a href="typography.html" title="Typegraphy">
               <i class="icon-font"></i> <span>Typography</span>
             </a>
           </li>         
-          <li class="current" keywords="gallery,login,profile,403,404,error,starter">
+          <li class="current" data-keywords="gallery,login,profile,403,404,error,starter">
             <a href="javascript:void(0)" title="Extra">
               <i class="icon-legal"></i> <span>Extra</span>
             </a>
@@ -181,13 +181,13 @@
               <li><a href="starter.html" title="Starter"><i class="icon-question-sign"></i> Starter</a></li>
             </ul>
           </li>
-          <li keywords="faq,questions">
+          <li data-keywords="faq,questions">
             <a href="faq.html">
               <i class="icon-question-sign"></i>
               <span>FAQ</span>
             </a>
           </li>
-          <li keywords="profile,settings,custom,modal,personal">
+          <li data-keywords="profile,settings,custom,modal,personal">
             <a href="#settings" role="button" data-toggle="modal" data-target="#settings">
               <i class="icon-cog"></i> <span>Settings</span>
             </a>
@@ -198,33 +198,33 @@
                 </h3> 
               </div> 
               <div class="modal-body"> 
-                <form class="form-horizontal" id="basic-form" method="get" action="">
+                <form class="form-horizontal" id="basic-form" method="get">
 
                     <div class="control-group">
                       <label class="control-label">Firstname (required)</label>
                       <div class="controls">
-                        <input type="text" name="firstname" id="firstname" placeholder="lisa" minlength="2" required>
+                        <input type="text" name="firstname" id="firstname" placeholder="lisa" required>
                       </div>
                     </div>
 
                     <div class="control-group">
                       <label class="control-label">lastname (required)</label>
                       <div class="controls">
-                        <input type="text" name="lastname" id="lastname" placeholder="joe" minlength="2" required>
+                        <input type="text" name="lastname" id="lastname" placeholder="joe" required>
                       </div>
                     </div>
 
                     <div class="control-group">
                       <label class="control-label">email (required)</label>
                       <div class="controls">
-                        <input type="text" name="email" id="email" type="email" placeholder="lisa@abc.com" required>
+                        <input name="email" id="email" type="email" placeholder="lisa@abc.com" required>
                       </div>
                     </div>
 
                     <div class="control-group">
                       <label class="control-label">Comment (requied)</label>
                       <div class="controls">
-                        <textarea type="text" name="comment" id="comment" placeholder="balbal blala..." required></textarea>  
+                        <textarea name="comment" id="comment" placeholder="balbal blala..." required></textarea>  
                       </div>
                     </div>
 
@@ -237,7 +237,7 @@
               </div> 
             </div>
           </li>
-          <li keywords="login,signin,profile,entry">
+          <li data-keywords="login,signin,profile,entry">
             <a href="login.html">
               <i class="icon-user"></i>
               <span>Login</span>

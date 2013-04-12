@@ -88,8 +88,8 @@ $(".navbar-inner form.form-search").droppable({
 });
 
 // widget action controller
-$(".widget .widget-header > a[rel='control']").each(function() {
-	var action_name = $(this).attr("action");//.trim().toLowerCase();
+$(".widget .widget-header > a[data-rel='widget']").each(function() {
+	var action_name = $(this).attr("data-action").trim().toLowerCase();
 
 	switch(action_name) {
 		case 'close':
@@ -228,7 +228,7 @@ $("#menuitem-filter").bind('keyup', function(e) {
 		
 		if(
 			input.length > 0 &&
-		  	(($(this).attr("keywords") || "").toLowerCase().indexOf(input) == -1) &&
+		  	(($(this).attr("data-keywords") || "").toLowerCase().indexOf(input) == -1) &&
 		  	(($(this).find("a > span").html() || "").toLowerCase().indexOf(input) == -1)
 		  ) 
 			display = "none";

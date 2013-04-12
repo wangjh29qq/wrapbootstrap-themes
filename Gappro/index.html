@@ -77,14 +77,14 @@
 		                  <span class="caret"></span>
 		                </button>
 		                <ul class="dropdown-menu" id="menu_colors">
-		                  <li><a href="#" color="pink">PINK</a></li>
-		                  <li><a href="#" color="green">GREEN</a></li>
-		                  <li><a href="#" color="grey">GREY</a></li>
-		                  <li><a href="#" color="white">WHITE</a></li>
-		                  <li><a href="#" color="orange">ORANGE</a></li>
-		                  <li><a href="#" color="blue">BLUE</a></li>
-		                  <li><a href="#" color="brown">BROWN</a></li>
-		                  <li><a href="#" color="default">BLACK (DEFAULT)</a></li>
+		                  <li><a href="#" data-color="pink">PINK</a></li>
+		                  <li><a href="#" data-color="green">GREEN</a></li>
+		                  <li><a href="#" data-color="grey">GREY</a></li>
+		                  <li><a href="#" data-color="white">WHITE</a></li>
+		                  <li><a href="#" data-color="orange">ORANGE</a></li>
+		                  <li><a href="#" data-color="blue">BLUE</a></li>
+		                  <li><a href="#" data-color="brown">BROWN</a></li>
+		                  <li><a href="#" data-color="default">BLACK (DEFAULT)</a></li>
 		                </ul>
 		            </div>
 				</div>
@@ -112,27 +112,27 @@
 							<span><i class="icon-angle-up"></i></span>
 						</a>
 					</li>
-					<li class="current"  keywords="home,dashboard,index,default,entry">
+					<li class="current" data-keywords="home,dashboard,index,default,entry">
 						<a href="index.html" title="Dashboard">
 							<i class="icon-home"></i> <span>Home</span>
 						</a>
 					</li>
-					<li keywords="widget,window,block,ui">
+					<li data-keywords="widget,window,block,ui">
 						<a href="widget.html" title="Widget" id="widget-menu">
 							<i class="icon-th-large"></i> <span>Widget</span>
 						</a>
 					</li>
-					<li keywords="table,data,rowlink,list,ui">
+					<li data-keywords="table,data,rowlink,list,ui">
 						<a href="tables.html" title="Tables">
 							<i class="icon-th-list"></i> <span>Tables</span>
 						</a>
 					</li>
-					<li keywords="chart,pie,bar,line,speakline,dynamic,donut,stacked">
+					<li data-keywords="chart,pie,bar,line,speakline,dynamic,donut,stacked">
 						<a href="charts.html" title="Charts">
 							<i class="icon-bar-chart"></i> <span>Charts</span>
 						</a>
 					</li>
-					<li keywords="forms,editor,wizard,validate,editable,slider,ui">
+					<li data-keywords="forms,editor,wizard,validate,editable,slider,ui">
 						<a href="forms.html" title="Forms">
 							<i class="icon-credit-card"></i> <span>Forms</span>
 						</a>
@@ -145,7 +145,7 @@
 							<li><a href="javascript:void(0)" title="Sub Link">Sub Link</a></li>
 						</ul>
 					</li>
-					<li keywords="ui,table,interface,gallery,box,block,widget,timeline,grid">
+					<li data-keywords="ui,table,interface,gallery,box,block,widget,timeline,grid">
 						<a href="ui.html" title="UI">
 							<i class="icon-camera"></i> <span>Interfaces</span>
 						</a>
@@ -164,12 +164,12 @@
 							<li><a href="javascript:void(0)" title="Sub Link">Sub Link</a></li>
 						</ul>	
 					</li>
-					<li keywords="wizard,typo,text,font">
+					<li data-keywords="wizard,typo,text,font">
 						<a href="typography.html" title="Typegraphy">
 							<i class="icon-font"></i> <span>Typography</span>
 						</a>
 					</li>
-					<li keywords="widget,post,quick,forms">
+					<li data-keywords="widget,post,quick,forms">
 						<a href="javascript:void(0)">
 							<i class="icon-plane"></i> <span>Quick Post</span>
 						</a>
@@ -187,7 +187,7 @@
 							</div>
 						</div>
 					</li>					
-					<li keywords="quick,widget,ui,tab">
+					<li data-keywords="quick,widget,ui,tab">
 						<a href="javascript:void(0)">
 							<i class="icon-lightbulb"></i> <span>Server Load</span>
 						</a>
@@ -224,7 +224,7 @@
 
 						</div>
 					</li>	
-					<li keywords="gallery,login,profile,403,404,error,starter">
+					<li data-keywords="gallery,login,profile,403,404,error,starter">
 						<a href="javascript:void(0)" title="Extra">
 							<i class="icon-legal"></i> <span>Extra</span>
 						</a>
@@ -237,13 +237,13 @@
 							<li><a href="starter.html" title="Starter"><i class="icon-question-sign"></i> Starter</a></li>
 						</ul>
 					</li>
-					<li keywords="faq,questions">
+					<li data-keywords="faq,questions">
 						<a href="faq.html">
 							<i class="icon-question-sign"></i>
 							<span>FAQ</span>
 						</a>
 					</li>
-					<li keywords="profile,settings,custom,modal,personal">
+					<li data-keywords="profile,settings,custom,modal,personal">
 						<a href="#settings" role="button" data-toggle="modal" data-target="#settings">
 							<i class="icon-cog"></i> <span>Settings</span>
 						</a>
@@ -254,33 +254,33 @@
 								</h3> 
 							</div> 
 							<div class="modal-body"> 
-								<form class="form-horizontal" id="basic-form" method="get" action="">
+								<form class="form-horizontal" id="basic-form" method="get">
 
 				                    <div class="control-group">
 				                      <label class="control-label">Firstname (required)</label>
 				                      <div class="controls">
-				                        <input type="text" name="firstname" id="firstname" placeholder="lisa" minlength="2" required>
+				                        <input type="text" name="firstname" id="firstname" placeholder="lisa" required>
 				                      </div>
 				                    </div>
 
 				                    <div class="control-group">
 				                      <label class="control-label">lastname (required)</label>
 				                      <div class="controls">
-				                        <input type="text" name="lastname" id="lastname" placeholder="joe" minlength="2" required>
+				                        <input type="text" name="lastname" id="lastname" placeholder="joe" required>
 				                      </div>
 				                    </div>
 
 				                    <div class="control-group">
 				                      <label class="control-label">email (required)</label>
 				                      <div class="controls">
-				                        <input type="text" name="email" id="email" type="email" placeholder="lisa@abc.com" required>
+				                        <input name="email" id="email" type="email" placeholder="lisa@abc.com" required>
 				                      </div>
 				                    </div>
 
 				                    <div class="control-group">
 				                      <label class="control-label">Comment (requied)</label>
 				                      <div class="controls">
-				                        <textarea type="text" name="comment" id="comment" placeholder="balbal blala..." required></textarea>  
+				                        <textarea name="comment" id="comment" placeholder="balbal blala..." required></textarea>  
 				                      </div>
 				                    </div>
 
@@ -293,13 +293,13 @@
 							</div> 
 						</div>
 					</li>
-					<li keywords="login,signin,profile,entry">
+					<li data-keywords="login,signin,profile,entry">
 						<a href="login.html">
 							<i class="icon-user"></i>
 							<span>Login</span>
 						</a>
 					</li>
-					<li keywords="tour,gide,wizard">
+					<li data-keywords="tour,gide,wizard">
 						<a href="javascript:void(0)" id="btn-tour-take">
 							<i class="icon-signin"></i>
 							<span>Take a Tour</span>
@@ -355,7 +355,7 @@
 
 					<div class="pull-right dropdown">
 						<a href="#" class="link dropdown-toggle" title="actions" role="button" data-toggle="dropdown" data-target="#"><i class="icon-plus"></i></a>
-						<ul class="pull-right dropdown-menu" role="menu">
+						<ul class="pull-right dropdown-menu">
 							<li><a href="javascript:void(0)"><i class="icon-share-alt"></i> Full Reports </a></li>
 							<li><a href="javascript:void(0)"><i class="icon-download"></i>  Export Excel </a></li>
 						</ul>
@@ -378,7 +378,7 @@
 
 					<div class="pull-right dropdown">
 						<a href="#" class="link dropdown-toggle" title="actions" role="button" data-toggle="dropdown" data-target="#"><i class="icon-plus"></i></a>
-						<ul class="pull-right dropdown-menu" role="menu">
+						<ul class="pull-right dropdown-menu">
 							<li><a href="javascript:void(0)"><i class="icon-share-alt"></i> Full Reports </a></li>
 							<li><a href="javascript:void(0)"><i class="icon-download"></i>  Export Excel </a></li>
 						</ul>
@@ -401,7 +401,7 @@
 					
 					<div class="pull-right dropdown">
 						<a href="#" class="link dropdown-toggle" title="actions" role="button" data-toggle="dropdown" data-target="#"><i class="icon-plus"></i></a>
-						<ul class="pull-right dropdown-menu" role="menu">
+						<ul class="pull-right dropdown-menu">
 							<li><a href="javascript:void(0)"><i class="icon-share-alt"></i> Full Reports </a></li>
 							<li><a href="javascript:void(0)"><i class="icon-download"></i>  Export Excel </a></li>
 						</ul>
@@ -415,17 +415,17 @@
 					<div class="widget-header">
 						<i class="icon-th-list"></i>
 						<h3>Sales Summary with vmap &amp; Leaderboard</h3>
-						<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-						<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-						<a class="pull-right" href="javascript:void(0)" rel="control" action="code"></a>
-						<a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
-						<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+						<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+						<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+						<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="code"></a>
+						<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="full"></a>
+						<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
 
 						<div class="pull-right dropdown">
 							<a href="javascript:void(0)" class="pull-right dropdown-toggle" role="button" data-toggle="dropdown" data-target="#">
 							    <i class="icon-cogs"></i>
 							</a>
-							<ul class="pull-right dropdown-menu" role="menu">
+							<ul class="pull-right dropdown-menu">
 								<li><a href="javascript:void(0)"><i class="icon-edit"></i> Add new</a></li>
 								<li><a href="javascript:void(0)"><i class="icon-download"></i> Import</a></li>
 								<li class="divider"></li>
@@ -511,9 +511,9 @@
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
 							<h3>TODO List</h3>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
 						</div>
 						<!-- /widget-header -->
 
@@ -635,10 +635,10 @@
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
 							<h3>Sales (-/+5%)</h3>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="full"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
 						</div>
 						<div class="widget-content">
 							<div class="alert alert-warning">
@@ -807,9 +807,9 @@
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
 							<h3>Statistics</h3>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
 						</div>
 						<div class="widget-content">
 							<table class="table">
@@ -865,9 +865,9 @@
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
 							<h3>Statistics</h3>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
 						</div>
 						<div class="widget-content">
 							<div class="row-fluid">
@@ -885,9 +885,9 @@
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
 							<h3>Gauge Chart</h3>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
 						</div>
 						<div class="widget-content">
 							<div id="gauge_orders" class="gauge">Product Orders</div>
@@ -903,14 +903,14 @@
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
 							<h3>Running Task</h3>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="config" target-box="config"></a>
-							<div id="config" class="modal hide fade" tabindex="-1" role="dialog"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> <h3 id="myModalLabel">Config Demo Box <i class="icon-github"></i> <i class="icon-facebook"></i> </h3> </div> <div class="modal-body"> <p><img src="img/icons/settings.png" alt=""> Lorem ipsum Magna Ut deserunt consequat dolor ea incididunt ut eu nostrud ex aliquip aliquip eu do sint exercitation quis reprehenderit.</p> </div> <div class="modal-footer"> <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button> <button class="btn btn-primary">Save changes</button> </div> </div>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="help" target-box="help"></a>
-							<div id="help" class="modal hide fade" tabindex="-1" role="dialog"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> <h3 id="myModalLabel">Help Demo Box <i class="icon-github"></i> <i class="icon-facebook"></i> </h3> </div> <div class="modal-body"> <p><img src="img/icons/help.png" alt=""> Lorem ipsum Ea in tempor ex fugiat qui nostrud consequat esse proident id voluptate do aliqua nostrud mollit ullamco fugiat exercitation quis sint id veniam do adipisicing eiusmod laboris non qui nostrud deserunt Duis laborum adipisicing reprehenderit do ea culpa elit.</p> </div> <div class="modal-footer"> <button class="btn" data-dismiss="modal" aria-hidden="true">Okay</button></div> </div>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="config" data-box="config"></a>
+							<div id="config" class="modal hide fade" tabindex="-1" role="dialog"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> <h3 id="myModalLabel2">Config Demo Box <i class="icon-github"></i> <i class="icon-facebook"></i> </h3> </div> <div class="modal-body"> <p><img src="img/icons/settings.png" alt=""> Lorem ipsum Magna Ut deserunt consequat dolor ea incididunt ut eu nostrud ex aliquip aliquip eu do sint exercitation quis reprehenderit.</p> </div> <div class="modal-footer"> <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button> <button class="btn btn-primary">Save changes</button> </div> </div>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="help" data-box="help"></a>
+							<div id="help" class="modal hide fade" tabindex="-1" role="dialog"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> <h3 id="myModalLabe3">Help Demo Box <i class="icon-github"></i> <i class="icon-facebook"></i> </h3> </div> <div class="modal-body"> <p><img src="img/icons/help.png" alt=""> Lorem ipsum Ea in tempor ex fugiat qui nostrud consequat esse proident id voluptate do aliqua nostrud mollit ullamco fugiat exercitation quis sint id veniam do adipisicing eiusmod laboris non qui nostrud deserunt Duis laborum adipisicing reprehenderit do ea culpa elit.</p> </div> <div class="modal-footer"> <button class="btn" data-dismiss="modal" aria-hidden="true">Okay</button></div> </div>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="full"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
 						</div>
 						<div class="widget-content">
 							<div class="config-box" style="display: none">
@@ -962,9 +962,9 @@
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
 							<h3>Chat Panel</h3>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
 						</div>
 						<!-- /widget-header -->
 						<div class="widget-content">
@@ -1046,10 +1046,10 @@
 
 							<form class="form-search ">
 								<input type="text" class="input-xlarge search-query" placeholder="Lorem ipsum pariatur tempor exercitation ut officia. ">
-								<button class="btn btn-success" type="submit"
+								<a class="btn btn-success">
 									<i class="icon-edit"></i>
 									Send
-								</button>
+								</a>
 								<a href="javascript:void(0)" class="btn">
 									<i class="icon-save"></i>
 									Save history
@@ -1068,9 +1068,9 @@
 						<div class="widget-header">
 							<i class="icon-th-list"></i>
 							<h3>Sales Percent</h3>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
 						</div>
 						<div class="widget-content">
 							<table class="table responsive">
@@ -1134,12 +1134,12 @@
 								<span class="badge badge-important">6</span>
 								unread messages!
 							</h3>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget"  data-action="close"></a>
+							<a class="pull-right" href="javascript:void(0)"  data-rel="widget"  data-action="hide"></a>
 							<a class="pull-right" href="javascript:void(0)"> <i class="icon-share"></i> </a>
 							<a class="pull-right" href="javascript:void(0)"> <i class="icon-edit"></i> </a>
 							<a class="pull-right" href="javascript:void(0)"> <i class="icon-trash"></i> </a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+							<a class="pull-right" href="javascript:void(0)"  data-rel="widget"  data-action="thumb"></a>
 						</div>
 						<!-- /widget-header -->
 
@@ -1306,9 +1306,9 @@
 								Cloud Words
 								<sup>hot</sup>
 							</h3>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-							<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+							<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
 						</div>
 						<!-- /widget-header -->
 

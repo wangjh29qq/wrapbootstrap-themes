@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 	$("#menu_colors li a").each(function() { 
 		$(this).click(function() {
-			var css_file = "css/menu_styles/" + $(this).attr("color") + ".css";
+			var css_file = "css/menu_styles/" + $(this).attr("data-color") + ".css";
 			load_css(css_file);
 			$.jStorage.set("menu_css_file", css_file);
 		});

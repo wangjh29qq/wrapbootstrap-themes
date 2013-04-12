@@ -90,13 +90,13 @@
                       <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" id="menu_colors">
-                      <li><a href="#" color="pink">PINK</a></li>
-                      <li><a href="#" color="green">GREEN</a></li>
-                      <li><a href="#" color="grey">GREY</a></li>
-                      <li><a href="#" color="white">WHITE</a></li>
-                      <li><a href="#" color="orange">ORANGE</a></li>
-                      <li><a href="#" color="blue">BLUE</a></li>
-                      <li><a href="#" color="brown">BROWN</a></li>
+                      <li><a href="#" data-color="pink">PINK</a></li>
+                      <li><a href="#" data-color="green">GREEN</a></li>
+                      <li><a href="#" data-color="grey">GREY</a></li>
+                      <li><a href="#" data-color="white">WHITE</a></li>
+                      <li><a href="#" data-color="orange">ORANGE</a></li>
+                      <li><a href="#" data-color="blue">BLUE</a></li>
+                      <li><a href="#" data-color="brown">BROWN</a></li>
                     </ul>
                 </div>
         </div>
@@ -125,27 +125,27 @@
               <span><i class="icon-angle-up"></i></span>
             </a>
           </li>
-          <li keywords="home,dashboard,index,default,entry">
+          <li data-keywords="home,dashboard,index,default,entry">
             <a href="index.html" title="Dashboard">
               <i class="icon-home"></i> <span>Home</span>
             </a>
           </li>
-          <li keywords="widget,window,block,ui">
+          <li data-keywords="widget,window,block,ui">
             <a href="widget.html" title="Widget" id="widget-menu">
               <i class="icon-th-large"></i> <span>Widget</span>
             </a>
           </li>
-          <li keywords="table,data,rowlink,list,ui">
+          <li data-keywords="table,data,rowlink,list,ui">
             <a href="tables.html" title="Tables">
               <i class="icon-th-list"></i> <span>Tables</span>
             </a>
           </li>
-          <li keywords="chart,pie,bar,line,speakline,dynamic,donut,stacked">
+          <li data-keywords="chart,pie,bar,line,speakline,dynamic,donut,stacked">
             <a href="charts.html" title="Charts">
               <i class="icon-bar-chart"></i> <span>Charts</span>
             </a>
           </li>
-          <li keywords="forms,editor,wizard,validate,editable,slider,ui">
+          <li data-keywords="forms,editor,wizard,validate,editable,slider,ui">
             <a href="forms.html" title="Forms">
               <i class="icon-credit-card"></i> <span>Forms</span>
             </a>
@@ -158,7 +158,7 @@
               <li><a href="javascript:void(0)" title="Sub Link">Sub Link</a></li>
             </ul>
           </li>
-          <li class="current" keywords="ui,table,interface,gallery,box,block,widget,timeline,grid">
+          <li class="current" data-keywords="ui,table,interface,gallery,box,block,widget,timeline,grid">
             <a href="ui.html" title="UI">
               <i class="icon-camera"></i> <span>Interfaces</span>
             </a>
@@ -177,12 +177,12 @@
               <li><a href="javascript:void(0)" title="Sub Link">Sub Link</a></li>
             </ul> 
           </li>
-          <li keywords="wizard,typo,text,font">
+          <li data-keywords="wizard,typo,text,font">
             <a href="typography.html" title="Typegraphy">
               <i class="icon-font"></i> <span>Typography</span>
             </a>
           </li>         
-          <li keywords="gallery,login,profile,403,404,error,starter">
+          <li data-keywords="gallery,login,profile,403,404,error,starter">
             <a href="javascript:void(0)" title="Extra">
               <i class="icon-legal"></i> <span>Extra</span>
             </a>
@@ -195,63 +195,63 @@
               <li><a href="starter.html" title="Starter"><i class="icon-question-sign"></i> Starter</a></li>
             </ul>
           </li>
-          <li keywords="faq,questions">
+          <li data-keywords="faq,questions">
             <a href="faq.html">
               <i class="icon-question-sign"></i>
               <span>FAQ</span>
             </a>
           </li>
-          <li keywords="profile,settings,custom,modal,personal">
+          <li data-keywords="profile,settings,custom,modal,personal">
             <a href="#settings" role="button" data-toggle="modal" data-target="#settings">
               <i class="icon-cog"></i> <span>Settings</span>
             </a>
             <div id="settings" class="modal hide fade" tabindex="-1" role="dialog"> 
               <div class="modal-header"> 
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> 
+                <button type="button" class="close" data-dismiss="modal">×</button> 
                 <h3 id="myModalLabel">Config Box
                 </h3> 
               </div> 
               <div class="modal-body"> 
-                <form class="form-horizontal" id="basic-form" method="get" action="">
+                <form class="form-horizontal" id="basic-form" method="get">
 
                     <div class="control-group">
                       <label class="control-label">Firstname (required)</label>
                       <div class="controls">
-                        <input type="text" name="firstname" id="firstname" placeholder="lisa" minlength="2" required>
+                        <input type="text" name="firstname" id="firstname" placeholder="lisa" required>
                       </div>
                     </div>
 
                     <div class="control-group">
                       <label class="control-label">lastname (required)</label>
                       <div class="controls">
-                        <input type="text" name="lastname" id="lastname" placeholder="joe" minlength="2" required>
+                        <input type="text" name="lastname" id="lastname" placeholder="joe" required>
                       </div>
                     </div>
 
                     <div class="control-group">
                       <label class="control-label">email (required)</label>
                       <div class="controls">
-                        <input type="text" name="email" id="email" type="email" placeholder="lisa@abc.com" required>
+                        <input name="email" id="email" type="email" placeholder="lisa@abc.com" required>
                       </div>
                     </div>
 
                     <div class="control-group">
                       <label class="control-label">Comment (requied)</label>
                       <div class="controls">
-                        <textarea type="text" name="comment" id="comment" placeholder="balbal blala..." required></textarea>  
+                        <textarea name="comment" id="comment" placeholder="balbal blala..." required></textarea>  
                       </div>
                     </div>
 
                     <div class="form-actions">
-                      <button type="submit" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Save changes</button>
-                      <button type="button" class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                      <button type="submit" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                      <button type="button" class="btn" data-dismiss="modal">Cancel</button>
                     </div>
 
                   </form>           
               </div> 
             </div>
           </li>
-          <li keywords="login,signin,profile,entry">
+          <li data-keywords="login,signin,profile,entry">
             <a href="login.html">
               <i class="icon-user"></i>
               <span>Login</span>
@@ -293,7 +293,7 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Dynamic ProgressBar</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
             </div>
             <!-- /widget-header -->
 
@@ -346,7 +346,7 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Progress Bars</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
             </div>
             <!-- /widget-header -->
 
@@ -625,11 +625,11 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Labels and badges</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="code"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="code"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="full"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
             </div>
             <!-- /widget-header -->
 
@@ -770,11 +770,11 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Calendar</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="code"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="code"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="full"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
             </div>
             <!-- /widget-header -->
 
@@ -791,20 +791,20 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Lightbox</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="code"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="code"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="full"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
             </div>
             <!-- /widget-header -->
 
             <div class="widget-content">
 
               <a data-toggle="lightbox" href="#demoLightbox">Open Lightbox</a>
-              <div id="demoLightbox" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div id="demoLightbox" class="lightbox hide fade"  tabindex="-1" role="dialog">
                 <div class='lightbox-header'>
-                  <button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
+                  <button type="button" class="close" data-dismiss="lightbox">&times;</button>
                 </div>
                 <div class='lightbox-content'>
                   <img src="img/800x600.jpg" alt="" />
@@ -821,7 +821,7 @@
           <div class="widget-header">
             <i class="icon-th-list"></i>
             <h3>Modal Dialogs</h3>
-            <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
+            <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
           </div>
           <!-- /widget-header -->
 
@@ -830,16 +830,16 @@
             <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
 
             <!-- Modal -->
-            <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Modal header</h3>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h3 id="myModalLabel3">Modal header</h3>
               </div>
               <div class="modal-body">
                 <p>One fine body…</p>
               </div>
               <div class="modal-footer">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                <button class="btn" data-dismiss="modal">Close</button>
                 <button class="btn btn-primary">Save changes</button>
               </div>
             </div>
@@ -854,7 +854,7 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Typehead</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
             </div>
             <!-- /widget-header -->
 
@@ -904,11 +904,11 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Tooltip and Popover</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="code"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="code"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="full"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
             </div>
             <!-- /widget-header -->
 
@@ -942,11 +942,11 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Color Picker</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="code"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="code"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="full"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
             </div>
             <!-- /widget-header -->
 
@@ -965,11 +965,11 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Date &amp; Time Picker</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="code"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="code"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="full"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
             </div>
             <!-- /widget-header -->
 
@@ -1023,11 +1023,11 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Pagination</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="code"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="code"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="full"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
             </div>
             <!-- /widget-header -->
 
@@ -1223,7 +1223,7 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Accordion Reading</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
             </div>
             <!-- /widget-header -->
 
@@ -1278,7 +1278,7 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>QRCode</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
             </div>
             <div class="widget-content">
               <div id="qrcode"></div>
@@ -1292,7 +1292,7 @@
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Colors Link</h3>
-              <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
+              <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
             </div>
             <!-- /widget-header -->
 
@@ -1320,52 +1320,52 @@
           <div class="widget-header">
             <i class="icon-th-list"></i>
             <h3>Loaders Images</h3>
-            <a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="code"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
-                  <a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+            <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="code"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="full"></a>
+                  <a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
           </div>
           <div class="widget-content">
-            <img src="img/loaders/old/3drotation.gif">
-            <img src="img/loaders/old/arrows.gif">
-            <img src="img/loaders/old/bar.gif">
-            <img src="img/loaders/old/bar2.gif">
-            <img src="img/loaders/old/bar3.gif">
-            <img src="img/loaders/old/barCircle.gif">
-            <img src="img/loaders/old/bbal.gif">
-            <img src="img/loaders/old/bert.gif">
-            <img src="img/loaders/old/bert2.gif">
-            <img src="img/loaders/old/bigCircleBall.gif">
-            <img src="img/loaders/old/bigRoller.gif">
-            <img src="img/loaders/old/bigSnake.gif">
-            <img src="img/loaders/old/bigflower.gif">
-            <img src="img/loaders/old/cbal.gif">
-            <img src="img/loaders/old/circleBal.gif">
-            <img src="img/loaders/old/circleTickbox.gif">
-            <img src="img/loaders/old/clock.gif">
-            <img src="img/loaders/old/dripCircle.gif">
-            <img src="img/loaders/old/ecircle.gif">
-            <img src="img/loaders/old/facebook.gif">
-            <img src="img/loaders/old/flower.gif">
-            <img src="img/loaders/old/hypnotize.gif">
-            <img src="img/loaders/old/indicator.gif">
-            <img src="img/loaders/old/indicatorBig.gif">
-            <img src="img/loaders/old/indicatorBig2.gif">
-            <img src="img/loaders/old/indicatorLite.gif">
-            <img src="img/loaders/old/kit.gif">
-            <img src="img/loaders/old/pakman.gif">
-            <img src="img/loaders/old/pik.gif">
-            <img src="img/loaders/old/pk.gif">
-            <img src="img/loaders/old/radar.gif">
-            <img src="img/loaders/old/refresh.gif">
-            <img src="img/loaders/old/roller.gif">
-            <img src="img/loaders/old/smallWait.gif">
-            <img src="img/loaders/old/snake.gif">
-            <img src="img/loaders/old/squares.gif">
-            <img src="img/loaders/old/squaresCircle.gif">
-            <img src="img/loaders/old/wheel.gif">
-            <img src="img/loaders/old/wheel1.gif">
+            <img alt="" src="img/loaders/old/3drotation.gif">
+            <img alt="" src="img/loaders/old/arrows.gif">
+            <img alt="" src="img/loaders/old/bar.gif">
+            <img alt="" src="img/loaders/old/bar2.gif">
+            <img alt="" src="img/loaders/old/bar3.gif">
+            <img alt="" src="img/loaders/old/barCircle.gif">
+            <img alt="" src="img/loaders/old/bbal.gif">
+            <img alt="" src="img/loaders/old/bert.gif">
+            <img alt="" src="img/loaders/old/bert2.gif">
+            <img alt="" src="img/loaders/old/bigCircleBall.gif">
+            <img alt="" src="img/loaders/old/bigRoller.gif">
+            <img alt="" src="img/loaders/old/bigSnake.gif">
+            <img alt="" src="img/loaders/old/bigflower.gif">
+            <img alt="" src="img/loaders/old/cbal.gif">
+            <img alt="" src="img/loaders/old/circleBal.gif">
+            <img alt="" src="img/loaders/old/circleTickbox.gif">
+            <img alt="" src="img/loaders/old/clock.gif">
+            <img alt="" src="img/loaders/old/dripCircle.gif">
+            <img alt="" src="img/loaders/old/ecircle.gif">
+            <img alt="" src="img/loaders/old/facebook.gif">
+            <img alt="" src="img/loaders/old/flower.gif">
+            <img alt="" src="img/loaders/old/hypnotize.gif">
+            <img alt="" src="img/loaders/old/indicator.gif">
+            <img alt="" src="img/loaders/old/indicatorBig.gif">
+            <img alt="" src="img/loaders/old/indicatorBig2.gif">
+            <img alt="" src="img/loaders/old/indicatorLite.gif">
+            <img alt="" src="img/loaders/old/kit.gif">
+            <img alt="" src="img/loaders/old/pakman.gif">
+            <img alt="" src="img/loaders/old/pik.gif">
+            <img alt="" src="img/loaders/old/pk.gif">
+            <img alt="" src="img/loaders/old/radar.gif">
+            <img alt="" src="img/loaders/old/refresh.gif">
+            <img alt="" src="img/loaders/old/roller.gif">
+            <img alt="" src="img/loaders/old/smallWait.gif">
+            <img alt="" src="img/loaders/old/snake.gif">
+            <img alt="" src="img/loaders/old/squares.gif">
+            <img alt="" src="img/loaders/old/squaresCircle.gif">
+            <img alt="" src="img/loaders/old/wheel.gif">
+            <img alt="" src="img/loaders/old/wheel1.gif">
           </div>
         </div>
       </div>
