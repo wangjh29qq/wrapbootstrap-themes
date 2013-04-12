@@ -126,7 +126,7 @@ Gappro is a admin template that can be used for any backed applications. It's no
 * Latest Safari
 * Opera 11+
 * Firefox 4+
-* Internet Explorer 8+
+* Internet Explorer 9+
 
 #Change Log
 

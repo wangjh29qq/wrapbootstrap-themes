@@ -814,7 +814,7 @@ input[type="checkbox"]:checked:after {
     list-style: none;
     margin-left: 0px;
     margin-bottom: 0px; 
-    margin-top: 70px;
+    margin-top: 50px;
     min-width: 120px;
 
     -o-box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
@@ -845,7 +845,8 @@ input[type="checkbox"]:checked:after {
     .background-black(#222222 ,0.2);
     .rounded-corners(200px);
     .border-black(#272727, 0.1);
-
+    
+    // for draggable
     cursor: move;
 }
 
@@ -887,13 +888,11 @@ input[type="checkbox"]:checked:after {
 .sub-menus > li > a:hover, 
 .icon-menu .current span, .icon-menu .current a,
 .icon-menu .current .sub-menus > li a {
-    // color: #658018;
     color: #ff001b;
 }
 
 .icon-menu > ul > li > a:hover, 
 .sub-menus > li > a:hover {
-    // padding-left: 20px;
     background: none; 
 
     background-color: #2a2a2a;
@@ -903,15 +902,11 @@ input[type="checkbox"]:checked:after {
     background: -o-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09));
     background: linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09));
 
-    // -webkit-transition: all .25s;
-    // -moz-transition: all .25s;
-    // -ms-transition: all .25s;
-    // -o-transition: all .25s;
-    // transition: all .25s;
-}
-
-.icon-menu > ul > li:nth-child(n+4) > a:hover {
-    // background: url('../img/arrow-right.png') no-repeat left center;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
 }
 
 .icon-menu > ul > li.circle > a {
@@ -943,18 +938,15 @@ input[type="checkbox"]:checked:after {
 }
 
 .icon-menu .sub-menus {
-    .rounded-corners;
-    margin-left: -2px;
+    .top-right-rounded-corners;
+    .bottom-right-rounded-corners;
+    margin-left: 1px;
     position: absolute;
     display: none;
     width: 360px;
     background-color: #202020;
-
-    -o-box-shadow: 1px 1px 3px #000, -1px -1px 3px #000;
-    -ms-box-shadow: 1px 1px 3px #000, -1px -1px 3px #000;
-    -moz-box-shadow: 1px 1px 3px #000, -1px -1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000, -1px -1px 3px #000;
-    box-shadow: 1px 1px 3px #000, -1px -1px 3px #000;
+    border: 1px solid #1b1b1b;
+    border-left: none;
 }
 
 .icon-menu .sub-menus li {
@@ -967,27 +959,20 @@ input[type="checkbox"]:checked:after {
     .rounded-corners(0px);
 }
 
-.icon-menu > ul .sub-menus li:nth-child(1) a {
-    .top-left-rounded-corners;
-}
+// .icon-menu > ul .sub-menus li:nth-child(1) a {
+//     .top-left-rounded-corners; 
+// }
 
 .icon-menu > ul .sub-menus li:nth-child(3) a {
     .top-right-rounded-corners;
 }
 
-.icon-menu > ul .sub-menus li:nth-last-child(3) a {
-    .bottom-left-rounded-corners;
-}
+// .icon-menu > ul .sub-menus li:nth-last-child(3) a {
+//     .bottom-left-rounded-corners;
+// }
 
 .icon-menu > ul .sub-menus li:last-child a {
     .bottom-right-rounded-corners;
-}
-
-.icon-menu li:hover > .sub-menus {
-    left: 182px;
-    display: block;
-    z-index: 9999;
-    margin-top: -42px;
 }
 
 .icon-menu .sub-menus li { 
@@ -995,12 +980,7 @@ input[type="checkbox"]:checked:after {
     text-align: left;
 }
 
-.icon-menu .sub-menus li:first-child a,
-.icon-menu .sub-menus li a:hover {
-    padding-left: 10px;
-}
-
-.icon-menu > ul li .sub-menus li a { 
+.icon-menu > ul > li .sub-menus > li > a { 
     .rounded-corners(0px);
 }
 
@@ -1029,9 +1009,9 @@ input[type="checkbox"]:checked:after {
     text-align: center;
 }
 
-.icon-menu li:hover > .quick-widget {
+.icon-menu li .sub-hover {
     display: block;
-    left: 180px;
+    left: 180px; // dynamix fix by js
     z-index: 9999;
     margin-top: -42px;
 }

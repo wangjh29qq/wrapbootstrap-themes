@@ -240,8 +240,9 @@ $("#menuitem-filter").bind('keyup', function(e) {
 });
 
 // fix position for quick widget and sub-menus
+var global_hover = null;
 $(".icon-menu > ul > li > a").each(function(){
-	$(this).bind('mouseover', function() {
+	$(this).bind('click', function(e) {
 		var sidebar_margin = $("#main_wrapper").css("margin-left");
 		var sidebar_padding = $("#main_wrapper").css("padding-left");
 		var width = $(this).parent().width() * 1 + 
@@ -255,9 +256,29 @@ $(".icon-menu > ul > li > a").each(function(){
 		}
 
 		$(this).next(".quick-widget, .sub-menus").each(function(){
-			$(this).css("left", width);
+			$(this).addClass("sub-hover").css("left", width);
+
+			if(global_hover && global_hover.html() != $(this).html()) {
+				global_hover.removeClass("sub-hover");
+			}
+
+			global_hover = $(this);
 		});
+
+		e.preventDefault();
 	});
+});
+
+$(".icon-menu").bind('mouseleave', function(e) {
+	if(global_hover) {
+		var timer = setTimeout(function() {
+			global_hover.removeClass("sub-hover");
+		}, 1000);
+
+		global_hover.bind('mouseenter', function() {
+			clearTimeout(timer);
+		});
+	}
 });
 
 // load fav menus
