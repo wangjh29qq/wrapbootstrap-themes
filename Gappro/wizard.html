@@ -350,7 +350,7 @@
                 <div class="control-group">
                   <label class="control-label">Email: </label>
                   <div class="controls">
-                    <input type="text" name="email2" id="email2" class="input-xlarge" />
+                    <input type="email" name="email2" id="email2" class="input-xlarge" />
                   </div>
                 </div>
 
@@ -492,7 +492,7 @@
 
   $("#default-form").validate({
     rules: {
-      email: {required: true},
+      email2: {required: true},
       pass: {required: true},
       confirm_pass: {required: true, equalTo: "#pass"}
     }
