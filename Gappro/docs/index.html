@@ -51,6 +51,7 @@ If you have any questions, please feel free to contact me via contact link or em
 	<li><h3><a href="#google_web_fonts">Google Web Fonts</a></h3></li>
 	<li><h3><a href="#basic_document">Basic Document</a></h3></li>
 	<li><h3><a href="#using_less">Using Less or Not</a></h3></li>
+	<li><h3><a href="#responsive">Responsive &amp; Disabled Features</a></h3></li>
 	<li><h3><a href="#top_bar">Top Bar</a></h3></li>
 	<li><h3><a href="#messages_container">Messages Container</a></h3></li>
 	<li>
@@ -64,6 +65,7 @@ If you have any questions, please feel free to contact me via contact link or em
 			<li>Draggable to create persistent favorites menus</li>
 			<li>Sub Menus</li>
 			<li>Quick Widget</li>
+			<li>Theme Colors</li>
 		</ul>
 	</li>
 	<li>
@@ -94,15 +96,17 @@ If you have any questions, please feel free to contact me via contact link or em
 	<li><h3><a href="#status_box">Status Box</a></h3></li>
 	<li><h3><a href="#compare_box">Compare Box</a></h3></li>
 	<li><h3><a href="#timeline">Timeline</a></h3></li>
+	<li><h3><a href="#tour">Guide Tour</a></h3></li>
 	<li><h3><a href="#interfaces">Other Interfaces List</a></h3></li>
 	<li><h3><a href="#plugin_docs">Plugins External Docs</a></h3></li>
+	<li><h3><a href="#plans">Future Plans</a></h3></li>
 	<li><h3><a href="#special_thanks">Special Thanks</a></h3></li>
 </ol>
 
 <div id="file_struture" class="well">
 	<h4>File Structure <a href="#top">TOP</a></h4> 
 	<ul>
-		<li>*.html - html documents</li>
+		<li>*.html - static html documents</li>
 		<li>css - stylesheets</li>
 		<li>font - Awesome fonts and google web fonts</li>
 		<li>img - background, icons, pictures</li>
@@ -238,10 +242,12 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 	
 	<h5>Filter by input keywords</h5>
 	<pre class="prettyprint lang-html linenums">
+<!--filter input box-->		
 <li class="filter-box">
 	<input type="text" id="menuitem-filter" placeholder="filter items, e.g. widget">
 </li>		
-<li keywords="widget,window,block,ui">
+<!--custom keywords-->
+<li data-keywords="widget,window,block,ui">
 	<a href="widget.html" title="Widget">
 		<i class="icon-th-large"></i> <span>Widget</span>
 	</a>
@@ -317,7 +323,31 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 		</div>
 	</div>
 </li>		
-	</pre>		
+	</pre>	
+
+	<h5>Theme Colors</h5>	
+	<ul>
+		<li>Pink, css/menu_styles/pink.css</li>
+		<li>Green, css/menu_styles/green.css</li>
+		<li>Grey, css/menu_styles/grey.css</li>
+		<li>White, css/menu_styles/white.css</li>
+		<li>Orange, css/menu_styles/orange.css</li>
+		<li>Blue, css/menu_styles/blue.css</li>
+		<li>Brown, css/menu_styles/brown.css</li>
+		<li>Black, css/menu_styles/default.css</li>
+	</ul>
+	<pre class="prettyprint lang-html linenums">
+<ul class="dropdown-menu" id="menu_colors">
+  <li><a href="#" data-color="pink">PINK</a></li>
+  <li><a href="#" data-color="green">GREEN</a></li>
+  <li><a href="#" data-color="grey">GREY</a></li>
+  <li><a href="#" data-color="white">WHITE</a></li>
+  <li><a href="#" data-color="orange">ORANGE</a></li>
+  <li><a href="#" data-color="blue">BLUE</a></li>
+  <li><a href="#" data-color="brown">BROWN</a></li>
+  <li><a href="#" data-color="default">BLACK (DEFAULT)</a></li>
+</ul>		
+	</pre>
 </div>
 
 <div id="widget" class="well">
@@ -365,19 +395,19 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 	<h5>Actions, you won't need write any javascript code.</h5>
 	<pre class="prettyprint lang-html linenums">
 <!--remove from dom tree-->
-<a class="pull-right" href="javascript:void(0)" rel="control" action="close"></a>
+<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="close"></a>
 <!--hide or show widget-->
-<a class="pull-right" href="javascript:void(0)" rel="control" action="hide"></a>
+<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="hide"></a>
 <!--show code-->
-<a class="pull-right" href="javascript:void(0)" rel="control" action="code"></a>
+<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="code"></a>
 <!--toggle fullscreen-->
-<a class="pull-right" href="javascript:void(0)" rel="control" action="full"></a>
+<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="full"></a>
 <!--show help modal box, need define modal box speratly-->
-<a class="pull-right" href="javascript:void(0)" rel="control" action="help"></a>
+<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="help"></a>
 <!--show config modal box, need define modal box speratly-->
-<a class="pull-right" href="javascript:void(0)" rel="control" action="config"></a>
+<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="config"></a>
 <!--place widget to workspace, you can retore it when it has finished long task-->
-<a class="pull-right" href="javascript:void(0)" rel="control" action="thumb"></a>
+<a class="pull-right" href="javascript:void(0)" data-rel="widget" data-action="thumb"></a>
 	</pre>	
 
 	<h5>Header Tabs</h5>
@@ -401,7 +431,7 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 
 	<h5>Widget Table</h5>
 	<pre class="prettyprint lang-html linenums">
-<div class="widget-header widget-tabbed">
+<div class="widget widget-table">
 	<!---->
 </div>	
 	</pre>
@@ -409,26 +439,26 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 	<h5>Header Background</h5>
 	<pre class="prettyprint lang-html linenums">
 <!--pink-->		
-<div class="widget-header pink-bg-linear">
-</div>	
+<div class="widget-header pink-bg-linear"> </div>
+<div class="widget-header pink-bg"> </div>
 <!--green-->		
-<div class="widget-header green-bg-linear">
-</div>	
+<div class="widget-header green-bg-linear"> </div>
+<div class="widget-header green-bg"> </div>
 <!--white-->		
-<div class="widget-header white-bg-linear">
-</div>	
+<div class="widget-header white-bg-linear"> </div>
+<div class="widget-header white-bg"> </div>
 <!--grey-->		
-<div class="widget-header grey-bg-linear">
-</div>	
+<div class="widget-header grey-bg-linear"> </div>
+<div class="widget-header grey-bg"> </div>
 <!--blue-->		
-<div class="widget-header blue-bg-linear">
-</div>	
+<div class="widget-header blue-bg-linear"> </div>
+<div class="widget-header blue-bg"> </div>
 <!--orange-->		
-<div class="widget-header orange-bg-linear">
-</div>	
+<div class="widget-header orange-bg-linear"> </div>
+<div class="widget-header orange-bg"> </div>
 <!--brown-->		
-<div class="widget-header brown-bg-linear">
-</div>	
+<div class="widget-header brown-bg-linear"> </div>
+<div class="widget-header brown-bg"> </div>
 	</pre>
 </div>
 
@@ -525,7 +555,7 @@ jQuery('#sales_vmap').vectorMap({
 	<br>
 	<span class="dau_line">
 		<!--speakline here-->
-		2800,2000,2000,3000,2800,2800,3600,2200,3000,2800,3000,2600,3200,3600,3000,2000,3200,3400,3600,2400,3000,3000,3400,3800
+		2800,2000,2000,3000
 	</span>
 	<hr>
 	<!--trends-->
@@ -605,6 +635,14 @@ $('#autosize_timeline').jqtimeline( {
 	}
 });
 	</pre>
+</div>
+
+<div id="tour" class="well">
+	<h4>Guide Tour <a href="#top">TOP</a></h4>
+	<ul>
+		<li>Steps Markup</li>
+		<li>Guide Start</li>
+	</ul>
 </div>
 
 <div id="interfaces" class="well">
@@ -700,6 +738,16 @@ $('#autosize_timeline').jqtimeline( {
 		<li>jquery validate, <a href="https://github.com/jzaefferer/jquery-validation">https://github.com/jzaefferer/jquery-validation</a></li>
 		<li>wysihtml5, <a href="https://github.com/xing/wysihtml5">https://github.com/xing/wysihtml5</a></li>
 		<li>joyride, <a href="http://www.zurb.com/playground/jquery-joyride-feature-tour-plugin">http://www.zurb.com/playground/jquery-joyride-feature-tour-plugin</a></li>
+	</ul>
+</div>
+
+<div id="plans" class="well">
+	<h4>Future Plans <a href="#top">TOP</a></h4>
+	<ul>
+		<li>jQuery leaderboard plugin</li>
+		<li>Drag widget to place workspace</li>
+		<li>More widget types</li>
+		<li>More layouts and pages</li>
 	</ul>
 </div>
 
