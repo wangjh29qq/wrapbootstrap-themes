@@ -45,3 +45,9 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 });
+
+$(window).resize(function() {
+	if($("body").find(".bootstrap-growl.alert").length < 1) {
+		$.bootstrapGrowl("<img src='img/icons/info.png' alt='' /> If content goes out of place when resizing, please refresh again.");
+	}
+});

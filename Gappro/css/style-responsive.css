@@ -73,6 +73,7 @@
 
 @media (max-width: 768px) {
     .filter-box, .menu-controller, .navbar,
+    #btn-tour-take,
     .icon-menu > ul > li > a > i {
         display: none !important;
     }
