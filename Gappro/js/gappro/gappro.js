@@ -250,12 +250,12 @@ $(".icon-menu > ul > li > a").each(function(){
 					sidebar_padding.replace("px", "") * 1;
 
 		if($("#main_wrapper").width() <= 640) {
-			width = 50;
-		} else if($("#main_wrapper").width() <= 800) { 
-			width -= 4;
+			width = 30;
 		}
 
 		$(this).next(".quick-widget, .sub-menus").each(function(){
+			if($(this).attr("class"))
+				width += 3;
 			$(this).addClass("sub-hover").css("left", width);
 
 			if(global_hover && global_hover.html() != $(this).html()) {
