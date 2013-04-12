@@ -159,8 +159,6 @@
 
     .icon-menu ul li:hover, .icon-menu ul li a:hover, 
     .icon-menu .current span, .icon-menu .current a {
-        color: #658018;
-
         -o-border-radius: 4px;
         -ms-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -194,11 +192,5 @@
 
     #workspace {
         margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 1024px) { 
-    .icon-menu > ul > li > a, .icon-menu .sub-menus > li > a {
-        font-size: 12px;
     }
 }
