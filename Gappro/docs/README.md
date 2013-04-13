@@ -117,9 +117,8 @@ Gappro is a admin template that can be used for any backed applications. It's no
 * jquery validate, https://github.com/jzaefferer/jquery-validation
 * wysihtml5, https://github.com/xing/wysihtml5
 
-#Support Level
+#Support
 * sites messages
-* email
 
 #Browsers Support
 * Latest Chrome
