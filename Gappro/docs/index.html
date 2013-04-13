@@ -44,7 +44,7 @@ If you have any questions, please feel free to contact me via contact link.
 		<tr>
 			<th>Support</th>
 			<td>
-				<a href="https://wrapbootstrap.com/user/boostbob">Contact Me</a>
+				<a href="https://wrapbootstrap.com/user/boostbob">Leave a Message</a>
 			</td>
 		</tr>
 	</table>
@@ -57,6 +57,7 @@ If you have any questions, please feel free to contact me via contact link.
 <div class="row-fluid">
 <!--sidebar-->	
 <div class="span3" id="sidebar">
+	<a href="#" name="top"></a>
 	<h2><i class="icon-question-sign"></i> Help Index </h2>
 	<ol id="toc">
 		<li><h3><a href="#file_struture">File Structure</a></h3></li>
@@ -65,6 +66,7 @@ If you have any questions, please feel free to contact me via contact link.
 		<li><h3><a href="#basic_document">Basic Document</a></h3></li>
 		<li><h3><a href="#using_less">Using Less or Not</a></h3></li>
 		<li><h3><a href="#responsive">Responsive &amp; Disabled Features</a></h3></li>
+		<li><h3><a href="#css">CSS File</a></h3></li>
 		<li><h3><a href="#top_bar">Top Bar</a></h3></li>
 		<li><h3><a href="#messages_container">Messages Container</a></h3></li>
 		<li>
@@ -146,7 +148,7 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 		<li>Header</li>
 		<li>Sidebar - Menu</li>
 		<li>Sidebar - Workspace</li>
-		<li>Main - Breadcrumb</li>
+		<li>Main - Breadcrumbs</li>
 		<li>Main - Content</li>
 		<li>Footer</li>
 	</ul>
@@ -254,6 +256,51 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 	</table>
 </div>
 
+<div id="css">
+	<h4>CSS File</h4>
+	<ul>
+		<li>
+			<h5>style.css</h5>
+			<ol>
+				<li>Less Vars</li>
+				<li>Global Style</li>
+				<li>Navbar, Nav-Inner, Brand</li>
+				<li>Override Bootstrap Components</li>
+				<li>Main Wrapper</li>
+				<li>Messages Box</li>
+				<li>Widget, Widget-Header, Widget-Content</li>
+				<li>Merge Box</li>
+				<li>Status Box</li>
+				<li>Compare Box</li>    
+				<li>Chat Message UI</li>
+				<li>Circle Link Button</li>   
+				<li>Pure color Background</li>
+				<li>Linear Background</li>
+				<li>Widget FAQ</li>    
+				<li>Main Wrapper Breadcrumbs</li>    
+				<li>Typograpgy Items</li>
+				<li>JQTimeline</li>
+				<li>Leaderboard</li>
+				<li>charts</li>
+				<li>Footer, Copyright</li>
+			</ol>
+		</li>
+		<li>
+			<h5>style_responsive.css</h5>
+			<ol>
+				<li>max-width: 320px</li>
+				<li>max-width: 360px</li>
+				<li>max-width: 480px</li>
+				<li>max-width: 600px</li>
+				<li>max-width: 768px</li>
+				<li>max-width: 800px</li>
+				<li>max-width: 900px</li>
+				<li>max-width: 980px</li>
+			</ol>
+		</li>
+	</ul>
+</div>
+
 <div id="top_bar">
 	<h4>Top Bar </h4>
 	<ul>
@@ -330,7 +377,7 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 
 	<h5>Icons, Using font icons</h5>	
 	<pre class="prettyprint lang-html linenums">
-<li class="current"  keywords="home,dashboard,index,default,entry">
+<li class="current"  data-keywords="home,dashboard,index,default,entry">
 	<a href="index.html" title="Dashboard">
 		<!--icons-->
 		<i class="icon-home"></i> 
@@ -353,7 +400,7 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 
 	<h5>Sub Menus</h5>
 	<pre class="prettyprint lang-html linenums">
-<li keywords="forms,editor,wizard,validate,editable,slider,ui">
+<li data-keywords="forms,editor,wizard,validate,editable,slider,ui">
 	<a href="forms.html" title="Forms">
 		<i class="icon-credit-card"></i> <span>Forms</span>
 	</a>
@@ -370,7 +417,7 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 
 	<h5>Quick Widget</h5>
 	<pre class="prettyprint lang-html linenums">
-<li keywords="widget,post,quick,forms">
+<li data-keywords="widget,post,quick,forms">
 	<a href="javascript:void(0)">
 		<i class="icon-plane"></i> <span>Quick Post</span>
 	</a>
@@ -548,7 +595,7 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 <div class="leaderboard">
 	<ul>
 		<li class="title">Product A Sales</li>
-		<li data-rel="US" data-value="845"><span class="name">United States</span><span class="value">$845</span></li>
+		<li data-rel="US" data-value="845"><span class="name">United States</span></li>
 	</ul>
 	<!--more-->
 </div>	
@@ -594,6 +641,10 @@ jQuery('#sales_vmap').vectorMap({
 // leaderboard
     $(".leaderboard ul").each(function() {
         $(this).find("li").not(".title").tsort({attr: 'data-value', order: 'desc'});
+    });
+
+    $(".leaderboard ul li").not(".title").each(function() {
+        $(this).append('<span class="value">' + $(this).attr("data-value") + '</span>');
     });
 });
 	</pre>	
@@ -813,6 +864,7 @@ $('#autosize_timeline').jqtimeline( {
 		<li>Drag widget to place workspace</li>
 		<li>More widget types</li>
 		<li>More layouts and pages</li>
+		<li>Middleman Support</li>
 	</ul>
 </div>
 
@@ -829,12 +881,14 @@ $('#autosize_timeline').jqtimeline( {
 </div>
 
 <hr>
-<p>Thank you Again. I'd be glad to help you if you have any questions relating to this theme, I will do my best.</p>
-<p><a href="#" class="btn btn-info"><i class="icon-arrow-up"></i></a></p>
+<p>Thank you Again. I'd be glad to help you if you have any questions relating to this theme, I will do my best to finish it.</p>
+<p>
+	<p>Copyright &copy; 2013. All rights reserved.</p>
+</p>
 
 <script>
 $("#main > div > h4").each(function() {
-	$(this).append("<a class='pull-right' href='#top'>TOP</a>");
+	$(this).append("<a class='pull-right' href='#top'>INDEX</a>");
 });
 
 $('#toc > li > h3 > a').each(function() {
