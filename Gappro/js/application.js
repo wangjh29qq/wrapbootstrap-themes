@@ -49,7 +49,7 @@ $(document).ready(function() {
 
 	//top
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {
+		if ($(this).scrollTop() > 200) {
 			$('#back-top').fadeIn();
 		} else {
 			$('#back-top').fadeOut();

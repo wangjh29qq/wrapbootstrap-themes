@@ -289,12 +289,12 @@ load_fav_menus();
 
 // tooltip
 $("a[data-toggle=tooltip]").tooltip().click(function(e) {
-	e.preventDefault();
+	// e.preventDefault();
 });
   
 // popover 
 $("a[data-toggle=popover]").popover().click(function(e) {
-  	e.preventDefault();
+  	// e.preventDefault();
 });
 
 // place widget to workspace
