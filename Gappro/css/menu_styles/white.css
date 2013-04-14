@@ -12,7 +12,7 @@
 
 .navbar {
 	border-bottom: 100px solid #ccc;
-	border-bottom: 100px solid rgba(204,204,204,0.2);
+	border-bottom: 100px solid rgba(204,204,204,0.5);
 }
 
 #main_wrapper {

@@ -40,6 +40,7 @@ $(document).ready(function() {
 	$("#tour").css('display', 'none');
 	$("#btn-tour, #btn-tour-take").bind("click", function(e) {
 		$("#tour").joyride({
+			autoStart: true,
 			'tipLocation': 'top'
 		});
 		e.preventDefault();

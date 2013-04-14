@@ -36,4 +36,8 @@ h1,h2,h3,h4,h5,h6 {line-height: 1em;}
 
 #main > div {margin-bottom: 30px; }
 #main > div > h4:before {content: "∞ "}
-#main > div > h4 {padding-bottom: 10px; border-bottom: 1px solid #ddd; }
+#main > div > h4 {
+	padding-bottom: 10px; 
+	border-bottom: 1px solid #ddd; 
+	color: #f29b36;
+}
