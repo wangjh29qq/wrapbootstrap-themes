@@ -750,37 +750,25 @@ input[type="checkbox"]:checked:after {
 /* Messages Box */
 
 #messages-box {
+    font-size: 12px;
     width: 300px;
     height: 274px;
-    overflow: hidden;
-    overflow-y: scroll;
     padding: 4px;
-    border: 1px solid #000; 
+    border: 1px solid #1b1b1b; 
 
     background: url('../img/msg.png');
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../img/msg.png");
-    font-size: 0.75em;
+    
     color: #999;
-
-    -o-box-shadow: 1px 1px 5px #000, -1px -1px 5px #000;
-    -ms-box-shadow: 1px 1px 5px #000, -1px -1px 5px #000;
-    -moz-box-shadow: 1px 1px 5px #000, -1px -1px 5px #000;
-    -webkit-box-shadow: 1px 1px 5px #000, -1px -1px 5px #000;
-    box-shadow: 1px 1px 5px #000, -1px -1px 5px #000;
-
-    // for custom scroller
-    overflow: hidden;
 }
 
 #messages-box li {
     display: block;
     line-height: 30px;
-    margin-bottom: 4px;
-    .background-black(#202020, 0.3);
-
     padding: 4px;
     margin-bottom: 0px;
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid #272727;
+    .background-black(#272727, 0.1);
 }
 
 #messages-box li:first-child { 
