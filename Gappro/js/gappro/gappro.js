@@ -254,7 +254,7 @@ $(".icon-menu > ul > li > a").each(function(){
 		}
 
 		$(this).next(".quick-widget, .sub-menus").each(function(){
-			if($(this).attr("class"))
+			if($(this).attr("class") == ".sub-menus")
 				width += 3;
 			$(this).addClass("sub-hover").css("left", width);
 
