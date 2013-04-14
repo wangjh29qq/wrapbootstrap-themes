@@ -321,4 +321,7 @@ div .grey-text,p .grey-text{color:grey;}
 .leaderboard ul li .name{text-transform:capitalize;}
 .leaderboard ul li .value{text-align:right;float:right;font-size:1em;}
 div[class^="gauge"]{text-align:center;}
+#back-top{position:fixed;left:30px;bottom:0px;color:#999;}
+#back-top a{display:block;-o-border-radius:200px;-ms-border-radius:200px;-moz-border-radius:200px;-webkit-border-radius:200px;border-radius:200px;background-color:#272727;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.1);font-size:2em;width:60px;height:60px;line-height:60px;text-align:center;-webkit-transition:all .25s;-moz-transition:all .25s;-ms-transition:all .25s;-o-transition:all .25s;transition:all .25s;}
+#back-top a:hover{background-color:#202020;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.2);}
 .copyright{color:#fff;font-size:0.8em;text-align:center;width:100%;}
