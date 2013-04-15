@@ -314,7 +314,7 @@ $(document).ready(function() {
         backgroundColor: '#272727',
         color: '#999',
         borderColor: '#2a2a2a',
-        hoverOpacity: 0.7,a
+        hoverOpacity: 0.7,
         selectedColor: '#666',
         enableZoom: true,
         showTooltip: true,
