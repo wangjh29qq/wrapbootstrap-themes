@@ -98,7 +98,7 @@ $(document).ready(function() {
       {"period": "1995 Q4", "licensed": 1702, "sorned": null},
       {"period": "1994 Q4", "licensed": 1732, "sorned": null}
       ];
-      Morris.Line({
+    Morris.Line({
       element: 'line_graph',
       data: quarter_data,
       xkey: 'period',
@@ -109,36 +109,41 @@ $(document).ready(function() {
     Morris.Area({
       element: 'area_graph',
       data: [
-      {x: '2011 Q1', y: 3, z: 3},
-      {x: '2011 Q2', y: 2, z: 0},
-      {x: '2011 Q3', y: 0, z: 2},
-      {x: '2011 Q4', y: 4, z: 4}
+        {x: '2011 Q1', y: 3, z: 3},
+        {x: '2011 Q2', y: 2, z: 0},
+        {x: '2011 Q3', y: 0, z: 2},
+        {x: '2011 Q4', y: 4, z: 4}
       ],
       xkey: 'x',
       ykeys: ['y', 'z'],
       labels: ['Y', 'Z']
-      });
+    });
 
     Morris.Bar({
       element: 'bar_graph',
       data: [
-      {x: '2011 Q1', y: 3, z: 2, a: 3},
-      {x: '2011 Q2', y: 2, z: null, a: 1},
-      {x: '2011 Q3', y: 0, z: 2, a: 4},
-      {x: '2011 Q4', y: 2, z: 4, a: 3}
+        {x: '2011 Q1', y: 3, z: 2, a: 3},
+        {x: '2011 Q2', y: 2, z: null, a: 1},
+        {x: '2011 Q3', y: 0, z: 2, a: 4},
+        {x: '2011 Q4', y: 2, z: 4, a: 3}
       ],
       xkey: 'x',
       ykeys: ['y', 'z', 'a'],
-      labels: ['Y', 'Z', 'A']
+      labels: ['Y', 'Z', 'A'],
+      barColors: [
+        '#336699',
+        '#f29b36',
+        '#cb423c'
+      ]
     });
 
     Morris.Donut({
       element: 'pie_graph',
       data: [
-      {value: 70, label: 'foo'},
-      {value: 15, label: 'bar'},
-      {value: 10, label: 'baz'},
-      {value: 5, label: 'A really really long label'}
+        {value: 70, label: 'foo'},
+        {value: 15, label: 'bar'},
+        {value: 10, label: 'baz'},
+        {value: 5, label: 'A really really long label'}
       ],
       formatter: function (x) { return x + "%"}
     });
@@ -146,10 +151,10 @@ $(document).ready(function() {
     Morris.Bar({
       element: 'stacked_bar',
       data: [
-      {x: '2011 Q1', y: 3, z: 2, a: 3},
-      {x: '2011 Q2', y: 2, z: null, a: 1},
-      {x: '2011 Q3', y: 0, z: 2, a: 4},
-      {x: '2011 Q4', y: 2, z: 4, a: 3}
+        {x: '2011 Q1', y: 3, z: 2, a: 3},
+        {x: '2011 Q2', y: 2, z: null, a: 1},
+        {x: '2011 Q3', y: 0, z: 2, a: 4},
+        {x: '2011 Q4', y: 2, z: 4, a: 3}
       ],
       xkey: 'x',
       ykeys: ['y', 'z', 'a'],
@@ -158,40 +163,39 @@ $(document).ready(function() {
     });
 
     Morris.Bar({
-    element: 'bar_colors',
-      data: [
-      {x: '2011 Q1', y: 0},
-      {x: '2011 Q2', y: 1},
-      {x: '2011 Q3', y: 2},
-      {x: '2011 Q4', y: 3},
-      {x: '2012 Q1', y: 4},
-      {x: '2012 Q2', y: 5},
-      {x: '2012 Q3', y: 6},
-      {x: '2012 Q4', y: 7},
-      {x: '2013 Q1', y: 8}
-      ],
-      xkey: 'x',
-      ykeys: ['y'],
-      labels: ['Y'],
-      barColors: function (row, series, type) {
-        if (type === 'bar') {
-        var red = Math.ceil(255 * row.y / this.ymax);
-        return 'rgb(' + red + ',0,0)';
+      element: 'bar_colors',
+        data: [
+          {x: '2011 Q1', y: 0},
+          {x: '2011 Q2', y: 1},
+          {x: '2011 Q3', y: 2},
+          {x: '2011 Q4', y: 3},
+          {x: '2012 Q1', y: 4},
+          {x: '2012 Q2', y: 5},
+          {x: '2012 Q3', y: 6},
+          {x: '2012 Q4', y: 7},
+          {x: '2013 Q1', y: 8}
+        ],
+        xkey: 'x',
+        ykeys: ['y'],
+        labels: ['Y'],
+        barColors: function (row, series, type) {
+          if(type === 'bar') {
+            var red = Math.ceil(255 * row.y / this.ymax);
+            return 'rgb(' + red + ',0,0)';
+          } else {
+            return '#000';
+          }
         }
-        else {
-        return '#000';
-        }
-      }
     });
 
     Morris.Bar({
       element: 'no_axes',
       axes: false,
       data: [
-      {x: '2011 Q1', y: 3, z: 2, a: 3},
-      {x: '2011 Q2', y: 2, z: null, a: 1},
-      {x: '2011 Q3', y: 0, z: 2, a: 4},
-      {x: '2011 Q4', y: 2, z: 4, a: 3}
+        {x: '2011 Q1', y: 3, z: 2, a: 3},
+        {x: '2011 Q2', y: 2, z: null, a: 1},
+        {x: '2011 Q3', y: 0, z: 2, a: 4},
+        {x: '2011 Q4', y: 2, z: 4, a: 3}
       ],
       xkey: 'x',
       ykeys: ['y', 'z', 'a'],
@@ -206,13 +210,13 @@ $(document).ready(function() {
         {value: 10, label: 'baz'},
         {value: 5, label: 'A really really long label'}
       ],
-      backgroundColor: '#ccc',
-      labelColor: '#060',
+      backgroundColor: '#000',
+      labelColor: '#f29b36',
       colors: [
-        '#0BA462',
-        '#39B580',
-        '#67C69D',
-        '#95D7BB'
+        '#272727',
+        '#202020',
+        '#1b1b1b',
+        '#2a2a2a'
       ],
       formatter: function (x) { return x + "%"}
     });
