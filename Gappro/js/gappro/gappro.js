@@ -95,24 +95,29 @@ if(CONFIG['enable_menuitem_drag']) {
 }
 
 // widget action controller
-$(".widget .widget-header > a[data-rel='widget']").each(function() {
+$(".widget").each(function() {
+	// not only data-action
+	$(this).find(".widget-header > a").wrapAll("<div class='pull-right'></div>");
+});
+
+$(".widget .widget-header > div > a[data-rel='widget']").each(function() {
 	var action_name = $(this).attr("data-action").trim().toLowerCase();
 
 	// class and href attr
-	$(this).addClass("pull-right").attr("href", "javascript:void(0)");
+	$(this).attr("href", "javascript:void(0)");
 
 	switch(action_name) {
 		case 'close':
 			$(this).html("<i class='icon-remove'></i>");
 			$(this).bind('click', function() {
-				$(this).parent().parent().slideUp();
+				$(this).parent().parent().parent().slideUp();
 			});
 	        break;
 
 		case 'hide':
 	        $(this).html("<i class='icon-minus'></i>");
 	        $(this).bind('click', function() {
-				$(this).parent().next("div").slideToggle();
+				$(this).parent().parent().next("div").slideToggle();
 				if($(this).html().trim().toLowerCase() == '<i class="icon-minus"></i>')
 					$(this).html('<i class="icon-plus"></i>');
 				else
@@ -123,7 +128,7 @@ $(".widget .widget-header > a[data-rel='widget']").each(function() {
 		case 'code':
 			$(this).html("<i class='icon-legal'></i>");
 			$(this).bind('click', function() {
-				var html = $(this).parent().parent().parent().html().trim();
+				var html = $(this).parent().parent().parent().parent().html().trim();
 				html = html.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 				var id = new Date().getTime().toString();
 				$('<div id="' + id + '" class="modal hide fade" tabindex="-1" role="dialog"><div class="modal-body"><pre class="prettyprint lang-html linenums"></pre></div></div>').appendTo("body");
@@ -156,7 +161,7 @@ $(".widget .widget-header > a[data-rel='widget']").each(function() {
 	    	if(CONFIG['enable_widget_workspace']) {
 				$(this).html('<i class="icon-arrow-left"></i>');
 				$(this).bind('click', function() {
-					add_to_sidebar($(this).parent().parent(), $(this).parent().find("h3").html());
+					add_to_sidebar($(this).parent().parent().parent(), $(this).parent().parent().find("h3").html());
 				});
 			} else {
 				$(this).remove();
@@ -174,16 +179,16 @@ $(".widget .widget-header > a[data-rel='widget']").each(function() {
 
 				if(!$(this).data('full')) {
 					// save to restrore
-					$(this).data('position', $(this).parent().parent().css('position'));
-					$(this).data('left', $(this).parent().parent().css('left'));
-					$(this).data('top', $(this).parent().parent().css('top'));
-					$(this).data('width', $(this).parent().parent().css('width'));
-					// $(this).data('height', $(this).parent().parent().css('height'));
-					$(this).data('background-color', $(this).parent().parent().css('background-color'));
-					$(this).data('z-index', $(this).parent().parent().css('z-index'));
+					$(this).data('position', $(this).parent().parent().parent().css('position'));
+					$(this).data('left', $(this).parent().parent().parent().css('left'));
+					$(this).data('top', $(this).parent().parent().parent().css('top'));
+					$(this).data('width', $(this).parent().parent().parent().css('width'));
+					// $(this).data('height', $(this).parent().parent().parent().css('height'));
+					$(this).data('background-color', $(this).parent().parent().parent().css('background-color'));
+					$(this).data('z-index', $(this).parent().parent().parent().css('z-index'));
 
 					// set fullscreen
-					$(this).parent().parent().fadeIn().css({
+					$(this).parent().parent().parent().fadeIn().css({
 						'position': 'absolute', 
 						'left' : '0px', 'top': '0px', 
 						'width': width, 
@@ -195,7 +200,7 @@ $(".widget .widget-header > a[data-rel='widget']").each(function() {
 					// flag it
 					$(this).data('full', true);
 				} else {
-					$(this).parent().parent().css({
+					$(this).parent().parent().parent().css({
 						'position': $(this).data('position'), 
 						'left' : $(this).data('left'), 'top': $(this).data('top'), 
 						'width': $(this).data('width'), 'height': $(this).data('height'),

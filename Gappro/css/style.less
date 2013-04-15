@@ -1062,13 +1062,19 @@ input[type="checkbox"]:checked:after {
     // cursor: move;
 }
 
-.widget-header > a { 
-    margin-left: 4px;
-    margin-right: 4px;
+.widget-header > div > a { 
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
     text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
 }
 
-.widget-header > a:hover { 
+.widget-header > div > a > i[class^="icon-"]
+{
+    margin: 0 auto;
+}
+
+.widget-header > div > a:hover { 
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
