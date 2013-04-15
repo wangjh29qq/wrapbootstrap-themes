@@ -104,7 +104,9 @@ input[type="checkbox"]:checked:after{content:'\2714';font-size:0.75em;position:a
 .popover.bottom .arrow:after{border-bottom:none;}
 #main_wrapper{background:url("../img/main.jpg");filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../img/main.jpg");margin:10px;margin-top:-80px;padding-top:20px;padding-bottom:20px;border:1px solid #272727;border-top:1px solid #222222;}
 #workspace{padding:4px;padding-left:8px;background:url('../img/body.png');filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../img/body.png");-o-border-radius:4px;-ms-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-o-box-shadow:1px 1px 5px #202020,-1px -1px 5px #202020;-ms-box-shadow:1px 1px 5px #202020,-1px -1px 5px #202020;-moz-box-shadow:1px 1px 5px #202020,-1px -1px 5px #202020;-webkit-box-shadow:1px 1px 5px #202020,-1px -1px 5px #202020;box-shadow:1px 1px 5px #202020,-1px -1px 5px #202020;}
-#workspace a.btn{text-align:left;display:block;margin:4px;}
+#workspace>.widget{margin-bottom:4px;}
+#workspace>.widget>.widget-footer>h3{margin-top:0px;}
+#workspace a.btn{text-align:left;display:block;margin-top:4px;}
 .sidebar-active{border:2px dashed orange;}
 .sidebar-hover{border:2px solid orange;}
 #messages-box{font-size:12px;width:300px;height:274px;padding:4px;border:1px solid #1b1b1b;background:url('../img/msg.png');filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../img/msg.png");color:#999;}
