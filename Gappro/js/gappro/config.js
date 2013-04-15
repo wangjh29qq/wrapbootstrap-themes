@@ -9,7 +9,7 @@
 
 -----------------------------------------------------*/
 
-var config = {
+var CONFIG = {
     // menu avatar or logo
     enable_menu_avatar: true,
     
