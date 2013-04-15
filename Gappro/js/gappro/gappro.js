@@ -178,7 +178,7 @@ $(".widget .widget-header > a[data-rel='widget']").each(function() {
 					$(this).data('left', $(this).parent().parent().css('left'));
 					$(this).data('top', $(this).parent().parent().css('top'));
 					$(this).data('width', $(this).parent().parent().css('width'));
-					$(this).data('height', $(this).parent().parent().css('height'));
+					// $(this).data('height', $(this).parent().parent().css('height'));
 					$(this).data('background-color', $(this).parent().parent().css('background-color'));
 					$(this).data('z-index', $(this).parent().parent().css('z-index'));
 
@@ -186,7 +186,8 @@ $(".widget .widget-header > a[data-rel='widget']").each(function() {
 					$(this).parent().parent().fadeIn().css({
 						'position': 'absolute', 
 						'left' : '0px', 'top': '0px', 
-						'width': width, 'height': height,
+						'width': width, 
+						// 'height': height,
 						'background-color': '#272727',
 						'z-index': 9999
 					});
