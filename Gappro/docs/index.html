@@ -306,6 +306,24 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 
 <div id="config">
 	<h4>Config File</h4>
+	<pre class="prettyprint lang-js linenums">
+var CONFIG = {
+    // menu avatar or logo, false will be remove
+    enable_menu_avatar: true,
+    
+    // filter input box, false will be remove
+    enable_menu_filter: true,
+    
+    // menu collapse/expand, false will be remove
+    enable_menu_collapse: true,
+
+    // enable menuitem drag, false will be disabled, cursor: pointer
+    enable_menuitem_drag: true,
+
+    // place widget to workspace, false will be remove data-action='thumb'
+    enable_widget_workspace: true
+};	
+	</pre>
 </div>
 
 <div id="top_bar">
@@ -868,7 +886,7 @@ $('#autosize_timeline').jqtimeline( {
 <div id="plans">
 	<h4>Future Plans </h4>
 	<ul>
-		<li>jQuery leaderboard plugin</li>
+		<li>More features with leaderboard</li>
 		<li>Drag widget to place workspace</li>
 		<li>More widget types</li>
 		<li>More layouts and pages</li>
