@@ -7,9 +7,6 @@
     Last Change: 03/18/2013
     Assign to: Bob Wang
 
-    attention here please:
-   		you should inlucde this file for using gappro uitilities.
-
 	0. polyfill
     1. widget drag-drop
     2. menuitem drag-drop
@@ -90,6 +87,9 @@ $(".navbar-inner form.form-search").droppable({
 // widget action controller
 $(".widget .widget-header > a[data-rel='widget']").each(function() {
 	var action_name = $(this).attr("data-action").trim().toLowerCase();
+
+	// class and href attr
+	$(this).addClass("pull-right").attr("href", "javascript:void(0)");
 
 	switch(action_name) {
 		case 'close':
