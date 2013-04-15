@@ -304,13 +304,17 @@ $(document).ready(function() {
         });
     });
 
+    // leaderboard
+    var lb = $(".leaderboard").jqleaderboard();
+    var lb_object = lb.data("leaderboard");
+
     // jqvmap
     jQuery('#sales_vmap').vectorMap({
         map: 'world_en',
         backgroundColor: '#272727',
         color: '#999',
         borderColor: '#2a2a2a',
-        hoverOpacity: 0.7,
+        hoverOpacity: 0.7,a
         selectedColor: '#666',
         enableZoom: true,
         showTooltip: true,
@@ -319,35 +323,10 @@ $(document).ready(function() {
         selectedRegion: 'RU',
         onRegionOver: function(event, code, region)
         {
-            $(".leaderboard ul li").not(".title").each(function() {
-                if($(this).attr('data-rel') == code.toUpperCase()) 
-                    $(this).toggleClass("hover");
-                else 
-                    $(this).removeClass("hover");
-            });
+            lb_object.leaderboard_highlight(code);
         },
         onRegionClick: function(element, code, region) {
-            var total = 0;
-
-            $(".leaderboard ul li").not(".title").each(function() {
-                if($(this).attr('data-rel') == code.toUpperCase()) {
-                    $(this).toggleClass("selected");
-                    total += $(this).attr('data-value') * 1;
-                } else {
-                    $(this).removeClass("selected");
-                }
-            });
-
-            $(".leaderboard .total").html("Total: $" +  total);
+            lb_object.leaderboard_select(code);
         }
-    });
-
-    // leaderboard
-    $(".leaderboard ul").each(function() {
-        $(this).find("li").not(".title").tsort({attr: 'data-value', order: 'desc'});
-    });
-
-    $(".leaderboard ul li").not(".title").each(function() {
-        $(this).append('<span class="value">' + $(this).attr("data-value") + '</span>');
     });
 });
