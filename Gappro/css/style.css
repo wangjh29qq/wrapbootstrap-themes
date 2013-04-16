@@ -163,7 +163,7 @@ input[type="checkbox"]:checked:after{content:'\2714';font-size:0.75em;position:a
 .widget-header [class^="icon-"],.widget-header [class*="icon-"]{color:#999;display:inline-block;font-size:1em;margin-left:13px;margin-right:-2px;vertical-align:middle;}
 .widget-header h3{color:#999;display:inline-block;font-size:0.8em;font-weight:800;left:10px;line-height:18px;margin-right:20px;margin-left:4px;top:2px;}
 .widget-header+.widget-content>div.alert{-o-border-radius:0px;-ms-border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;border-radius:0px;}
-.widget-content{-o-border-radius:4px;-ms-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;background-color:#222222;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.2);border:1px solid #000;border-bottom:1px solid #000;padding:20px 15px 15px;}
+.widget-content{-o-border-radius:4px;-ms-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;background-color:#1b1b1b;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.4);border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);padding:20px 15px 15px;}
 .widget-header+.widget-content{-o-border-top-left-radius:0px;-ms-border-top-left-radius:0px;-moz-border-top-left-radius:0px;-webkit-border-top-left-radius:0px;border-top-left-radius:0px;-o-border-top-right-radius:0px;-ms-border-top-right-radius:0px;-moz-border-top-right-radius:0px;-webkit-border-top-right-radius:0px;border-top-right-radius:0px;border-top:none;}
 .widget-right-header-tabs{float:right;margin-top:2px;border-bottom:none;}
 .widget-left-header-tabs{float:left;margin-top:2px;border-bottom:none;}
@@ -197,7 +197,7 @@ input[type="checkbox"]:checked:after{content:'\2714';font-size:0.75em;position:a
 .todo .level{float:right;color:#999;}
 .todo .done{color:#000;text-decoration:line-through;}
 .merge-box{width:27.5%;padding:10px;border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);text-align:center;font-size:1.25em;margin-bottom:20px;-o-border-radius:4px;-ms-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
-.merge-box,.widget-content{border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);background-color:#222222;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.2);}
+.merge-box{border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);background-color:#222222;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.2);}
 .merge-box .bad{color:red;font-weight:bold;}
 .merge-box .good{color:orange;font-weight:bold;}
 .merge-box .nice{color:green;font-weight:bold;}

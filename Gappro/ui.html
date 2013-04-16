@@ -18,8 +18,10 @@
 <link href="css/sb/sexybuttons.css" rel="stylesheet" media="screen">
 <link href="css/joyride/joyride-2.0.3.css" rel="stylesheet" media="screen">
 <link href="css/prettify/sons-of-obsidian.css" rel="stylesheet" media="screen">
+<link href="css/jqcloud/jqcloud.css" rel="stylesheet" media="screen">
 <style>
   .sexybutton { margin-bottom: 8px; }
+  .words-cloud {height: 150px; }
 </style>
 <meta name="description" content="admin theme template for any backend applications.">
 <meta name="author" content="boostbob.github.com">
@@ -1306,6 +1308,30 @@
       </div>
 
       <div class="row-fluid">
+        <div class="span12">
+          <div class="widget">
+            <div class="widget-header">
+              <i class="icon-th-list"></i>
+              <h3>
+                Cloud Words
+                <sup>hot</sup>
+              </h3>
+              <a data-rel="widget" data-action="thumb"></a>
+              <a data-rel="widget" data-action="hide"></a>
+              <a data-rel="widget" data-action="close"></a>
+            </div>
+            <!-- /widget-header -->
+
+            <div class="widget-content">
+              <div id="chat_words" class="words-cloud"></div>
+            </div>
+            <!-- /widget-content -->
+          </div>
+        </div>
+      </div>
+      <!--/Cloud Words-->
+
+      <div class="row-fluid">
         <div class="widget">
           <div class="widget-header">
             <i class="icon-th-list"></i>
@@ -1417,9 +1443,9 @@
 <script src="js/qrcode/jquery.qrcode.js"></script>
 <script src="js/application.js"></script>
 <script src="js/prettify/prettify.js"></script>
-<script src="js/prettify/prettify.js"></script>
 <script src="js/format/html-format.js"></script>
 <script src="js/cookie/jquery.cookie.js"></script>
+<script src="js/jqcloud/jqcloud-1.0.2.min.js"></script>
 <script src="js/bootstrap_growl/jquery.bootstrap-growl.min.js"></script>
 <script src="js/jstorage/json2.js"></script>
 <script src="js/jstorage/jstorage.min.js"></script>
