@@ -832,7 +832,7 @@
 
 <div class="row-fluid">
   <div class="widget">
-    <div class="widget-header">
+    <div class="widget-header"> 
       <i class="icon-th-list"></i>
       <h3>Code Preview</h3>
       <a data-rel="widget" data-action="thumb"></a>
@@ -842,7 +842,13 @@
       <a data-rel="widget" data-action="close"></a>
     </div>
     <div class="widget-content">
-      <pre class="prettyprint linenums" id="demo_code"> codes here </pre>
+      <pre class="prettyprint lang-c linenums" id="demo_code">
+void main(int argc, char* argv[]) 
+{ 
+  // comments
+  return 0; 
+}
+      </pre>
     </div>
   </div>
 </div>
@@ -900,7 +906,7 @@
     $("textarea").autosize();
 
     // prettify code
-    var html = $("#demo_code").parent().parent().parent().html();
+    var html = $("#demo_code").html();
     html = html.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     $("#demo_code").html(html);
     prettyPrint();

@@ -21,6 +21,7 @@ $(document).ready(function() {
         $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
       }
   });
+  
   $("#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
   $("#slider-increase").slider({
@@ -32,5 +33,14 @@ $(document).ready(function() {
       $("#inc-amount").val( "$" + ui.value );
     }
   });
-  $("#inc-amount").val( "$" + $( "#slider-increase" ).slider( "value" ) );
+
+  $("#inc-amount").val( "$" + $( "#slider-increase" ).slider("value"));
+
+  //progressbar
+  $( "#progressbar" ).progressbar({
+    value: 45
+  });
+
+  // spiner
+  $("#spinner").spinner();
 });  
