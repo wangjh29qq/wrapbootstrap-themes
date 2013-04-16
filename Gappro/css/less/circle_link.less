@@ -1,0 +1,60 @@
+// circle link
+
+.circle-link-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.circle-link {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    .rounded-corners(200px);
+    .background-black;
+    margin: 8px;
+    margin-bottom: 16px;
+
+    -o-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;
+    -ms-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;
+    -moz-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;
+    -webkit-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;
+    box-shadow: inset 1px 1px 3px #101010, 1px 1px 3px #101010;
+
+    color: #666;
+    font-size: 2.25em;
+}
+
+.circle-link img {    
+    .rounded-corners(200px);
+}
+
+.circle-link.link-info {color: #336699;}
+.circle-link.link-primary {color: #087dcc;}
+.circle-link.link-warning {color: #f29b36}
+.circle-link.link-success {color: #54a954;}
+.circle-link.link-danger {color: #cb423c;}
+.circle-link.link-inverse {color: #000;}
+
+.circle-link:hover {    
+    -o-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
+    -ms-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
+    -moz-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
+    -webkit-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
+    box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
+}
+
+.circle-link:hover i {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
