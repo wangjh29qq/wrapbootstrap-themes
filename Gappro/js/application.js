@@ -14,7 +14,7 @@ function load_css(path) {
 function load_widget_bg(el, color_name) {
 	var node = $(el);
 
-	class_array = ['pink', 'green', 'grey', 'white', 'orange', 'blue', 'brown'];
+	class_array = ['pink', 'green', 'grey', 'white', 'orange', 'blue', 'gold'];
 	for(idx in class_array) {
 		node.parent().parent().removeClass(class_array[idx] + '-bg-linear');
 	}
@@ -35,6 +35,10 @@ $(document).ready(function() {
 			load_css(css_file);
 			$.jStorage.set("menu_css_file", css_file);
 		});
+
+		var color = $(this).attr("data-color");
+		if(color == 'default') color = 'black';
+		$(this).css("color", color);
 	});
 
 	// guide tour
