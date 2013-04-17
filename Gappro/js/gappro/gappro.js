@@ -288,12 +288,12 @@ $("#icon-menu > ul > li > a").each(function(){
 		}
 
 		$(this).next(".quick-widget, .sub-menus").each(function(){
-			if($(this).attr("class") == ".sub-menus")
-				width += 3;
+			$(this).prev().addClass("parent-hover");
 			$(this).addClass("sub-hover").css("left", width);
 
 			if(global_hover && global_hover.html() != $(this).html()) {
 				global_hover.removeClass("sub-hover");
+				global_hover.prev().removeClass("parent-hover");
 			}
 
 			global_hover = $(this);
@@ -310,6 +310,7 @@ $("#icon-menu").bind('mouseleave', function(e) {
 	if(global_hover) {
 		var timer = setTimeout(function() {
 			global_hover.removeClass("sub-hover");
+			global_hover.prev().removeClass("parent-hover");
 		}, 1000);
 
 		global_hover.bind('mouseenter', function() {

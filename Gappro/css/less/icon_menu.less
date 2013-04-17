@@ -45,10 +45,10 @@
     
     // for draggable
     cursor: move;
-}
 
-#icon-menu > ul > li > a > i:hover { 
-    border: 1px dashed #0a0a0a;
+    &:hover {
+        border: 1px dashed #0a0a0a;
+    }
 }
 
 .menuitem-active {border: 2px dashed orange;}
@@ -192,11 +192,15 @@
     display: none;
     z-index: 9999;
     padding-bottom: 0px;
-    .rounded-corners;
+    // .rounded-corners;
     text-transform: none;
     // override
     line-height: 20px;
     color: #999;
+}
+
+#icon-menu .quick-widget > .tabbable > .nav.nav-tabs > li > a {
+    .rounded-corners(0px);
 }
 
 #icon-menu .quick-widget .widget {
@@ -216,4 +220,8 @@
     left: 180px; // dynamix fix by js
     z-index: 9999;
     margin-top: -40px;
+}
+
+#icon-menu > ul > li > a.parent-hover {
+    background-color: #2a2a2a;
 }
