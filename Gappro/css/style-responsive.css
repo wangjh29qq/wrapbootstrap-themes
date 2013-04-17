@@ -10,12 +10,12 @@
 -------------------------------------------------------------------*/
 
 @media (max-width: 320px) {
-    .icon-menu > ul > li > a {
+    #icon-menu > ul > li > a {
         width: 100px !important;
         font-size: 0.625em !important;
     }
 
-    .icon-menu > ul > li > a + .sub-menus {
+    #icon-menu > ul > li > a + .sub-menus {
         width: 240px;
     }
 }
@@ -46,11 +46,11 @@
     .navbar, #workspace, #breadcrumbs,
     a[data-action="thumb"] {display: none;}
 
-    .icon-menu ul {
+    #icon-menu ul {
         margin-left: 0px !important;
     }
 
-    .icon-menu ul li {
+    #icon-menu ul li {
         width: 120px;
         float: left;
         display: inline-block;
@@ -66,16 +66,16 @@
 }
 
 @media (max-width: 768px) {
-    .icon-menu .sub-menus {
+    #icon-menu .sub-menus {
         margin-left: -3px !important;
     }
 }
 
 @media (max-width: 800px) {
     .navbar .brand,
-    .icon-menu > ul > li.circle {display: none; }
+    #icon-menu > ul > li.circle {display: none; }
 
-    .icon-menu > ul {
+    #icon-menu > ul {
         margin-top: 2px;
         margin-left: -8px;
     }
@@ -92,12 +92,12 @@
 
 @media (max-width: 980px) {
     /* menu font and icon size */
-    .icon-menu > ul > li > a, 
-    .icon-menu ul > li > .sub-menus > li > a {
+    #icon-menu > ul > li > a, 
+    #icon-menu ul > li > .sub-menus > li > a {
         font-size: 0.8em;
     }
 
-    .icon-menu > ul > li > a > i { 
+    #icon-menu > ul > li > a > i { 
         width: 14px;
         height: 14px;
     }
