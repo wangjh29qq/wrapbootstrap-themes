@@ -10,11 +10,6 @@
     box-shadow: 1px 1px 5px #b68d4c, -1px -1px 3px #b68d4c;
 }
 
-.navbar {
-	border-bottom: 100px solid #b68d4c;
-	border-bottom: 100px solid rgba(182,141,76,0.5);
-}
-
 #main_wrapper {
 	border-top: 1px solid #b68d4c;
 }

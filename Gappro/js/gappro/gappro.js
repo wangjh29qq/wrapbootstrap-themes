@@ -223,7 +223,6 @@ if(CONFIG['enable_menu_collapse']) {
 
 		if($(this).html().trim() == '<span><i class="icon-angle-up"></i></span>') {
 			$(this).html('<span><i class="icon-angle-down"></i></span>');
-			$(this).css({"border-bottom-left-radius": "4px", "border-bottom-right-radius": "4px"});
 			display = "none";
 		} else {
 			$(this).html('<span><i class="icon-angle-up"></i></span>');
@@ -249,8 +248,6 @@ if(CONFIG['enable_menu_filter']) {
 		}
 
 		$("#icon-menu > ul > li:nth-child(n+4)").each(function() {
-			// console.debug(($(this).find("a > span").html() || "").toLowerCase().indexOf(input));
-			
 			if(
 				input.length > 0 &&
 			  	(($(this).attr("data-keywords") || "").toLowerCase().indexOf(input) == -1) &&

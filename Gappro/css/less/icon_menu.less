@@ -3,7 +3,6 @@
 #icon-menu {
     padding: 0px;
     margin-bottom: 20px;
-    .rounded-corners; 
 }
 
 #icon-menu > ul {
@@ -14,13 +13,11 @@
     margin-top: 65px;
     min-width: 120px;
 
-    -o-box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
-    -ms-box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
-    -moz-box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
-    -webkit-box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
-    box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
-
-    .rounded-corners;
+    // -o-box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
+    // -ms-box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
+    // -moz-box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
+    // -webkit-box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
+    // box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
 }
 
 #icon-menu > ul li {
@@ -75,10 +72,6 @@
     border: none;
 }
 
-#icon-menu > ul > li:last-child a { 
-    .bottom-rounded-corners;
-}
-
 #icon-menu > ul > li:hover, 
 .sub-menus > ul > li:hover,
 #icon-menu > ul > li > a:hover, 
@@ -109,12 +102,13 @@
 #icon-menu > ul > li.circle > a {
     padding-left: 0px;
     padding-right: 0px;
+    text-align: center;
 }
 
 #icon-menu > ul > li.circle a img {
     .rounded-corners(200px);
 
-    margin-top: -110px;
+    margin-top: -80px;
     margin-bottom: 6px;
     
     -o-box-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
@@ -135,15 +129,11 @@
 }
 
 #icon-menu .sub-menus {
-    .top-right-rounded-corners;
-    .bottom-right-rounded-corners;
     margin-left: 1px;
     position: absolute;
     display: none;
     width: 360px;
     background-color: #2a2a2a;
-    // border: 1px solid #1b1b1b;
-    // border-left: none;
 }
 
 #icon-menu .sub-menus li {
@@ -152,38 +142,9 @@
     min-width: 120px;
 }
 
-#icon-menu .sub-menus li a {
-    .rounded-corners(0px);
-}
-
-// #icon-menu > ul .sub-menus li:nth-child(1) a {
-//     .top-left-rounded-corners; 
-// }
-
-#icon-menu > ul .sub-menus li:nth-child(3) a {
-    .top-right-rounded-corners;
-}
-
-// #icon-menu > ul .sub-menus li:nth-last-child(3) a {
-//     .bottom-left-rounded-corners;
-// }
-
-#icon-menu > ul .sub-menus li:last-child a {
-    .bottom-right-rounded-corners;
-}
-
-#icon-menu > ul .sub-menus li:nth-child(3n+1),
-#icon-menu > ul .sub-menus li:nth-child(3n+2) {
-    .rounded-corners(0px);
-}
-
 #icon-menu .sub-menus li { 
     display: inline;
     text-align: left;
-}
-
-#icon-menu > ul > li .sub-menus > li > a { 
-    .rounded-corners(0px);
 }
 
 #icon-menu .quick-widget {
@@ -192,7 +153,6 @@
     display: none;
     z-index: 9999;
     padding-bottom: 0px;
-    // .rounded-corners;
     text-transform: none;
     // override
     line-height: 20px;
