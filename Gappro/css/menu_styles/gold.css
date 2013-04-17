@@ -1,8 +1,8 @@
-.icon-menu > ul > li > a, .icon-menu > ul > li > span {
+#icon-menu > ul > li > a, .icon-menu > ul > li > span {
     color: #b68d4c;
 }
 
-.icon-menu > ul > li.circle a img {
+#icon-menu > ul > li.circle a img {
 	-o-box-shadow: 1px 1px 5px #b68d4c, -1px -1px 5px #b68d4c;
     -ms-box-shadow: 1px 1px 5px #b68d4c, -1px -1px 5px #b68d4c;
     -moz-box-shadow: 1px 1px 5px #b68d4c, -1px -1px 5px #b68d4c;

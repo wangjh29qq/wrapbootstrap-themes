@@ -1,9 +1,9 @@
-.icon-menu > ul > li > a, .icon-menu > ul > li > span { 
+#icon-menu > ul > li > a, .icon-menu > ul > li > span { 
     color: #999;
 }
 
 
-.icon-menu > ul > li.circle a img {
+#icon-menu > ul > li.circle a img {
 	-o-box-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
     -ms-box-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
     -moz-box-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
