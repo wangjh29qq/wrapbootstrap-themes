@@ -47,6 +47,7 @@ Gappro is a admin template that can be used for any backed applications. It's no
 * Striped tables
 * Dynamic tables
 * Rowlink tables
+* Editable tables
 
 #Other Features
 
@@ -59,6 +60,7 @@ Gappro is a admin template that can be used for any backed applications. It's no
 * TODO UI
 * Contacts UI
 * jQuery UI support
+* Less support(include 25 less files)
 * Well documented
 * Hard code
 * Google webfonts
@@ -116,6 +118,7 @@ Gappro is a admin template that can be used for any backed applications. It's no
 * tsort, http://tinysort.sjeiti.com/
 * jquery validate, https://github.com/jzaefferer/jquery-validation
 * wysihtml5, https://github.com/xing/wysihtml5
+* handsontable, http://handsontable.com/
 
 #Support
 * sites messages

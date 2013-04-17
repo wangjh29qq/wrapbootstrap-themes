@@ -208,10 +208,37 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 
 <div id="using_less">
 	<h4>Less is a dynamic stylesheet language. </h4></h4>
-	<blockquote>
+	<p>
 		LESS extends CSS with dynamic behavior such as variables, mixins, operations and functions. 
-	</blockquote>	
-	<p>You can edit style.less, or edit style.css if you won't using less.</p>
+		You can edit style.less, or edit style.css if you won't using less. There are 25 less files.
+	</p>
+	<ul>
+		<li>vars.less</li>
+		<li>functions.less</li>
+		<li>global.less</li>
+		<li>back_top.less</li>
+		<li>background_colors.less</li>
+		<li>bme.less</li>
+		<li>breadcrumbs.less</li>
+		<li>chat.less</li>
+		<li>circle_link.less</li>
+		<li>compare_box.less</li>
+		<li>faq.less</li>
+		<li>icon_menu.less</li>
+		<li>main_wrapper.less</li>
+		<li>merge_box.less</li>
+		<li>messages_box.less</li>
+		<li>navbar.less</li>
+		<li>override.less</li>
+		<li>plugins.less</li>
+		<li>status_box.less</li>
+		<li>style.less</li>
+		<li>todo.less</li>
+		<li>typo.less</li>
+		<li>widget.less</li>
+		<li>workspace.less</li>
+		<li>copyright.less</li>
+	</ul>
 </div>	
 
 <div id="responsive">
@@ -239,13 +266,16 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 			<td>900px</td> <td>1440 x 900</td> <td></td> <td></td> 
 		</tr>
 		<tr> 
-			<td>800px</td> <td>1280 x 800</td> <td></td> <td></td> 
+			<td>800px</td> <td>1280 x 800</td> <td>avatar</td> <td></td> 
 		</tr>
 		<tr> 
 			<td>768px</td> <td>1024 x 768</td> <td></td> <td></td> 
 		</tr>
 		<tr> 
-			<td>640px</td> <td>640 x 360</td> <td></td> <td></td> 
+			<td>640px</td> <td>640 x 360</td> <td>topbar,workspace,breadcrumbs,menu expand/collapse/filter,widget thumb</td> <td></td> 
+		</tr>
+		<tr> 
+			<td>360px</td> <td>640 x 360</td> <td>widget full,widget code</td> <td></td> 
 		</tr>
 		<tr> 
 			<td>600px</td> <td>1280 x 600</td> <td></td> <td></td> 
@@ -306,6 +336,7 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 
 <div id="config">
 	<h4>Config File</h4>
+	<p>You can disable some features that just to set the key-value in config file.</p>
 	<pre class="prettyprint lang-js linenums">
 var CONFIG = {
     // menu avatar or logo, false will be remove
@@ -486,7 +517,7 @@ var CONFIG = {
   <li><a href="#" data-color="orange">ORANGE</a></li>
   <li><a href="#" data-color="blue">BLUE</a></li>
   <li><a href="#" data-color="gold">GOLD</a></li>
-  <li><a href="#" data-color="default">BLACK (DEFAULT)</a></li>
+  <li><a href="#" data-color="black">DEFAULT</a></li>
 </ul>		
 	</pre>
 </div>
@@ -636,45 +667,27 @@ jQuery('#sales_vmap').vectorMap({
     map: 'world_en',
     backgroundColor: '#272727',
     color: '#999',
+    borderColor: '#2a2a2a',
     hoverOpacity: 0.7,
-    selectedColor: '#fff',
+    selectedColor: '#666',
     enableZoom: true,
     showTooltip: true,
     scaleColors: ['#C8EEFF', '#006491'],
     normalizeFunction: 'linear',
+    selectedRegion: 'RU',
     onRegionOver: function(event, code, region)
     {
-        $(".leaderboard ul li").not(".title").each(function() {
-            if($(this).attr('data-rel') == code.toUpperCase()) 
-                $(this).toggleClass("hover");
-            else 
-                $(this).removeClass("hover");
-        });
+        lb_object.leaderboard_highlight(code);
     },
     onRegionClick: function(element, code, region) {
-        var total = 0;
-
-        $(".leaderboard ul li").not(".title").each(function() {
-            if($(this).attr('data-rel') == code.toUpperCase()) {
-                $(this).toggleClass("selected");
-                total += $(this).attr('data-value') * 1;
-            } else {
-                $(this).removeClass("selected");
-            }
-        });
-
-        $("$.leaderboard .total").html("Total: $" +  total);
+        lb_object.leaderboard_select(code);
     }
 });
 
 // leaderboard
-    $(".leaderboard ul").each(function() {
-        $(this).find("li").not(".title").tsort({attr: 'data-value', order: 'desc'});
-    });
-
-    $(".leaderboard ul li").not(".title").each(function() {
-        $(this).append('<span class="value">' + $(this).attr("data-value") + '</span>');
-    });
+var lb = $(".leaderboard").jqleaderboard();
+var lb_object = lb.data("leaderboard");
+// lb_object.public_methods...
 });
 	</pre>	
 </div>
@@ -811,6 +824,7 @@ $('#autosize_timeline').jqtimeline( {
 		<li>Condensed tables</li>
 		<li>Striped tables</li>
 		<li>rowlink, see tables.html</li>
+		<li>editable tables, see tables.html</li>
 	</ul>
 
 	<h5>Others</h5>
@@ -859,6 +873,7 @@ $('#autosize_timeline').jqtimeline( {
 		<li>dual listbox, <a href="http://www.meadmiracle.com">http://www.meadmiracle.com</a></li>
 		<li>jqcloud, <a href="https://github.com/lucaong/jQCloud">https://github.com/lucaong/jQCloud</a></li>
 		<li>jqtimeline, <a href="https://github.com/boostbob/jqtimeline">https://github.com/boostbob/jqtimeline</a></li>
+		<li>leaderboard, <a href="https://github.com/boostbob/jquery.leaderboard">https://github.com/boostbob/jquery.leaderboard</a></li>
 		<li>jqvmap, <a href="http://jqvmap.com">http://jqvmap.com</a></li>
 		<li>justgage, <a href="http://www.justgage.com">http://www.justgage.com</a></li>
 		<li>lightbox, <a href="http://leandrovieira.com/projects/jquery/lightbox/">http://leandrovieira.com/projects/jquery/lightbox/</a></li>
@@ -883,6 +898,7 @@ $('#autosize_timeline').jqtimeline( {
 		<li>jquery validate, <a href="https://github.com/jzaefferer/jquery-validation">https://github.com/jzaefferer/jquery-validation</a></li>
 		<li>wysihtml5, <a href="https://github.com/xing/wysihtml5">https://github.com/xing/wysihtml5</a></li>
 		<li>joyride, <a href="http://www.zurb.com/playground/jquery-joyride-feature-tour-plugin">http://www.zurb.com/playground/jquery-joyride-feature-tour-plugin</a></li>
+		<li>handsontable, <a href="http://handsontable.com/">http://handsontable.com/</a></li>
 	</ul>
 </div>
 
