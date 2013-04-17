@@ -66,7 +66,7 @@ if(CONFIG['enable_widget_workspace']) {
 
 // menu drag features
 if(CONFIG['enable_menuitem_drag']) {
-	$(".icon-menu > ul > li > a > i").each(function() {
+	$("#icon-menu > ul > li > a > i").each(function() {
 		var menuitem = $(this).parent();
 
 		menuitem.draggable({
@@ -77,7 +77,7 @@ if(CONFIG['enable_menuitem_drag']) {
 	});
 
 	$(".navbar-inner form.form-search").droppable({
-		accept: ".icon-menu > ul > li > a",
+		accept: "#icon-menu > ul > li > a",
 		activeClass: "menuitem-active",
 		hoverClass: "menuitem-hover",
 		tolerance: 'touch',
@@ -89,7 +89,7 @@ if(CONFIG['enable_menuitem_drag']) {
 		}
 	});
 } else {
-	$(".icon-menu > ul > li > a > i").each(function() {
+	$("#icon-menu > ul > li > a > i").each(function() {
 		$(this).css('cursor', 'pointer');
 	});
 }
@@ -230,7 +230,7 @@ if(CONFIG['enable_menu_collapse']) {
 			display = "block";
 		}
 
-		$(".icon-menu > ul > li:nth-child(n+4)").each(function() {
+		$("#icon-menu > ul > li:nth-child(n+4)").each(function() {
 			$(this).css("display", display);
 		});
 	});
@@ -248,7 +248,7 @@ if(CONFIG['enable_menu_filter']) {
 			input = "";
 		}
 
-		$(".icon-menu > ul > li:nth-child(n+4)").each(function() {
+		$("#icon-menu > ul > li:nth-child(n+4)").each(function() {
 			// console.debug(($(this).find("a > span").html() || "").toLowerCase().indexOf(input));
 			
 			if(
@@ -269,13 +269,13 @@ if(CONFIG['enable_menu_filter']) {
 
 // menu avatar
 if(!CONFIG['enable_menu_avatar']) { 
-	$(".icon-menu > ul > li.circle").remove();
-	$(".icon-menu > ul").css('margin-top', '2px');
+	$("#icon-menu > ul > li.circle").remove();
+	$("#icon-menu > ul").css('margin-top', '2px');
 }
 
 // fix position for quick widget and sub-menus
 var global_hover = null;
-$(".icon-menu > ul > li > a").each(function(){
+$("#icon-menu > ul > li > a").each(function(){
 	$(this).bind(CONFIG['menu_sub_trigger'], function(e) {
 		var sidebar_margin = $("#main_wrapper").css("margin-left");
 		var sidebar_padding = $("#main_wrapper").css("padding-left");
@@ -306,7 +306,7 @@ $(".icon-menu > ul > li > a").each(function(){
 	});
 });
 
-$(".icon-menu").bind('mouseleave', function(e) {
+$("#icon-menu").bind('mouseleave', function(e) {
 	if(global_hover) {
 		var timer = setTimeout(function() {
 			global_hover.removeClass("sub-hover");
