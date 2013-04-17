@@ -67,7 +67,7 @@ Gappro is a admin template that can be used for any backed applications. It's no
 * 27+ uniqe pages
 * Upgrade free
 
-#Resolution
+#Resolution support
 
 * 480 x 320
 * 640 x 360
