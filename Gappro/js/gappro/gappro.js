@@ -276,7 +276,7 @@ if(!CONFIG['enable_menu_avatar']) {
 // fix position for quick widget and sub-menus
 var global_hover = null;
 $(".icon-menu > ul > li > a").each(function(){
-	$(this).bind('mouseenter', function(e) {
+	$(this).bind(CONFIG['menu_sub_trigger'], function(e) {
 		var sidebar_margin = $("#main_wrapper").css("margin-left");
 		var sidebar_padding = $("#main_wrapper").css("padding-left");
 		var width = $(this).parent().width() * 1 + 

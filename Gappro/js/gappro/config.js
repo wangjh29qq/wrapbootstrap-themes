@@ -23,5 +23,8 @@ var CONFIG = {
     enable_menuitem_drag: true,
 
     // place widget to workspace
-    enable_widget_workspace: true
+    enable_widget_workspace: true, 
+
+    // sub-menus, sub-quick-widget trigger way
+    menu_sub_trigger: 'click' // click or mouseenter
 };
