@@ -161,21 +161,23 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 </div>	
 
 <div class="container-fluid" id="main_wrapper">
-	<div class="span2">
-		<div class="icon-menu">
+	<div class="row-fluid">
+		<div class="span2" id="sidebar">
+			<div id="icon-menu">
+				<!-- content -->
+			</div>
+			<hr>
+			<div id="workspace">
+				<!-- content -->
+			</div>
+		</div>	
+		<div class="span10" id="main">
+			<ul id="breadcrumbs">
+				<!-- content -->
+			</ul>	
 			<!-- content -->
-		</div>
-		<hr>
-		<div id="workspace">
-			<!-- content -->
-		</div>
-	</div>	
-	<div class="span10" id="main">
-		<ul id="breadcrumbs">
-			<!-- content -->
-		</ul>	
-		<!-- content -->
-	</div>	
+		</div>	
+	</div>
 </div>
 
 <!--footer-->
@@ -394,7 +396,7 @@ var CONFIG = {
 	<h4>Menu </h4>
 	<h5>Structure</h5>
 	<pre class="prettyprint lang-html linenums">
-<div class="icon-menu">
+<div id="icon-menu">
 	<ul>
 		<!--menu items here-->
 		<li></li>
