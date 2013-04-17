@@ -323,13 +323,25 @@ $("#icon-menu").bind('mouseleave', function(e) {
 load_fav_menus();
 
 // tooltip
-$("a[data-toggle=tooltip]").tooltip().click(function(e) {
-	// e.preventDefault();
+$("a[data-toggle=tooltip]").each(function() {
+	$(this).bind('mouseenter', function() {
+		$(this).tooltip('show');
+	});
+
+	$(this).bind('mouseleave', function() {
+		$(this).tooltip('hide');
+	});
 });
   
 // popover 
-$("a[data-toggle=popover]").popover().click(function(e) {
-  	// e.preventDefault();
+$("a[data-toggle=popover]").each(function() {
+	$(this).bind('mouseenter', function() {
+		$(this).popover('show');
+	});
+
+	$(this).bind('mouseleave', function() {
+		$(this).popover('hide');
+	});
 });
 
 // place widget to workspace
