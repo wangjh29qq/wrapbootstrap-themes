@@ -78,7 +78,7 @@ If you have any questions, please feel free to contact me via contact link.
 				<li>Filter</li>
 				<li>Expand/Collapse</li>
 				<li>Icons</li>
-				<li>Draggable to create persistent favorites menus</li>
+				<li>Drag to persist fav menus</li>
 				<li>Sub Menus</li>
 				<li>Quick Widget</li>
 				<li>Theme Colors</li>
@@ -216,7 +216,6 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 		<li>vars.less</li>
 		<li>functions.less</li>
 		<li>global.less</li>
-		<li>back_top.less</li>
 		<li>background_colors.less</li>
 		<li>bme.less</li>
 		<li>breadcrumbs.less</li>
@@ -237,6 +236,7 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 		<li>typo.less</li>
 		<li>widget.less</li>
 		<li>workspace.less</li>
+		<li>back_top.less</li>
 		<li>copyright.less</li>
 	</ul>
 </div>	
@@ -648,6 +648,18 @@ var CONFIG = {
 
 <div id="vmap_leaderboard">
 	<h4>VMap &amp; Leaderboard </h4>
+	
+	<h5>Requirements</h5>
+	<pre class="prettyprint lang-html linenums">	
+<link href="css/jqvmap/jqvmap.css" rel="stylesheet" media="screen">
+<link href="css/leaderboard/jquery.leaderboard-1.0.css" rel="stylesheet" media="screen">
+<script src="js/jqvmap/jquery.vmap.min.js"></script>
+<script src="js/jqvmap/maps/jquery.vmap.world.js"></script>
+<script src="js/tsort/jquery.tinysort.min.js"></script>
+<script src="js/leaderboard/jquery.leaderboard-1.0.min.js"></script>
+	</pre>
+
+	<h5>Markup</h5>
 	<pre class="prettyprint lang-html linenums">
 <!--vmap container-->
 <div id="sales_vmap" style="width: 100%; height: 350px;"></div>
@@ -661,6 +673,7 @@ var CONFIG = {
 </div>	
 	</pre>	
 
+	<h5>Javascript</h5>
 	<pre class="prettyprint lang-js linenums">
 // jqvmap
 jQuery('#sales_vmap').vectorMap({
@@ -701,7 +714,7 @@ var lb_object = lb.data("leaderboard");
 		<li>Text</li>
 		<li>Link</li>
 	</ul>
-	<pre class="prettyprint lang-js linenums">
+	<pre class="prettyprint lang-html linenums">
 <!--nice, bad style-->		
 <div class="merge-box span4 nice">
 	<!--title-->
@@ -734,7 +747,7 @@ var lb_object = lb.data("leaderboard");
 
 <div id="status_box">
 	<h4>Status Box </h4>
-	<pre class="prettyprint lang-js linenums">
+	<pre class="prettyprint lang-html linenums">
 <!--nice,bad styles-->		
 <div class="status-box nice">
 	<strong>-3%</strong>
@@ -748,7 +761,7 @@ var lb_object = lb.data("leaderboard");
 
 <div id="compare_box">
 	<h4>Compare Box </h4>
-	<pre class="prettyprint lang-js linenums">
+	<pre class="prettyprint lang-html linenums">
 <div class="compare-box">
 	<div class="master" style="width: 55%">New York 55%</div>
 	<div class="slave" style="width: 25%">25%</div>
@@ -763,7 +776,15 @@ var lb_object = lb.data("leaderboard");
 		<li>Fixed Timeline</li>
 		<li>Autosize Timeline</li>
 	</ul>
-	<pre class="prettyprint lang-js linenums">
+
+	<h5>Requirements</h5>
+	<pre class="prettyprint lang-html linenums">
+<link href="css/jqtimeline/jquery.jqtimeline.css" rel="stylesheet" media="screen">
+<script src="js/jqtimeline/jquery.jqtimeline.js"></script>
+	</pre>		
+
+	<h5>Markup</h5>
+	<pre class="prettyprint lang-html linenums">
 <!--fixed-->
 <div id="fixed_timeline" class="timeline fixed"></div>
 <!--autosize-->	
@@ -797,10 +818,38 @@ $('#autosize_timeline').jqtimeline( {
 
 <div id="tour">
 	<h4>Guide Tour </h4>
-	<ul>
-		<li>Step Markup</li>
-		<li>Guide Start</li>
-	</ul>
+	
+	<h5>Requirements</h5>
+	<pre class="prettyprint lang-html linenums">
+<link href="css/joyride/joyride-2.0.3.css" rel="stylesheet" media="screen">		
+<script src="js/joyride/jquery.joyride-2.0.3.js"></script>		
+	</pre>
+		
+	<h5>Steps, Markup</h5>
+	<pre class="prettyprint lang-html linenums">
+<ol id="tour">
+	<li data-class="filter-box" data-text="Next Please">
+		<h5>Welcome to gappro!</h5>
+		<p>Follow me please, type 'widget' to filter menu.</p>
+	</li>
+	<!--more steps-->
+	<li data-id="btn-profile" data-text="Finish Tour">
+		<h5>You have created a persistent fav-link.</h5>
+		<p>Jump to another page to test it, or drag again to remove it.</p>
+	</li>
+</ol>
+	</pre>
+	
+	<h5>Guide Start, Javascript</h5>
+	<pre class="prettyprint lang-js linenums">	
+$("#btn-tour, #btn-tour-take").bind("click", function(e) {
+	$("#tour").joyride({
+		autoStart: true,
+		'tipLocation': 'top'
+	});
+	e.preventDefault();
+});
+	</pre>
 </div>
 
 <div id="interfaces">
