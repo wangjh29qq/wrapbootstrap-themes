@@ -76,7 +76,11 @@
 .sub-menus > li > a:hover, 
 #icon-menu .current span, #icon-menu .current a,
 #icon-menu .current .sub-menus > li a {
-    color: #ff001b;
+    // color: #ff001b;
+}
+
+#icon-menu > ul > li.current a { 
+    .background-black(#272727, 0.1);
 }
 
 #icon-menu > ul > li > a:hover, 
@@ -198,7 +202,7 @@
     position: absolute;
     width: 170px;
     // height: 250px;
-    height: 50px;
+    height: 250px;
     top: 70px;
     left: -192px;
     z-index: 9999;
@@ -210,6 +214,9 @@
         -ms-transition: all .25s;
          -o-transition: all .25s;
             transition: all .25s;
+
+    background: url("../img/map.jpg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../img/map.jpg");
 }
 
 #config-box .config-button { 
