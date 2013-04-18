@@ -9,18 +9,18 @@
 }
 
 .msg-items-container .online a {
-    color: green;
+    color: @success-color;
 }
 
 .msg-items-container .offline a { 
-    color: red;
+    color: @danger-color;
 }
 
 .msg-items-container .nav {
     margin-bottom: 0px;
 }
 
-.msg-item .username {color: orange; }
+.msg-item .username {color: @warning-color; }
 
 .msg-item .avatar {
     width: 30px;
@@ -38,7 +38,6 @@
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
 }
-.user-item {margin-top: 10px; }
 
 .msg-item.received {
     .background-black;
