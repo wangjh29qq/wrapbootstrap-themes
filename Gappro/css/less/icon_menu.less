@@ -8,9 +8,7 @@
 #icon-menu > ul {
     /*overflow: hidden;*/
     list-style: none;
-    margin-left: 0px;
-    margin-bottom: 0px; 
-    margin-top: 65px;
+    margin: 0px;
     min-width: 120px;
 
     // -o-box-shadow: 1px 1px 5px #202020, -1px -1px 5px #202020;
@@ -86,11 +84,11 @@
     background: none; 
 
     background-color: #2a2a2a;
-    // background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.02)), to(rgba(0, 0, 0, 0.09)));
-    // background: -webkit-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09));
-    // background: -moz-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09));
-    // background: -o-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09));
-    // background: linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.02)), to(rgba(0, 0, 0, 0.09)));
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09));
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09));
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09));
+    background: linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09));
 
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
@@ -105,10 +103,10 @@
     text-align: center;
 }
 
-#icon-menu > ul > li.circle a img {
+#icon-menu > ul > li.circle > a > img {
+    width: 100px;
+    height: 100px;
     .rounded-corners(200px);
-
-    margin-top: -80px;
     margin-bottom: 6px;
     
     -o-box-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;

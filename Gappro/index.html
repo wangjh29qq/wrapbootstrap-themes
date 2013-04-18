@@ -7,8 +7,6 @@
 <link href="css/style.css" rel="stylesheet" media="screen">
 <link href="css/style-responsive.css" rel="stylesheet" media="screen">
 <link href="css/font_awesome/font-awesome.min.css" rel="stylesheet" media="screen">
-<link href="css/sb/sexybuttons.css" rel="stylesheet" media="screen">
-<link rel="stylesheet" href="css/lightbox/bootstrap-lightbox.min.css" media="screen">
 <link href="css/responsive_tables/responsive-tables.css" rel="stylesheet" media="screen">
 <link href="css/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" media="screen">
 <link href="css/jqvmap/jqvmap.css" rel="stylesheet" media="screen">
@@ -98,7 +96,7 @@
 				<ul>
 					<li class="circle">
 						<a href="profile.html" title="Profile">
-							<img src="img/user.png" alt="">		
+							<img src="img/avatar9.jpg" alt="">		
 						</a>
 					</li>
 					<li class="filter-box">
@@ -158,7 +156,7 @@
 							<li><a href="sliders.html" title="Sliders">Sliders</a></li>
 							<li><a href="noty.html" title="Notifications">Notifications</a></li>
 							<li><a href="accordion.html" title="Accordion">Accordion</a></li>
-							<li><a href="javascript:void(0)" title="Sub Link">Sub Link</a></li>
+							<li><a href="faq.html" title="FAQ">FAQ</a></li>
 						</ul>	
 					</li>
 					<li data-keywords="wizard,typo,text,font">
@@ -230,12 +228,6 @@
 							<li><a href="starter.html" title="Starter"><i class="icon-question-sign"></i> Starter</a></li>
 						</ul>
 					</li>
-					<li data-keywords="faq,questions">
-						<a href="faq.html">
-							<i class="icon-question-sign"></i>
-							<span>FAQ</span>
-						</a>
-					</li>
 					<li data-keywords="profile,settings,custom,modal,personal">
 						<a href="#settings" role="button" data-toggle="modal" data-target="#settings">
 							<i class="icon-cog"></i> <span>Settings</span>
@@ -286,12 +278,6 @@
 							</div> 
 						</div>
 					</li>
-					<li data-keywords="login,signin,profile,entry">
-						<a href="login.html">
-							<i class="icon-user"></i>
-							<span>Logout</span>
-						</a>
-					</li>
 					<li data-keywords="tour,gide,wizard">
 						<a href="javascript:void(0)" id="btn-tour-take">
 							<i class="icon-signin"></i>
@@ -303,6 +289,7 @@
 
 			<hr>
 			<div id="workspace">
+				<div id="datepicker"></div>
 				<div>
 					<span>Disk</span>
 					<span class="pull-right">65%</span>
@@ -366,11 +353,18 @@
 						</a>
 					</li>
 				</ul>
-
 			</div>
 
 			<div class="row-fluid">
-				<div class="merge-box span4 nice">
+				<div class="span3">
+					<ul class="box">
+						<li class="nice"><i class="icon-arrow-up"></i> <span class="pull-right">2346 Visitors</span></li>
+						<li><i class="icon-arrow-up"></i> <span class="pull-right">80 Orders</span></li>
+						<li><i class="icon-arrow-up"></i> <span class="pull-right">56 Registers</span></li>
+						<li class="bad"><i class="icon-arrow-down"></i> <span class="pull-right">27 Rejected</span></li>
+					</ul>
+				</div>
+				<div class="merge-box span3 nice">
 					<span class="text">
 						Orders <sup>24h</sup>
 					</span>
@@ -392,7 +386,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="merge-box span4">
+				<div class="merge-box span3">
 					<span class="text">
 						Sales
 						<sup>24h</sup>
@@ -415,7 +409,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="merge-box span4 bad">
+				<div class="merge-box span3 bad">
 					<span class="text">
 						Visitor
 						<sup>24h</sup>
@@ -441,499 +435,179 @@
 				<!--merge-box end-->
 			</div>
 
-			<div class="row-fluid">
-				<div class="widget">
-					<div class="widget-header">
-						<i class="icon-th-list"></i>
-						<h3>Sales Summary</h3>
-						<a data-rel="widget" data-action="thumb"></a>
-						<a data-rel="widget" data-action="full"></a>
-						<a data-rel="widget" data-action="code"></a>
-						<a data-rel="widget" data-action="hide"></a>
-						<a data-rel="widget" data-action="close"></a>
-					</div>
-					<div class="widget-content">
-						<div class="circle-link-container">
-							<a href="javascript:void(0)" class="circle-link" title="more description here" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top">
-								<i class="icon-lock"></i>
-							</a>
-							<a href="javascript:void(0)" class="circle-link link-info" title="more description here" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top">
-								<i class="icon-cloud-upload"></i>
-							</a>
-							<a href="javascript:void(0)" class="circle-link link-warning" title="more description here" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top">
-								<i class="icon-comments"></i>
-							</a>
-							<a href="javascript:void(0)" class="circle-link link-success" title="more description here" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top">
-								<i class="icon-key"></i>
-							</a>
-							<a href="javascript:void(0)" class="circle-link link-danger" title="more description here" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top">
-								<i class="icon-gift"></i>
-							</a>
-							<a href="javascript:void(0)" class="circle-link link-inverse" title="more description here" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top">
-								<i class="icon-coffee"></i>
-							</a>
-						</div>	
+			<div class="circle-link-container">
+				<a href="javascript:void(0)" class="circle-link" title="more description here" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top">
+					<i class="icon-lock"></i>
+				</a>
+				<a href="javascript:void(0)" class="circle-link link-info" title="more description here" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top">
+					<i class="icon-cloud-upload"></i>
+				</a>
+				<a href="javascript:void(0)" class="circle-link link-warning" title="more description here" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top">
+					<i class="icon-comments"></i>
+				</a>
+				<a href="javascript:void(0)" class="circle-link link-success" title="more description here" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top">
+					<i class="icon-key"></i>
+				</a>
+				<a href="javascript:void(0)" class="circle-link link-danger" title="more description here" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top">
+					<i class="icon-gift"></i>
+				</a>
+				<a href="javascript:void(0)" class="circle-link link-inverse" title="more description here" data-toggle="popover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top">
+					<i class="icon-coffee"></i>
+				</a>
+			</div>	
 
-						<div id="sales_vmap" style="width: 100%; height: 350px;"></div>
-						<div class="leaderboard">
-							<div class="row-fluid">
-								<h4>Leaderboard Table</h4>
-							</div>
-
-							<div class="row-fluid">
-								<ul class="span3">
-									<li class="title">Product A Sales</li>
-									<li class="rank"></li>
-									<li data-rel="US" data-value="845"><span class="name">United States</span></li>
-									<li data-rel="CA" data-value="454"><span class="name">Canada</span></li>
-									<li data-rel="CN" data-value="345"><span class="name">China</span></li>
-									<li data-rel="AU" data-value="676"><span class="name">Australia</span></li>
-									<li data-rel="BR" data-value="834"><span class="name">Brazil</span></li>
-									<li data-rel="GL" data-value="582"><span class="name">Greeland</span></li>
-									<li data-rel="RU" data-value="224"><span class="name">Russian</span></li>
-								</ul>
-								<ul class="span3">
-									<li class="title">Product B Sales</li>
-									<li class="rank"></li>
-									<li data-rel="US" data-value="485"><span class="name">United States</span></li>
-									<li data-rel="CA" data-value="823"><span class="name">Canada</span></li>
-									<li data-rel="CN" data-value="748"><span class="name">China</span></li>
-									<li data-rel="AU" data-value="442"><span class="name">Australia</span></li>
-									<li data-rel="BR" data-value="734"><span class="name">Brazil</span></li>
-									<li data-rel="GL" data-value="254"><span class="name">Greeland</span></li>
-									<li data-rel="RU" data-value="533"><span class="name">Russian</span></li>
-								</ul>
-								<ul class="span3">
-									<li class="title">Product C Sales</li>
-									<li class="rank"></li>
-									<li data-rel="US" data-value="874"><span class="name">United States</span></li>
-									<li data-rel="CA" data-value="834"><span class="name">Canada</span></li>
-									<li data-rel="CN" data-value="745"><span class="name">China</span></li>
-									<li data-rel="AU" data-value="634"><span class="name">Australia</span></li>
-									<li data-rel="BR" data-value="732"><span class="name">Brazil</span></li>
-									<li data-rel="GL" data-value="563"><span class="name">Greeland</span></li>
-									<li data-rel="RU" data-value="322"><span class="name">Russian</span></li>
-								</ul>
-								<ul class="span3">
-									<li class="title">Product D Sales</li>
-									<li class="rank"></li>
-									<li data-rel="US" data-value="343"><span class="name">United States</span></li>
-									<li data-rel="CA" data-value="563"><span class="name">Canada</span></li>
-									<li data-rel="CN" data-value="673"><span class="name">China</span></li>
-									<li data-rel="AU" data-value="532"><span class="name">Australia</span></li>
-									<li data-rel="BR" data-value="432"><span class="name">Brazil</span></li>
-									<li data-rel="GL" data-value="546"><span class="name">Greeland</span></li>
-									<li data-rel="RU" data-value="575"><span class="name">Russian</span></li>
-								</ul>
-							</div>
-							
-							<div class="row-fluid">
-								<div class="total"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row-fluid">
-				<div class="span6" id="widget_todo">
-					<div class="widget widget-table">
-						<div class="widget-header">
-							<i class="icon-th-list"></i>
-							<h3>TODO List</h3>
-							<a data-rel="widget" data-action="thumb"></a>
-							<a data-rel="widget" data-action="hide"></a>
-							<a data-rel="widget" data-action="close"></a>
-						</div>
-						<!-- /widget-header -->
-
-						<div class="widget-content">
-							<table class="table todo">
-								<tr>
-									<td>
-										<form class="form-search">
-											<div class="input-append">
-												<input type="text" class="search-query input-large" placeholder="Hey, New task">
-												<button class="btn" type="submit">
-													<i class="icon-plus"></i>
-												</button>
-											</div>
-										</form>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="check">&nbsp;</div>
-										<span class="time">Mar 28</span>
-										<span class="content">Lorem ipsum nisi do ad irure.</span>
-										<a href="javascript:void(0)" class="level"><i class="icon-star"></i></a>
-									</td>
-								</tr>
-
-								<tr>
-									<td>
-										<div class="check checked">&nbsp;</div>
-										<span class="time done">Mar 28</span>
-										<span class="content done">Lorem ipsum nisi do ad irure.</span>
-										<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
-									</td>
-								</tr>
-
-								<tr>
-									<td>
-										<div class="check">&nbsp;</div>
-										<span class="time">Mar 28</span>
-										<span class="content">Lorem ipsum nisi do ad irure.</span>
-										<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
-									</td>
-								</tr>
-
-								<tr>
-									<td>
-										<div class="check checked">&nbsp;</div>
-										<span class="time done">Mar 28</span>
-										<span class="content done">Lorem ipsum nisi do ad irure.</span>
-										<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<div class="check">&nbsp;</div>
-										<span class="time">Mar 28</span>
-										<span class="content">Lorem ipsum nisi do ad irure.</span>
-										<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
-									</td>
-								</tr>
-
-								<tr>
-									<td>
-										<div class="check checked">&nbsp;</div>
-										<span class="time done">Mar 28</span>
-										<span class="content done">Lorem ipsum nisi do ad irure.</span>
-										<a href="javascript:void(0)" class="level"><i class="icon-star"></i></a>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="left"><span class="label label-info">10</span> items left.</div>
-										<div class="completed"><span class="label label-warning">60</span> completed items.</div>
-									</td>
-								</tr>
-							</table>
-
-						</div>
-					</div>
+			<div id="sales_vmap" style="width: 100%; height: 350px;"></div>
+			<div class="leaderboard">
+				<div class="row-fluid">
+					<h4>Leaderboard Table</h4>
 				</div>
 
-				<div class="span6">
-					<div class="alert alert-warning">
-						<button data-dismiss="alert" class="close" type="button">×</button>
-						<h4>Server Warnings!</h4>
-						Lorem ipsum cillum dolore et culpa sunt officia.
-					</div>
-
-					<div class="alert alert-error">
-						<button data-dismiss="alert" class="close" type="button">×</button>
-						<h4>Server Errors!</h4>
-						Lorem ipsum cillum dolore et culpa sunt officia.
-						<br>
-						<button class="sexybutton sexysimple sexyblack" type="reset">
-							<span class="sync">Sync</span>
-						</button>
-					</div>
-
-					<div class="alert alert-success">
-						<button data-dismiss="alert" class="close" type="button"><i class="icon-thumbs-up"></i></button>
-						<h4>Server Success!</h4>
-						Lorem ipsum cillum dolore et culpa sunt officia.
-					</div>
-					
-					<div class="alert alert-info">
-						<button data-dismiss="alert" class="close" type="button">×</button>
-						<h4>Server Info!</h4>
-						Lorem ipsum cillum dolore et culpa sunt officia.
-						<br>	
-						<button class="sexybutton sexysimple sexyblack" type="reset">
-							<span class="download2">Save</span>
-						</button>
-						<br>
-					</div>
-				</div>
-			</div>
-
-			<div class="row-fluid">
-				<div class="span12">
-					<div class="widget widget-table">
-						<div class="widget-header">
-							<i class="icon-th-list"></i>
-							<h3>Sales (-/+5%)</h3>
-							<a data-rel="widget" data-action="thumb"></a>
-							<a data-rel="widget" data-action="full"></a>
-							<a data-rel="widget" data-action="hide"></a>
-							<a data-rel="widget" data-action="close"></a>
-						</div>
-						<div class="widget-content">
-							<div class="alert alert-warning">
-								<h4><img src="img/icons/info.png" alt=""> Compare Box</h4>
-								<button data-dismiss="alert" class="close" type="button">×</button>
-								According to the compare box, you can tell the sales of each brand based on color.
-							</div>
-							<table class="table responsive">
-								<tr>
-									<th class="span1">Brands \ Counties</th>
-									<th class="span1">United States</th>
-									<th class="span1">Canada</th>
-									<th class="span1">Greeland</th>
-									<th class="span1">Russian</th>
-								</tr>
-								<tr>
-									<td>Product A</td>
-									<td>
-										<div class="status-box">
-											<strong>-3%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 30%"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="status-box">
-											<strong>-2%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 20%"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="status-box">
-											<strong>-4%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 40%"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="status-box bad">
-											<strong>-8%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 5%"></div>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>Product B</td>
-									<td>
-										<div class="status-box bad">
-											<strong>-7%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 7%"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="status-box">
-											<strong>-3%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 30%"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="status-box nice">
-											<strong>+6%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 60%"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="status-box">
-											<strong>-1%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 10%"></div>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>Product C</td>
-									<td>
-										<div class="status-box">
-											<strong>-2%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 20%"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="status-box">
-											<strong>-3%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 30%"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="status-box nice">
-											<strong>+5%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 50%"></div>
-											</div>
-										</div>
-									</td>
-
-									<td>
-										<div class="status-box">
-											<strong>-2%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 20%"></div>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>Product D</td>
-									<td>
-										<div class="status-box bad">
-											<strong>-9%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 2%"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="status-box">
-											<strong>-1%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 10%"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="status-box">
-											<strong>-3%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 30%"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="status-box">
-											<strong>-2%</strong>
-											<div class="progress">
-												<div class="bar" style="width: 20%"></div>
-											</div>
-										</div>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row-fluid">
-				<div class="span6">
-					<div class="widget widget-table">
-						<div class="widget-header">
-							<i class="icon-th-list"></i>
-							<h3>Statistics</h3>
-							<a data-rel="widget" data-action="thumb"></a>
-							<a data-rel="widget" data-action="hide"></a>
-							<a data-rel="widget" data-action="close"></a>
-						</div>
-						<div class="widget-content">
-							<table class="table">
-								<tr>
-									<td> <strong><i class="icon-circle"></i>
-											Visitors</strong> 
-									</td>
-									<td>
-										<span id="visitors"></span>
-									</td>
-									<td>34734</td>
-								</tr>
-								<tr>
-									<td> <strong><i class="icon-circle-blank"></i>
-											Sales</strong> 
-									</td>
-									<td>
-										<span id="sales"></span>
-									</td>
-									<td>$2349</td>
-								</tr>
-								<tr>
-									<td>
-										<strong>
-											<i class="icon-circle"></i>
-											Register
-										</strong>
-									</td>
-									<td>
-										<span id="register"></span>
-									</td>
-									<td>2365</td>
-								</tr>
-								<tr>
-									<td>
-										<strong>
-											<i class="icon-circle-blank"></i>
-											Orders
-										</strong>
-									</td>
-									<td>
-										<span id="orders"></span>
-									</td>
-									<td>9754</td>
-								</tr>
-							</table>
-						</div>
-					</div>
+				<div class="row-fluid">
+					<ul class="span3">
+						<li class="title">Product A Sales</li>
+						<li class="rank"></li>
+						<li data-rel="US" data-value="845"><span class="name">United States</span></li>
+						<li data-rel="CA" data-value="454"><span class="name">Canada</span></li>
+						<li data-rel="CN" data-value="345"><span class="name">China</span></li>
+						<li data-rel="AU" data-value="676"><span class="name">Australia</span></li>
+						<li data-rel="BR" data-value="834"><span class="name">Brazil</span></li>
+						<li data-rel="GL" data-value="582"><span class="name">Greeland</span></li>
+						<li data-rel="RU" data-value="224"><span class="name">Russian</span></li>
+					</ul>
+					<ul class="span3">
+						<li class="title">Product B Sales</li>
+						<li class="rank"></li>
+						<li data-rel="US" data-value="485"><span class="name">United States</span></li>
+						<li data-rel="CA" data-value="823"><span class="name">Canada</span></li>
+						<li data-rel="CN" data-value="748"><span class="name">China</span></li>
+						<li data-rel="AU" data-value="442"><span class="name">Australia</span></li>
+						<li data-rel="BR" data-value="734"><span class="name">Brazil</span></li>
+						<li data-rel="GL" data-value="254"><span class="name">Greeland</span></li>
+						<li data-rel="RU" data-value="533"><span class="name">Russian</span></li>
+					</ul>
+					<ul class="span3">
+						<li class="title">Product C Sales</li>
+						<li class="rank"></li>
+						<li data-rel="US" data-value="874"><span class="name">United States</span></li>
+						<li data-rel="CA" data-value="834"><span class="name">Canada</span></li>
+						<li data-rel="CN" data-value="745"><span class="name">China</span></li>
+						<li data-rel="AU" data-value="634"><span class="name">Australia</span></li>
+						<li data-rel="BR" data-value="732"><span class="name">Brazil</span></li>
+						<li data-rel="GL" data-value="563"><span class="name">Greeland</span></li>
+						<li data-rel="RU" data-value="322"><span class="name">Russian</span></li>
+					</ul>
+					<ul class="span3">
+						<li class="title">Product D Sales</li>
+						<li class="rank"></li>
+						<li data-rel="US" data-value="343"><span class="name">United States</span></li>
+						<li data-rel="CA" data-value="563"><span class="name">Canada</span></li>
+						<li data-rel="CN" data-value="673"><span class="name">China</span></li>
+						<li data-rel="AU" data-value="532"><span class="name">Australia</span></li>
+						<li data-rel="BR" data-value="432"><span class="name">Brazil</span></li>
+						<li data-rel="GL" data-value="546"><span class="name">Greeland</span></li>
+						<li data-rel="RU" data-value="575"><span class="name">Russian</span></li>
+					</ul>
 				</div>
 				
-				<div class="span6">
-					<div class="widget">
-						<div class="widget-header">
-							<i class="icon-th-list"></i>
-							<h3>Statistics</h3>
-							<a data-rel="widget" data-action="thumb"></a>
-							<a data-rel="widget" data-action="hide"></a>
-							<a data-rel="widget" data-action="close"></a>
-						</div>
-						<div class="widget-content">
-							<div class="row-fluid">
-								<div id="mobile_device" class="morris_pie span6"></div>
-								<div id="area_orders" class="morris_pie span6"></div>
-							</div>
-						</div>
-					</div>
+				<div class="row-fluid">
+					<div class="total"></div>
 				</div>
 			</div>
 
 			<div class="row-fluid">
 				<div class="span6">
-					<div class="widget">
-						<div class="widget-header">
-							<i class="icon-th-list"></i>
-							<h3>Gauge Chart</h3>
-							<a data-rel="widget" data-action="thumb"></a>
-							<a data-rel="widget" data-action="hide"></a>
-							<a data-rel="widget" data-action="close"></a>
-						</div>
-						<div class="widget-content">
-							<div class="row-fluid">
-								<div id="gauge_orders" class="gauge span6">Product Orders</div>
-								<div id="gauge_task" class="gauge span6">Task Progress</div>
-							</div>
-							<hr>
-							<div class="row-fluid">
-								<div id="gauge_visited" class="gauge span6">Visitors</div>
-								<div id="gauge_request" class="gauge span6">Server Request</div>
-							</div>
-						</div>
+					<div class="row-fluid">
+						<div id="gauge_orders" class="gauge span6"></div>
+						<div id="gauge_task" class="gauge span6"></div>
 					</div>
+					
+					<div class="row-fluid">
+						<div id="gauge_visited" class="gauge span6"></div>
+						<div id="gauge_request" class="gauge span6"></div>
+					</div>
+				</div>
+
+				<div class="span6">
+					<div id="mobile_device" class="morris_pie span6"></div>
+					<div id="area_orders" class="morris_pie span6"></div>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span6">
+					<table class="table todo">
+						<tr>
+							<td>
+								<form class="form-search">
+									<div class="input-append">
+										<input type="text" class="search-query input-large" placeholder="Hey, New task">
+										<button class="btn" type="submit">
+											<i class="icon-plus"></i>
+										</button>
+									</div>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="check">&nbsp;</div>
+								<span class="time">Mar 28</span>
+								<span class="content">Lorem ipsum nisi do ad irure.</span>
+								<a href="javascript:void(0)" class="level"><i class="icon-star"></i></a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="check checked">&nbsp;</div>
+								<span class="time done">Mar 28</span>
+								<span class="content done">Lorem ipsum nisi do ad irure.</span>
+								<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="check">&nbsp;</div>
+								<span class="time">Mar 28</span>
+								<span class="content">Lorem ipsum nisi do ad irure.</span>
+								<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="check checked">&nbsp;</div>
+								<span class="time done">Mar 28</span>
+								<span class="content done">Lorem ipsum nisi do ad irure.</span>
+								<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="check">&nbsp;</div>
+								<span class="time">Mar 28</span>
+								<span class="content">Lorem ipsum nisi do ad irure.</span>
+								<a href="javascript:void(0)" class="level"><i class="icon-star-empty"></i></a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="check checked">&nbsp;</div>
+								<span class="time done">Mar 28</span>
+								<span class="content done">Lorem ipsum nisi do ad irure.</span>
+								<a href="javascript:void(0)" class="level"><i class="icon-star"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="left"><span class="label label-info">10</span> items left.</div>
+								<div class="completed"><span class="label label-warning">60</span> completed items.</div>
+							</td>
+						</tr>
+					</table>
 				</div>
 				<div class="span6">
 					<div class="widget">
@@ -950,40 +624,34 @@
 							<a data-rel="widget" data-action="close"></a>
 						</div>
 						<div class="widget-content">
-							<i class="icon-bell"></i> Clear Zombies (dynamic)
+							<i class="icon-bell"></i> Task (dynamic)
 							<span class="pull-right">20%</span>
 							<div class="progress progress-info" id="dynamic-progresses">
 								<div style="width: 20%" class="bar"></div>
 							</div>
 
-							<i class="icon-beaker"></i> Clear Zombies (default bg)
+							<i class="icon-beaker"></i> Task (default bg)
 							<span class="pull-right">80%</span>
 							<div class="progress progress-info progress-striped">
 								<div style="width: 80%" class="bar"></div>
 							</div>
 
-							<i class="icon-filter"></i> Clear Zombies (pink linear bg)
+							<i class="icon-filter"></i> Task (pink linear bg)
 							<span class="pull-right">40%</span>
 							<div class="progress progress-success pink-bg-linear">
 								<div style="width: 40%" class="bar"></div>
 							</div>
 
-							<i class="icon-map-marker"></i> Clear Zombies (green bg)
+							<i class="icon-map-marker"></i> Task (green bg)
 							<span class="pull-right">60%</span>
-							<div class="progress progress-warning green-bg-linear">
-								<div style="width: 60%" class="bar"></div>
-							</div>
 							<div class="progress progress-warning green-bg">
 								<div style="width: 60%" class="bar"></div>
 							</div>
 
-							<i class="icon-beer"></i> Clear Zombies (orange bg)
+							<i class="icon-beer"></i> Task (orange bg)
 							<span class="pull-right">90%</span>
-							<div class="progress progress-success progress-striped orange-bg-linear">
-								<div style="width: 90%" class="bar"></div>
-							</div>
 							<div class="progress progress-success progress-striped orange-bg">
-								<div style="width: 70%" class="bar"></div>
+								<div style="width: 90%" class="bar"></div>
 							</div>
 						</div>
 					</div>
@@ -1095,68 +763,6 @@
 				</div>
 			</div>
 			<!--/chats-->
-
-			<div class="row-fluid">	
-				<div class="span12">
-					<div class="widget widget-table">
-						<div class="widget-header">
-							<i class="icon-th-list"></i>
-							<h3>Sales Percent</h3>
-							<a data-rel="widget" data-action="thumb"></a>
-							<a data-rel="widget" data-action="hide"></a>
-							<a data-rel="widget" data-action="close"></a>
-						</div>
-						<div class="widget-content">
-							<table class="table responsive">
-								<tr>
-									<th>Brands \ Cities</th>
-									<th>New York &amp; San Francisco &amp; Others</th>
-								</tr>
-								<tr>
-									<td>Product A</td>
-									<td>
-										<div class="compare-box">
-											<div class="master" style="width: 55%">New York 55%</div>
-											<div class="slave" style="width: 25%">25%</div>
-											<div>&nbsp;</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>Product B</td>
-									<td>
-										<div class="compare-box">
-											<div class="master" style="width: 50%">New York 50%</div>
-											<div class="slave" style="width: 20%">20%</div>
-											<div>&nbsp;</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>Product C</td>
-									<td>
-										<div class="compare-box">
-											<div class="master" style="width: 45%">New York 45%</div>
-											<div class="slave" style="width: 15%">15%</div>
-											<div>&nbsp;</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>Product D</td>
-									<td>
-										<div class="compare-box">
-											<div class="master" style="width: 40%">New York 40%</div>
-											<div class="slave" style="width: 10%">10%</div>
-											<div>&nbsp;</div>
-										</div>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</div>	
-			</div>
 
 			<div class="row-fluid">
 				<div class="span12">
@@ -1391,8 +997,6 @@
 <script src="js/justgage/justgage.1.0.1.min.js"></script>
 <script src="js/flot/jquery.flot.js"></script>
 <script src="js/morris/morris.min.js"></script>
-<script src="js/bootstrap_switch/bootstrapSwitch.js"></script>
-<script src="js/lightbox/bootstrap-lightbox.min.js"></script>
 <script src="js/responsive_tables/responsive-tables.js"></script>
 <script src="js/mCustomScrollbar/jquery.mousewheel.min.js"></script>
 <script src="js/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>

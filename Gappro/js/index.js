@@ -20,12 +20,6 @@ $(document).ready(function() {
         }
     }, 100);
 
-    // sparklines
-    $("#visitors").sparkline([300,600,700,500,500,800,300,500,800,300,800,400], {type: 'line'});
-    $("#sales").sparkline([700,600,700,600,800,500,900,300,600,800,500], {type: 'bar'});
-    $("#register").sparkline([600,700,700,600,500,700,300,300,900,600,300,500], {type: 'line'});
-    $("#orders").sparkline([800,600,700,800,600,400,600,400,800,600,400], {type: 'bar'});
-
     // updating
     var updatingChart = $(".updating-chart").peity("line", { width: 120, height: 45, colour: 'red' });
     setInterval(function() {
@@ -214,9 +208,9 @@ $(document).ready(function() {
       backgroundColor: '#000',
       formatter: function (x) { return x + "%"},
       colors: [
-        '#101010',
-        '#0a0a0a',
-        '#2a2a2a',
+        '#222222',
+        '#343434',
+        '#272727',
         '#b0a4e3',]
     });  
 

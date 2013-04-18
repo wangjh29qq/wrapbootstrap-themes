@@ -24,6 +24,29 @@
 
     color: #666;
     font-size: 2.25em;
+    position: relative;
+
+    &:hover {
+        -o-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
+        -ms-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
+        -moz-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
+        -webkit-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
+        box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
+    }
+
+    &:hover i {
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
 }
 
 .circle-link img {    
@@ -36,25 +59,3 @@
 .circle-link.link-success {color: #54a954;}
 .circle-link.link-danger {color: #cb423c;}
 .circle-link.link-inverse {color: #000;}
-
-.circle-link:hover {    
-    -o-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
-    -ms-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
-    -moz-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
-    -webkit-box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
-    box-shadow: inset 1px 1px 3px #000, 1px 1px 3px #000;    
-}
-
-.circle-link:hover i {
-    -webkit-transform: rotate(-360deg);
-    -moz-transform: rotate(-360deg);
-    -ms-transform: rotate(-360deg);
-    -o-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}

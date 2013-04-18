@@ -12,8 +12,8 @@
 
 /* leaderboard */
 .leaderboard {
-    background-color: #272727;
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    /*background-color: #272727;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);*/
     overflow: hidden;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -36,7 +36,7 @@
     cursor: pointer;
     float: left;
     list-style-type: none;
-    border-left: 2px solid #202020;
+    border-left: 1px solid #272727;
     padding-left: 4px;
 }
 
@@ -44,7 +44,7 @@
     cursor: text;
     font-weight: bold;
     list-style: none;
-    border-bottom: 2px solid #202020;
+    border-bottom: 1px solid #272727;
 }
 
 .leaderboard ul li.rank { 

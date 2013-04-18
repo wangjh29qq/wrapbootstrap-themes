@@ -1,0 +1,28 @@
+// box 
+
+ul.box {
+	.border-black;
+	.rounded-corners;
+	.background-black(#272727, 0.1);
+	list-style-type: none;
+	margin-left: 0px;
+}
+
+ul.box li {
+	margin: 0px;
+	.border-bottom;
+	margin: 0px;
+	padding: 8px;
+
+	&:hover {
+		.background-black(#222222, 0.2);
+		cursor: pointer;
+	}
+
+	&.nice {color: @success-color;}
+	&.bad  {color: @danger-color;}
+}
+
+ul.box li:last-child {
+	border-bottom: 0px;
+}
