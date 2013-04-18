@@ -276,10 +276,12 @@ $("#icon-menu > ul > li > a").each(function(){
 	$(this).bind(CONFIG['menu_sub_trigger'], function(e) {
 		var sidebar_margin = $("#main_wrapper").css("margin-left");
 		var sidebar_padding = $("#main_wrapper").css("padding-left");
-		var width = $(this).parent().width() * 1 + 
-					sidebar_margin.replace("px","") * 1 + 
-					sidebar_padding.replace("px", "") * 1;
+		// var width = $(this).parent().width() * 1 + 
+		// 			sidebar_margin.replace("px","") * 1 + 
+		// 			sidebar_padding.replace("px", "") * 1;
 
+		var width = $(this).parent().width();
+		
 		if($("#main_wrapper").width() <= 640) {
 			width = 30;
 		}

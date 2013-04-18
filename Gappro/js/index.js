@@ -205,7 +205,7 @@ $(document).ready(function() {
         {value: 5, label: 'San Francisco'}
       ],
       labelColor: '#999',
-      backgroundColor: '#000',
+      backgroundColor: '#0a0a0a',
       formatter: function (x) { return x + "%"},
       colors: [
         '#222222',
