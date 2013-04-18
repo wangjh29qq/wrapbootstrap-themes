@@ -214,7 +214,7 @@ $(document).ready(function() {
         '#1b1b1b',]
     });  
 
-    $("div.msg-items-container, ul#messages-box").mCustomScrollbar({scrollButtons:{enable:true } });
+    $("div.msg-items-container, ul#messages-box").mCustomScrollbar({scrollButtons:{enable:true}});
     
     $("#btn-send").click(function() {
       $.bootstrapGrowl("<img src='img/icons/exclamation.png' alt='' /> Message sent!", {
