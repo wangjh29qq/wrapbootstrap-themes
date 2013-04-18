@@ -211,7 +211,7 @@ $(document).ready(function() {
         '#222222',
         '#343434',
         '#272727',
-        '#b0a4e3',]
+        '#1b1b1b',]
     });  
 
     $("div.msg-items-container, ul#messages-box").mCustomScrollbar({scrollButtons:{enable:true } });
