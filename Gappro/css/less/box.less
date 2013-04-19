@@ -21,13 +21,15 @@ ul.box li {
 	padding: 8px;
 	overflow: hidden;
 
+	&.nice {color: @success-color;}
+	&.bad  {color: @danger-color;}
+}
+
+ul.box li:not(.title) {
 	&:hover {
 		.background-black(#272727, 0.1);
 		cursor: pointer;
 	}
-
-	&.nice {color: @success-color;}
-	&.bad  {color: @danger-color;}
 }
 
 ul.box .title {text-align: center;}
