@@ -11,10 +11,11 @@
     height: 100px;
     text-align: center;
     line-height: 100px;
-    .rounded-corners(200px);
+    .rounded-corners(20px);
     .background-black;
     margin: 8px;
     margin-bottom: 16px;
+    border: 3px solid #5e5e5e;
 
     -o-box-shadow: inset 1px 1px 3px #272727, 1px 1px 3px #272727;
     -ms-box-shadow: inset 1px 1px 3px #272727, 1px 1px 3px #272727;
@@ -47,15 +48,23 @@
         -o-transition: all .5s;
         transition: all .5s;
     }
+
+    &.link-info {color: #336699;}
+    &.link-primary {color: #087dcc;}
+    &.link-warning {color: #f29b36}
+    &.link-success {color: #54a954;}
+    &.link-danger {color: #cb423c;}
+    &.link-inverse {color: #000;}
 }
 
 .circle-link img {    
     .rounded-corners(200px);
 }
 
-.circle-link.link-info {color: #336699;}
-.circle-link.link-primary {color: #087dcc;}
-.circle-link.link-warning {color: #f29b36}
-.circle-link.link-success {color: #54a954;}
-.circle-link.link-danger {color: #cb423c;}
-.circle-link.link-inverse {color: #000;}
+.circle-link span.link-title {
+    position: relative;
+    font-size: 0.4em;
+    line-height: 1em;
+    display: block;
+    top: 4px;
+}
