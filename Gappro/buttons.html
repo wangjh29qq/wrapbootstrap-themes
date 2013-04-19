@@ -12,7 +12,9 @@
 <link href="css/joyride/joyride-2.0.3.css" rel="stylesheet" media="screen">
 <link href="css/prettify/sons-of-obsidian.css" rel="stylesheet" media="screen">
 <style>
-  .sexybutton, .btn {margin-bottom: 8px; }
+  .sexybutton, .btn {margin-bottom: 8px;}
+  #default-icons a.btn {width: 24px;}
+  #awesome-icons a.btn {width: 200px; text-align: left;}
 </style>
 <meta name="description" content="admin theme template for any backend applications.">
 <meta name="author" content="boostbob.github.com">
@@ -548,7 +550,7 @@
           </div>
           <!-- /widget-header -->
 
-          <div class="widget-content">
+          <div class="widget-content" id="default-icons">
               <a class="btn" href="javascript:void(0)"><i class="icon-glass"></i></a>
               <a class="btn" href="javascript:void(0)"><i class="icon-music"></i></a>
               <a class="btn" href="javascript:void(0)"><i class="icon-search"></i></a>
@@ -704,7 +706,7 @@
           </div>
           <!-- /widget-header -->
 
-          <div class="widget-content">
+          <div class="widget-content" id="awesome-icons">
               <h4>New Icons</h4>
               <a class="btn" href="javascript:void(0)"><i class="icon-cloud-download"></i> icon-cloud-download</a>
               <a class="btn" href="javascript:void(0)"><i class="icon-cloud-upload"></i> icon-cloud-upload</a>
