@@ -250,7 +250,7 @@ $(document).ready(function() {
     // jqvmap
     jQuery('#sales_vmap').vectorMap({
         map: 'world_en',
-        backgroundColor: '#343434',
+        backgroundColor: 'rgba(0,0,0,0.2)',
         color: '#999',
         borderColor: '#2a2a2a',
         hoverOpacity: 0.7,

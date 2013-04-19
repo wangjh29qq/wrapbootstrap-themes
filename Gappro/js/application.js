@@ -29,6 +29,13 @@ $(document).ready(function() {
 		load_css(menu_css_file);
 	}
 
+	$("#config-box #backgrounds li a").each(function() {
+		$(this).bind("click", function() {
+			var bg = $(this).find("img").attr("src");
+			$("#main_wrapper").css("background-image", "url('" + bg + "')");
+		});
+	});
+
 	$("#menu_colors li a").each(function() { 
 		$(this).click(function() {
 			var css_file = "css/menu_styles/" + $(this).attr("data-color") + ".css";
