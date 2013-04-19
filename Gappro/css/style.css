@@ -149,7 +149,7 @@ input[type="checkbox"]:checked:after{content:'\2714';font-size:0.75em;position:a
 #config-box .config-button{position:relative;left:172px;top:-16px;-o-border-radius:0px;-ms-border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;border-radius:0px;}
 #config-box .btn-group{margin-top:-50px;}
 #config-box #backgrounds{list-style-type:none;margin-left:0px;}
-#config-box #backgrounds li{display:inline-block;margin-right:12px;margin-bottom:4px;}
+#config-box #backgrounds li{display:inline-block;margin-right:15px;margin-bottom:4px;}
 #config-box #backgrounds li a img{height:20px;width:20px;border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);}
 .widget{clear:both;margin-bottom:2em;position:relative;width:auto;-o-border-radius:4px;-ms-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
 .widget-header{border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);border-top-left-radius:4px;border-top-right-radius:4px;height:40px;line-height:40px;position:relative;padding-right:6px;padding-left:4px;background-color:#2a2a2a;background-image:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.02)), to(rgba(0, 0, 0, 0.03)));background-image:-webkit-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.03));background-image:-moz-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.03));background-image:-o-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.03));background-image:linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.03));}
@@ -205,10 +205,15 @@ ul.box.simple{border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);-o-bo
 ul.box li{border-bottom:1px solid #272727;border-bottom:1px solid rgba(0, 0, 0, 0.1);margin:0px;padding:8px;overflow:hidden;}ul.box li.nice{color:#54a954;}
 ul.box li.bad{color:#cb423c;}
 ul.box li:not(.title):hover{background-color:#272727;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.1);cursor:pointer;}
-ul.box .title{text-align:center;}
-ul.box .sub{color:#666;font-size:0.8em;}
+ul.box li.title,ul.box li .title{text-align:center;}
+ul.box li .sub{color:#666;font-size:0.8em;}
+ul.box li .light{color:#fff;}
+ul.box li .number{font-size:1.5em;text-align:center;color:#fff;}
+ul.box li .flag{position:relative;left:85%;top:-45px;}
 ul.box li img{float:left;margin-right:4px;}
 ul.box li:last-child{border-bottom:0px;}
+ul.box li .widget{margin-bottom:0px;}
+ul.box li .widget>.widget-content{padding-top:0px;padding-bottom:10px;}
 .merge-box{width:27.5%;padding:8px;text-align:center;font-size:1em;margin-bottom:20px;-o-border-radius:4px;-ms-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);background-color:#222222;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.2);}.merge-box:hover{background-color:#272727;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.1);cursor:pointer;}
 .merge-box .bad{color:red;font-weight:bold;}
 .merge-box .good{color:orange;font-weight:bold;}
@@ -276,7 +281,7 @@ ul.box li:last-child{border-bottom:0px;}
 .bme .tabbable{margin-top:10px;margin-left:0px;}
 .bme .tabbable .tab-content{padding-left:0px;padding-top:0px;}
 .bme .nav-tabs{border-bottom:none;}
-.breadcrumbs-title{font-size:1.8em;line-height:1.5em;margin-left:8px;}
+.breadcrumbs-title{font-size:1.8em;line-height:1.5em;margin-left:8px;text-shadow:1px 1px 1px #000;}
 .breadcrumbs-title .sub{font-size:0.6em;line-height:1.2em;color:#666;}
 ul#breadcrumbs{margin-left:0px;overflow:hidden;list-style:none;}
 ul#breadcrumbs li:last-child a{color:#fff;}

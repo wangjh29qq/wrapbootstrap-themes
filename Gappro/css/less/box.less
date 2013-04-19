@@ -33,8 +33,11 @@ ul.box li:not(.title) {
 	}
 }
 
-ul.box .title {text-align: center;}
-ul.box .sub {color: #666; font-size: 0.8em;}
+ul.box li.title,ul.box li .title {text-align: center;}
+ul.box li .sub {color: #666; font-size: 0.8em;}
+ul.box li .light {color: #fff;}
+ul.box li .number {font-size: 1.5em; text-align: center; color: #fff;}
+ul.box li .flag {position: relative; left: 85%; top: -45px;}
 
 ul.box li img { 
 	float: left;
@@ -44,3 +47,6 @@ ul.box li img {
 ul.box li:last-child {
 	border-bottom: 0px;
 }
+
+ul.box li .widget {margin-bottom: 0px;}
+ul.box li .widget > .widget-content {padding-top: 0px;padding-bottom: 10px;}
