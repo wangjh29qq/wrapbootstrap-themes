@@ -312,6 +312,8 @@ div .gold-text,p .gold-text{color:gold;}
 div .white-text,p .white-text{color:white;}
 div .grey-text,p .grey-text{color:grey;}
 .centered{text-align:center;margin:0 auto;display:block;}
+.lefted{text-align:left;display:block;}
+.righted{text-align:right;display:block;}
 .gauge{display:inline-block;width:150px;height:120px;margin:0 auto;margin-bottom:15px;}
 div[class^="gauge"]{text-align:center;}
 .morris-hover{position:absolute;z-index:1000;}
