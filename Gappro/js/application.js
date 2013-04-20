@@ -48,6 +48,21 @@ $(document).ready(function() {
 		$(this).css("color", color);
 	});
 
+	$("#menu-trigger a").each(function() {
+		$(this).bind('click', function() {
+			CONFIG['menu_sub_trigger'] = $(this).attr('data-trigger');
+			$("#icon-menu > ul > li > a").each(function(){ 
+				$(this).unbind('click');
+				$(this).unbind('mouseover');
+				hack_sub_menu($(this)); 
+			});
+			$.bootstrapGrowl("<img src='img/icons/exclamation.png' alt='' /> Changed Successfully!", {
+		    	type: 'info',
+		    	align: 'left'
+		  	});
+		});
+	});
+
 	// guide tour
 	$("#tour").css('display', 'none');
 	$("#btn-tour, #btn-tour-take").bind("click", function(e) {

@@ -272,8 +272,8 @@ $(document).ready(function() {
     // sidebar speakline
     $("#sl_bar").sparkline([5,6,7,2,6,4,2,4,8,5,6,8,9,2,3,6,5,7,8,8,6], {type: 'bar', barColor: '#ff7f00'});
     $("#sl_invoices").sparkline([5,6,7,2,6,4,2,4,8,5,6,8,9,2,3,6,5,7,8,8,6], {type: 'bar', barColor: '#f29b36'});
-    $("#sl_users").sparkline([5,6,7,2,6,4,2,4,8,5,6,8,9,2,3,6,5,7,8,8,6], {type: 'bar', barColor: '#54a954'});
+    $("#sl_users").sparkline([5,6,7,2,6,4,2,4,8,5,6,8,9,2,3,6,5,7,8,8,6], {type: 'bar', barColor: '#336699'});
     $("#sl_clicks").sparkline([5,6,7,2,6,4,2,4,8,5,6,8,9,2,3,6,5,7,8,8,6], {type: 'bar', barColor: '#cb423c'});
-    $("#sl_comments").sparkline([5,6,7,2,6,4,2,4,8,5,6,8,9,2,3,6,5,7,8,8,6], {type: 'bar', barColor: '#336699'});
+    $("#sl_comments").sparkline([5,6,7,2,6,4,2,4,8,5,6,8,9,2,3,6,5,7,8,8,6], {type: 'bar', barColor: '#54a954'});
     $("#sl_line").sparkline([5,6,7,9,9,5,3,6,7,4,6,7,8,6,6,8,9,5,4,6,5,6,7,9,7,8,9,9,5,6,7,8,5,6,7,9], {type: 'line', fillColor: '#5fbf00'});
 });

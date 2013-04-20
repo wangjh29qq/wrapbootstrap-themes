@@ -272,8 +272,9 @@ if(!CONFIG['enable_menu_avatar']) {
 
 // fix position for quick widget and sub-menus
 var global_hover = null;
-$("#icon-menu > ul > li > a").each(function(){
-	$(this).bind(CONFIG['menu_sub_trigger'], function(e) {
+$("#icon-menu > ul > li > a").each(function(){ hack_sub_menu($(this)); });
+function hack_sub_menu(menuitem){
+	menuitem.bind(CONFIG['menu_sub_trigger'], function(e) {
 		var sidebar_margin = $("#main_wrapper").css("margin-left");
 		var sidebar_padding = $("#main_wrapper").css("padding-left");
 		// var width = $(this).parent().width() * 1 + 
@@ -303,7 +304,7 @@ $("#icon-menu > ul > li > a").each(function(){
 			e.preventDefault();
 		}
 	});
-});
+}
 
 $("#icon-menu").bind('mouseleave', function(e) {
 	if(global_hover) {

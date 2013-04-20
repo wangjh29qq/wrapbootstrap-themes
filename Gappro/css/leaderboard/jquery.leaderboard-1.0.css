@@ -37,7 +37,7 @@
     float: left;
     list-style-type: none;
     border-left: 1px solid #272727;
-    padding-left: 4px;
+    padding: 4px;
 }
 
 .leaderboard ul li.title {
