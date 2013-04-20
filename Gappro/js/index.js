@@ -51,10 +51,10 @@ $(document).ready(function() {
         min: 0,
         max: 100,
         title: "Visitors",
-        shadowOpacity: 1,
-        shadowSize: 0,
+        gaugeColor: "#222222",
+        showInnerShadow: false,
         labelFontColor: '#999',
-        valueFontColor: '#999',
+        valueFontColor: '#fff',
         shadowVerticalOffset: 10,
         gaugeWidthScale: 0.5,
         levelColors: [
@@ -70,10 +70,10 @@ $(document).ready(function() {
         min: 0,
         max: 100,
         title: "Request",
-        shadowOpacity: 1,
-        shadowSize: 0,
+        gaugeColor: "#222222",
+        showInnerShadow: false,
         labelFontColor: '#999',
-        valueFontColor: '#999',
+        valueFontColor: '#fff',
         shadowVerticalOffset: 10,
         gaugeWidthScale: 0.5,
         levelColors: [
@@ -89,10 +89,10 @@ $(document).ready(function() {
         min: 0,
         max: 100,
         title: "Orders",
-        shadowOpacity: 1,
-        shadowSize: 0,
+        gaugeColor: "#222222",
+        showInnerShadow: false,
         labelFontColor: '#999',
-        valueFontColor: '#999',
+        valueFontColor: '#fff',
         shadowVerticalOffset: 10,
         levelColors: [
           "#ff00fc",
@@ -107,10 +107,10 @@ $(document).ready(function() {
         min: 0,
         max: 100,
         title: "Tasks",
-        shadowOpacity: 1,
-        shadowSize: 0,
+        gaugeColor: "#222222",
+        showInnerShadow: false,
         labelFontColor: '#999',
-        valueFontColor: '#999',
+        valueFontColor: '#fff',
         shadowVerticalOffset: 10,
         levelColors: [
           "#00fff6",
@@ -193,26 +193,14 @@ $(document).ready(function() {
       ],
       labelColor: '#999',
       backgroundColor: '#202020',
-      formatter: function (x) { return x + "%"}
-    }); 
-
-    Morris.Donut({
-      element: 'area_orders',
-      data: [
-        {value: 45, label: 'New York'},
-        {value: 35, label: 'Seattle'},
-        {value: 10, label: 'Los Angeles'},
-        {value: 5, label: 'San Francisco'}
-      ],
-      labelColor: '#999',
-      backgroundColor: '#0a0a0a',
       formatter: function (x) { return x + "%"},
       colors: [
         '#222222',
-        '#343434',
+        '#303030',
         '#272727',
-        '#1b1b1b',]
-    });  
+        '#4a4a4a'
+      ]
+    }); 
 
     $("div.msg-items-container, ul#messages-box").mCustomScrollbar({scrollButtons:{enable:true}});
     

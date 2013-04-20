@@ -311,12 +311,14 @@ div .blue-text,p .blue-text{color:blue;}
 div .gold-text,p .gold-text{color:gold;}
 div .white-text,p .white-text{color:white;}
 div .grey-text,p .grey-text{color:grey;}
+.centered{text-align:center;margin:0 auto;display:block;}
 .gauge{display:inline-block;width:150px;height:120px;margin:0 auto;margin-bottom:15px;}
+div[class^="gauge"]{text-align:center;}
 .morris-hover{position:absolute;z-index:1000;}
 .morris-hover.morris-default-style{-o-border-radius:10px;-ms-border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;padding:6px;color:#666;background:rgba(255, 255, 255, 0.8);border:solid 2px rgba(230, 230, 230, 0.8);font-family:sans-serif;font-size:0.75em;text-align:center;}
 .morris-hover.morris-default-style .morris-hover-row-label{font-weight:bold;margin:0.25em 0;}
 .morris-hover.morris-default-style .morris-hover-point{white-space:nowrap;margin:0.1em 0;}
-.morris_pie{width:240px;height:240px;}
+.morris_pie{width:210px;height:210px;}
 .table.dataTable tr.odd{background-color:#202020;background-color:rgba(0, 0, 0, 0.2);}
 .table.dataTable tr.even{background-color:#1a1a1a;background-color:rgba(0, 0, 0, 0.4);}
 table.dataTable tr.odd td.sorting_1{background-color:#0d0d0d;background-color:rgba(0, 0, 0, 0.6) !important;}
@@ -326,7 +328,6 @@ table.dataTable thead th{border-bottom:1px solid #000 !important;}
 .fc-state-default,.fc-state-default .fc-button-inner{background:none !important;border-color:#000 !important;}
 .timeline{margin-top:10px;margin-bottom:10px;}.timeline.fixed{overflow:auto;}
 .timeline.autosize{overflow:hidden;}
-div[class^="gauge"]{text-align:center;}
 #back-top{position:fixed;left:30px;bottom:0px;color:#999;}
 #back-top a{display:block;-o-border-radius:200px;-ms-border-radius:200px;-moz-border-radius:200px;-webkit-border-radius:200px;border-radius:200px;background-color:#272727;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.1);font-size:2em;width:60px;height:60px;line-height:60px;text-align:center;-webkit-transition:all .25s;-moz-transition:all .25s;-ms-transition:all .25s;-o-transition:all .25s;transition:all .25s;}#back-top a:hover{background-color:#202020;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.2);}
 .copyright{color:#fff;font-size:0.8em;text-align:center;width:100%;}

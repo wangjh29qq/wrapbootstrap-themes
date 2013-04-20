@@ -159,7 +159,7 @@
 					<li data-keywords="forms,editor,wizard,validate,editable,slider,ui">
 						<a href="forms.html" title="Forms">
 							<i class="icon-credit-card"></i> <span>Forms</span>
-							<span class="label label-info">5</span>
+							<span class="label label-success">5</span>
 						</a>
 						<ul class="sub-menus">
 							<li><a href="forms.html" title="Forms"> <span>Elements</span> </a> </li>
@@ -173,7 +173,7 @@
 					<li data-keywords="ui,table,interface,gallery,box,block,widget,timeline,grid">
 						<a href="ui.html" title="UI">
 							<i class="icon-camera"></i> <span>Interfaces</span>
-							<span class="label label-warning">11</span>
+							<span class="label label-success">11</span>
 						</a>
 						<ul class="sub-menus">
 							<li><a href="ui.html" title="UI"> <span>Elements</span> </a> </li>
@@ -696,28 +696,70 @@
 			</div>
 
 			<div class="row-fluid">
-				<div class="span6">
-					<div class="widget">
-						<div class="widget-content">
-							<div class="row-fluid">
-								<div id="gauge_orders" class="gauge span6"></div>
-								<div id="gauge_task" class="gauge span6"></div>
-							</div>
-							
-							<div class="row-fluid">
-								<div id="gauge_visited" class="gauge span6"></div>
-								<div id="gauge_request" class="gauge span6"></div>
-							</div>
-						</div>
-					</div>
+				<div class="span4">
+					<ul class="box">
+						<li class="title">
+							<i class="icon-bullhorn"></i>
+							Recent Overview
+						</li>
+						<li>
+							<span class="number">263</span> 
+							<span>New Registers</span>
+							<span class="sub">13/04 08:00</span>
+							<a href="javascript:void(0)" class="btn btn-circle pull-right">View</a>
+						</li>
+						<li>
+							<span class="number">341</span> 
+							<span>New Visitors</span>
+							<span class="sub">13/04 07:00</span>
+							<a href="javascript:void(0)" class="btn btn-circle btn-info pull-right">View</a>
+						</li>
+						<li>
+							<span class="number">242</span> 
+							<span>New Sales</span>
+							<span class="sub">13/04 06:00</span>
+							<a href="javascript:void(0)" class="btn btn-circle btn-warning pull-right">View</a>
+						</li>
+						<li>
+							<span class="number">522</span> 
+							<span>New Orders</span>
+							<span class="sub">13/04 05:00</span>
+							<a href="javascript:void(0)" class="btn btn-circle btn-danger pull-right">View</a>
+						</li>
+						<li>
+							<span class="number">224</span> 
+							<span>New Requests</span>
+							<span class="sub">13/04 04:00</span>
+							<a href="javascript:void(0)" class="btn btn-circle btn-success pull-right">View</a>
+						</li>
+						<li>
+							<span>Note</span>
+							<span class="foot">Lorem ipsum Reprea ea nostrud.</span>
+						</li>
+					</ul>
 				</div>
-
-				<div class="span6">
+				<div class="span8">
 					<div class="widget">
 						<div class="widget-content">
 							<div class="row-fluid">
-								<div id="mobile_device" class="morris_pie span6"></div>
-								<div id="area_orders" class="morris_pie span6"></div>
+								<div class="span6">
+									<div class="row-fluid">
+										<div id="gauge_orders" class="gauge span6">Orders Example</div>
+										<div id="gauge_task" class="gauge span6">Tasks Example</div>
+									</div>
+									
+									<div class="row-fluid">
+										<div id="gauge_visited" class="gauge span6">Visitors Example</div>
+										<div id="gauge_request" class="gauge span6">Requests Example</div>
+									</div>
+								</div>
+								<div class="span6">
+									<div class="centered">
+										<div class="orange-text">Donut Charts Type</div>
+										<div>Sales Percent (Mobile Devices)</div>
+										<div id="mobile_device" class="morris_pie centered"></div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
