@@ -32,7 +32,14 @@ $(document).ready(function() {
 	$("#config-box #backgrounds li a").each(function() {
 		$(this).bind("click", function() {
 			var bg = $(this).find("img").attr("src");
-			$("#main_wrapper").css("background-image", "url('" + bg + "')");
+			$("#main_wrapper").css("background", "url('" + bg + "')");
+		});
+	});
+
+	$("#config-box #menu-backgrounds li a").each(function() {
+		$(this).bind("click", function() {
+			var bg = $(this).find("img").attr("src");
+			$("#icon-menu").css("background", "url('" + bg + "')");
 		});
 	});
 

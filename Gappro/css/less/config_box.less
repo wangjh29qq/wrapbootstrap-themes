@@ -6,7 +6,7 @@
     padding: 10px;
     position: absolute;
     width: 162px;
-    height: 300px;
+    height: 350px;
     top: 69px;
     left: -190px;
     z-index: 9999;
@@ -22,13 +22,22 @@
     .rounded-corners(0px);
 }
 
-#config-box .btn-group {
-    // margin-top: -50px;
+#config-box #backgrounds, 
+#config-box #menu-trigger, 
+#config-box #menu-backgrounds {
+    list-style-type: none; 
+    margin-left: 0px;
 }
-
-#config-box #backgrounds {list-style-type: none; margin-left: 0px;}
-#config-box #backgrounds li {display: inline-block; margin-right: 15px; margin-bottom: 4px;}
-#config-box #backgrounds li a img {
+#config-box #backgrounds li, 
+#config-box #menu-trigger li, 
+#config-box #menu-backgrounds li {
+    display: inline-block; 
+    margin-right: 15px; 
+    margin-bottom: 4px;
+}
+#config-box #backgrounds li a img,
+#config-box #menu-trigger li a img,
+#config-box #menu-backgrounds li a img {
     height: 20px;
     width: 20px;
     .border-black;
