@@ -43,4 +43,10 @@ $(document).ready(function() {
 
   // spiner
   $("#spinner").spinner();
+  $("#datepicker").datepicker({
+    showButtonPanel: true,
+    numberOfMonths: 3
+  });
+  $( "#accordion" ).accordion();
+  $( "#tabs" ).tabs();
 });  

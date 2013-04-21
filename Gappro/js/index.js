@@ -202,7 +202,7 @@ $(document).ready(function() {
       ]
     }); 
 
-    $("div.msg-items-container, ul#messages-box, ul#chat-box").mCustomScrollbar({scrollButtons:{enable:true}});
+    $("div.msg-items-container, ul#messages-box, ul#chat-box, ul#products_list").mCustomScrollbar({scrollButtons:{enable:true}});
     
     $("#btn-send").click(function() {
       $.bootstrapGrowl("<img src='img/icons/exclamation.png' alt='' /> Message sent!", {
@@ -264,4 +264,5 @@ $(document).ready(function() {
     $("#sl_clicks").sparkline([5,6,7,2,6,4,2,4,8,5,6,8,9,2,3,6,5,7,8,8,6], {type: 'bar', barColor: '#cb423c'});
     $("#sl_comments").sparkline([5,6,7,2,6,4,2,4,8,5,6,8,9,2,3,6,5,7,8,8,6], {type: 'bar', barColor: '#54a954'});
     $("#sl_line").sparkline([5,6,7,9,9,5,3,6,7,4,6,7,8,6,6,8,9,5,4,6,5,6,7,9,7,8,9,9,5,6,7,8,5,6,7,9], {type: 'line', fillColor: '#5fbf00'});
+    $(".sl_product").sparkline([5,6,7,6,9,5,6,7,5,7,8,6,4,5,6,7,8,5,6,7,9], {type: 'bar', barColor: '#666', height: 40});
 });
