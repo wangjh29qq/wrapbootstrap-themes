@@ -202,7 +202,7 @@ $(document).ready(function() {
       ]
     }); 
 
-    $("div.msg-items-container, ul#messages-box").mCustomScrollbar({scrollButtons:{enable:true}});
+    $("div.msg-items-container, ul#messages-box, ul#chat-box").mCustomScrollbar({scrollButtons:{enable:true}});
     
     $("#btn-send").click(function() {
       $.bootstrapGrowl("<img src='img/icons/exclamation.png' alt='' /> Message sent!", {
