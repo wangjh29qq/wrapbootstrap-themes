@@ -42,9 +42,11 @@
 }
 
 @media (max-width: 640px) { 
-    #btn-tour-take, #menuitem-filter, #btn-menu-controller,
-    .navbar, #workspace, #breadcrumbs,
-    a[data-action="thumb"] {display: none;}
+    #btn-tour-take,.navbar, #workspace, #breadcrumbs,
+    .circle-link .link-title,
+    a[data-action="thumb"] {
+        display: none !important;
+    }
 
     #icon-menu ul {
         margin-left: 0px !important;
@@ -63,9 +65,27 @@
         line-height: 60px;
         font-size: 1.25em;
     }
+
+    #main {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    #sidebar {
+        margin-top: -20px;
+    }
+
+    body {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 @media (max-width: 768px) {
+    #icon-menu > ul > li > a > span.label {
+        display: none;
+    }
+
     #icon-menu .sub-menus {
         margin-left: -3px !important;
     }
@@ -77,12 +97,12 @@
 
     #icon-menu > ul {
         margin-top: 2px;
-        margin-left: -8px;
+        margin-left: -4px;
     }
 
     #workspace {
-        margin-left: -12px;
-        margin-right: -8px;
+        margin-left: -4px;
+        margin-right: -4px;
         margin-bottom: 10px;
     }
 }
