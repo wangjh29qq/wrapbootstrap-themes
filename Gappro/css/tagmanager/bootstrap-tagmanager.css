@@ -1,9 +1,9 @@
   .myTag
   {
-    background: none repeat scroll 0 0 #CDE69C;
-    border: 1px solid #A5D24A;
+    background: none repeat scroll 0 0 #272727;
+    border: 1px solid #343434;
     border-radius: 3px 3px 3px 3px;
-    color: #638421;
+    color: #fff;
 
 // to be tested    
 	display: block;

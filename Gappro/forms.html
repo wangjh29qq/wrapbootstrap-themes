@@ -845,7 +845,7 @@
                     <!-- Username -->
                     <label class="control-label"  for="username">Username</label>
                     <div class="controls">
-                      <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+                      <input type="text" id="username" name="username" placeholder="" class="input-xlarge" required>
                       <p class="help-block">Username can contain any letters or numbers, without spaces</p>
                     </div>
                   </div>
@@ -854,7 +854,7 @@
                     <!-- E-mail -->
                     <label class="control-label" for="email">E-mail</label>
                     <div class="controls">
-                      <input type="text" id="email2" name="email2" placeholder="" class="input-xlarge">
+                      <input type="text" id="email2" name="email2" placeholder="" class="input-xlarge" required>
                       <p class="help-block">Please provide your E-mail</p>
                     </div>
                   </div>
@@ -863,23 +863,23 @@
                     <!-- Password-->
                     <label class="control-label" for="password">Password</label>
                     <div class="controls">
-                      <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+                      <input type="password" id="password" name="password" placeholder="" class="input-xlarge" required>
                       <p class="help-block">Password should be at least 4 characters</p>
                     </div>
                   </div>
 
                   <div class="control-group">
                     <!-- Password -->
-                    <label class="control-label"  for="password_confirm">Password (Confirm)</label>
+                    <label class="control-label" for="password_confirm">Password (Confirm)</label>
                     <div class="controls">
-                      <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
+                      <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge" required>
                       <p class="help-block">Please confirm password</p>
                     </div>
                   </div>
 
                   <div class="control-group">
                     <div class="controls">
-                      <input type="checkbox">Term of privacy
+                      <input type="checkbox" required>Term of privacy
                     </div>
                   </div>
 
@@ -911,11 +911,11 @@
                 <form>
                   <legend>Action Name</legend>
                     <label>First Name</label>
-                    <input type="text" placeholder="Your First Name">
+                    <input type="text" placeholder="Your First Name" required>
                     <label>Last Name</label>
-                    <input type="text" placeholder="Your Last Name">
+                    <input type="text" placeholder="Your Last Name" required>
                     <label>Email Address</label>
-                    <input type="text" placeholder="Your email address">
+                    <input type="text" placeholder="Your email address" required>
                     <label>Subject</label>
 
                     <select class="selectpicker" data-size="4">
@@ -924,7 +924,7 @@
                       <option value="suggestions">Suggestions</option>
                       <option value="product">Product Support</option>
                     </select>
-                    <textarea name="message" id="message" rows="5"></textarea>
+                    <textarea name="message" id="message" rows="5" required></textarea>
                     <button type="submit" class="btn btn-large btn-warning">
                       <i class="icon-arrow-right"></i> Send Message
                     </button>
