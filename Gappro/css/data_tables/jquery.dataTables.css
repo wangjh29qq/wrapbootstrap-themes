@@ -1,4 +1,3 @@
-
 /*
  * Table
  */
@@ -146,7 +145,7 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 
 .paging_full_numbers a.paginate_button,
 .paging_full_numbers a.paginate_active {
-	border: 1px solid #aaa;
+	border: 1px solid #0a0a0a;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -154,20 +153,21 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 	margin: 0 3px;
 	cursor: pointer;
 	*cursor: hand;
-	color: #333 !important;
+	color: #999 !important;
 }
 
 .paging_full_numbers a.paginate_button {
-	background-color: #ddd;
+	background-color: #1b1b1b;
 }
 
 .paging_full_numbers a.paginate_button:hover {
-	background-color: #ccc;
+	background-color: #000;
+	color: #fff;
 	text-decoration: none !important;
 }
 
 .paging_full_numbers a.paginate_active {
-	background-color: #99B3FF;
+	background-color: #000;
 }
 
 

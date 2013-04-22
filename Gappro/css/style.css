@@ -316,10 +316,14 @@ div .grey-text,p .grey-text{color:#b5c6d0;}
 .centered{text-align:center;margin:0 auto;display:block;}
 .lefted{text-align:left;display:block;}
 .righted{text-align:right;display:block;}
+.xxsmall-text{font-size:0.5em;}
 .xsmall-text{font-size:0.6em;}
 .small-text{font-size:0.8em;}
 .medium-text{font-size:1.0em;}
 .large-text{font-size:1.2em;}
+.xlarge-text{font-size:1.5em;}
+.xxlarge-text{font-size:2.0em;}
+.xxxlarge-text{font-size:2.5em;}
 kbd{display:inline-block;background-color:#1b1b1b;color:#666;font-size:0.8em;padding-left:2px;padding-right:2px;border-radius:4px;}
 .gauge{display:inline-block;width:150px;height:120px;margin:0 auto;margin-bottom:15px;}
 div[class^="gauge"]{text-align:center;}
