@@ -824,7 +824,7 @@
       </div>
 
        <div class="row-fluid">
-        <div class="span6">
+        <div class="span8">
           <div class="widget">
             <div class="widget-header">
               <i class="icon-th-list"></i>
@@ -878,9 +878,16 @@
                   </div>
 
                   <div class="control-group">
+                    <div class="controls">
+                      <input type="checkbox">Term of privacy
+                    </div>
+                  </div>
+
+                  <div class="control-group">
                     <!-- Button -->
                     <div class="controls">
-                      <button class="btn btn-success">Register</button>
+                      <button type="submit" class="btn btn-large btn-success">Register</button>
+                      <button type="reset" class="btn btn-large btn-danger">Reset</button>
                     </div>
                   </div>
                 </fieldset>
@@ -889,23 +896,20 @@
             <!-- /widget-content --> </div>
         </div>
 
-        <div class="span6">
+        <div class="span4">
           <div class="widget">
             <div class="widget-header">
               <i class="icon-th-list"></i>
               <h3>Compact Contact Form Example 2</h3>
-              <a data-rel="widget" data-action="thumb"></a>
-              <a data-rel="widget" data-action="full"></a>
-              <a data-rel="widget" data-action="code"></a>
-              <a data-rel="widget" data-action="hide"></a>
               <a data-rel="widget" data-action="close"></a>
             </div>
             <!-- /widget-header -->
 
             <div class="widget-content">
               <div class="row-fluid">
-                <form class="well span12">
-                  <div class="span6">
+                
+                <form>
+                  <legend>Action Name</legend>
                     <label>First Name</label>
                     <input type="text" placeholder="Your First Name">
                     <label>Last Name</label>
@@ -913,21 +917,19 @@
                     <label>Email Address</label>
                     <input type="text" placeholder="Your email address">
                     <label>Subject</label>
+
                     <select class="selectpicker" data-size="4">
                       <option value="na" selected="">Choose One:</option>
                       <option value="service">Customer Service</option>
                       <option value="suggestions">Suggestions</option>
                       <option value="product">Product Support</option>
                     </select>
-                    <button type="submit" class="btn btn-large btn-primary">
+                    <textarea name="message" id="message" rows="5"></textarea>
+                    <button type="submit" class="btn btn-large btn-warning">
                       <i class="icon-arrow-right"></i> Send Message
                     </button>
-                  </div>
-                  <div class="span6">
-                    <label>Message</label>
-                    <textarea name="message" id="message" class="span12" rows="10"></textarea>
-                  </div>
                 </form>
+
               </div>
               <!-- /widget-content --> </div>
           </div>
