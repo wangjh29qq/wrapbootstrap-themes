@@ -287,15 +287,9 @@ form {
 }
 
 .breadcrumb {
-    border: 1px solid #000;
+    border: 1px solid #2c2c2c;
     .rounded-corners(5px);
     .background-black;
-    
-    -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    -ms-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 2px #000000;
 }
 
 .breadcrumb li a, .breadcrumb li .divider { 
@@ -405,12 +399,13 @@ input[type="checkbox"]:checked:after {
 // popover override
 .popover {background-color: #272727;border: 1px solid #202020;padding: 0px;}
 .popover-title {background-color: #1b1b1b;border-bottom: 1px solid #202020;}
+
 .popover.top .arrow:after {
     border-top: none;
 }
 
 .popover.right .arrow:after {
-    border-top: none;
+    border-right: none;
 }
 
 .popover.left .arrow:after {
