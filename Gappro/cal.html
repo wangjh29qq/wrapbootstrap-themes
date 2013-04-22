@@ -65,8 +65,10 @@
             </a>
           </form>
         </div>
+        
         <div class="span2">
-          <a href="login.html" class="btn btn-circle pull-right"><i class="icon-off"></i></a>
+          <a href="javascript:void(0)" class="btn btn-circle">Visit Website</a>
+          <a href="login.html" class="btn btn-circle"><i class="icon-off"></i></a>
         </div>
         
         <div id="config-box">
@@ -87,6 +89,33 @@
                       <li><a href="#" data-color="black">DEFAULT</a></li>
                     </ul>
                 </div>
+                <h4>Backgournd:</h4>
+                <ul id="backgrounds">
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/1.jpg" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/2.jpg" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/3.jpg" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/4.jpg" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/5.jpg" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/6.jpg" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/7.jpg" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/8.jpg" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/9.jpg" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/10.jpg" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/11.jpg" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/12.jpg" alt=""></a></li>
+                </ul>
+                <h4>Menu Sub Trigger:</h4>
+                <ul id="menu-trigger">
+                  <li><a href="javascript:void(0)" class="btn" data-trigger="click">Click</a></li>
+                  <li><a href="javascript:void(0)" class="btn" data-trigger="mouseover">Hover</a></li>
+                </ul>
+                <h4>Menu Background:</h4>
+                <ul id="menu-backgrounds">
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/menu1.png" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/menu2.png" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/menu3.png" alt=""></a></li>
+                  <li><a href="javascript:void(0)"><img src="img/backgrounds/menu4.png" alt=""></a></li>
+                </ul>
         </div>
       </div>
 
@@ -427,7 +456,7 @@
 
    $('#calendar').fullCalendar({
     header: {
-      left: 'prev,next today',
+      left: 'prev next today',
       center: 'title',
       right: 'month,basicWeek,basicDay'
     },
