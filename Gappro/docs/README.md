@@ -33,7 +33,6 @@ Gappro is a admin template that can be used for any backed applications. It's no
 * Validator
 * Wizard
 * Editable elements
-* Dual listbox
 * Input mask
 * Auto size textarea
 * Custom select
@@ -92,7 +91,6 @@ Gappro is a admin template that can be used for any backed applications. It's no
 * data tables, http://www.datatables.net
 * datepicker, http://www.improvely.com/
 * daterange picker, http://www.improvely.com/
-* dual listbox, http://www.meadmiracle.com
 * jqcloud, https://github.com/lucaong/jQCloud
 * jqtimeline, https://github.com/boostbob/jqtimeline
 * jqvmap, http://jqvmap.com
