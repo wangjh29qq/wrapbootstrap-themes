@@ -21,10 +21,10 @@ a{color:#336699;}a:hover,a:focus{text-decoration:none;}
 .navbar-inner .form-search .ui-draggable{margin-top:4px;}
 .well{border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);background-color:#222222;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.2);}
 .modal,.modal-footer{background-color:#272727;color:#999999;}
-.modal-body{line-height:20px;}
+.modal-body{line-height:20px;background-color:#343434;}
 .modal-header{border-bottom:1px solid #202020;border-bottom:1px solid rgba(0, 0, 0, 0.3);}
 .modal-header button{color:#fff;}
-.modal-footer{border-top:1px solid #202020;border-top:1px solid rgba(0, 0, 0, 0.3);box-shadow:0 1px 0 #1b1b1b inset;}
+.modal-footer{border-top:none;box-shadow:none;}
 .dropdown-menu{border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);background-color:#202020;}
 .dropdown-menu .divider{background:none;border-bottom:1px solid #1b1b1b;}
 .dropdown-menu li a{color:#999;}
