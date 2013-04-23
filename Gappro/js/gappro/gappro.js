@@ -100,8 +100,8 @@ $(".widget").each(function() {
 	$(this).find(".widget-header > a").wrapAll("<div class='pull-right'></div>");
 });
 
-$(".widget .widget-header > div > a[data-rel='widget']").each(function() {
-	var action_name = $(this).attr("data-action").trim().toLowerCase();
+$(".widget .widget-header > div > a[data-widget-action]").each(function() {
+	var action_name = $(this).attr("data-widget-action").trim().toLowerCase();
 
 	// class and href attr
 	$(this).attr("href", "javascript:void(0)");
