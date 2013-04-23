@@ -12,7 +12,8 @@ hr{clear:both;border:0;height:1px;background-image:-webkit-gradient(linear, 0 0,
 .h350{height:350px;}
 .h450{height:450px;}
 a{color:#336699;}a:hover,a:focus{text-decoration:none;}
-.navbar{padding-top:10px;border:0px;margin-bottom:0px;background:url('../img/gear.png') no-repeat top right;}
+.navbar{padding-top:10px;border:0px;margin-bottom:0px;background-color:#3a3a3a;background-image:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.02)), to(rgba(0, 0, 0, 0.16)));background-image:-webkit-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.16));background-image:-moz-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.16));background-image:-o-linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.16));background-image:linear-gradient(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.16));}
+.navbar .navbar-inner{padding-right:12px;}
 .navbar-inverse .brand{color:#000;font-size:1.8em;padding-left:0px;font-weight:bold;text-shadow:0px 4px 3px rgba(255, 255, 255, 0.4),0px 8px 13px rgba(255, 255, 255, 0.1);}
 .navbar-inverse a{color:#fff;}
 .navbar-inverse .navbar-inner{background:none;border:none;}
@@ -107,7 +108,7 @@ input[type="checkbox"]:checked:after{content:'\2714';font-size:0.75em;position:a
 .daterangepicker .ranges label{text-shadow:none !important;color:#999 !important;}
 .nav-tabs>li>a,.nav-pills>li>a{margin-right:0px;}
 #main_wrapper{background:url("../img/main.jpg");margin-bottom:10px;padding:0px;border:1px solid #272727;border-top:1px solid #222222;}
-#sidebar{background-color:#343434;padding-bottom:10px;}
+#sidebar{background-color:#343434;padding-bottom:10px;border-right:1px solid #272727;}
 #main{margin-left:0px;padding:20px;padding-right:0px;}
 #workspace{padding:2px;padding-right:4px;-o-border-radius:4px;-ms-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
 #workspace>.widget{margin-bottom:4px;}
@@ -122,6 +123,10 @@ input[type="checkbox"]:checked:after{content:'\2714';font-size:0.75em;position:a
 #messages-box li span.time{float:right;color:#666;}
 #messages-box li span.content{color:#999;}
 #messages-box li img{width:30px;height:30px;float:left;margin-right:6px;-o-border-radius:200px;-ms-border-radius:200px;-moz-border-radius:200px;-webkit-border-radius:200px;border-radius:200px;}
+#top-menu{position:relative;margin-left:0px;list-style-type:none;overflow:hidden;margin-bottom:0px;margin-top:-18px;right:-30px;text-align:right;}
+#top-menu li{display:inline-block;border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);margin-left:-6px;}
+#top-menu li a{width:60px;height:60px;padding-top:4px;padding-left:4px;padding-right:4px;color:#ccc;text-align:center;-o-border-radius:0px;-ms-border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;border-radius:0px;}#top-menu li a:hover{color:#54a954;}
+#top-menu li a i{font-size:2em;display:block;margin:0 auto;}
 #icon-menu{padding:0px;margin-bottom:20px;background:url('../img/menu.png');}
 #icon-menu>ul{list-style:none;margin:0px;min-width:110px;}
 #icon-menu>ul li{width:100%;min-width:110px;color:#999;display:block;border-bottom:1px solid #222222;border-bottom:1px solid rgba(0, 0, 0, 0.25);}
@@ -146,7 +151,7 @@ input[type="checkbox"]:checked:after{content:'\2714';font-size:0.75em;position:a
 #icon-menu .quick-widget .widget .widget-header{text-align:center;}
 #icon-menu li .sub-hover{display:block;left:180px;z-index:9999;margin-top:-42px;}
 #icon-menu>ul>li>a.parent-hover{background-color:#2a2a2a;}
-#config-box{border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);background-color:#343434;padding:10px;position:absolute;width:162px;height:350px;top:69px;left:-190px;z-index:9999;-webkit-transition:all .25s;-moz-transition:all .25s;-ms-transition:all .25s;-o-transition:all .25s;transition:all .25s;}#config-box:hover{left:0px;}
+#config-box{border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);background-color:#343434;padding:10px;position:absolute;width:162px;height:350px;top:70px;left:-190px;z-index:9999;-webkit-transition:all .25s;-moz-transition:all .25s;-ms-transition:all .25s;-o-transition:all .25s;transition:all .25s;}#config-box:hover{left:0px;}
 #config-box .config-button{position:relative;left:172px;top:-16px;-o-border-radius:0px;-ms-border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;border-radius:0px;}
 #config-box #backgrounds,#config-box #menu-trigger,#config-box #menu-backgrounds{list-style-type:none;margin-left:0px;}
 #config-box #backgrounds li,#config-box #menu-trigger li,#config-box #menu-backgrounds li{display:inline-block;margin-right:15px;margin-bottom:4px;}

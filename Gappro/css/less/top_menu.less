@@ -1,0 +1,39 @@
+// top menu 
+
+#top-menu {
+	position: relative;
+	margin-left: 0px;
+	list-style-type: none;
+	overflow: hidden;
+	margin-bottom: 0px;
+	margin-top: -18px;
+	right: -30px;
+	text-align: right;
+}
+
+#top-menu li {
+	display: inline-block;
+	.border-black;
+	margin-left: -6px;
+} 
+
+#top-menu li a {
+	width: 60px;
+	height: 60px;
+	padding-top: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: #ccc;
+	text-align: center;
+	.rounded-corners(0px);
+
+	&:hover {
+		color: @success-color;
+	}
+}
+
+#top-menu li a i { 
+	font-size: 2em;
+	display: block;
+	margin: 0 auto;
+}

@@ -105,6 +105,15 @@
         margin-right: -4px;
         margin-bottom: 10px;
     }
+
+    #top-menu li a span { 
+        display: none;
+    }
+
+    #top-menu li a i { 
+        vertical-align: middle;
+        line-height: 60px;
+    }
 }
 @media (max-width: 980px) {
     

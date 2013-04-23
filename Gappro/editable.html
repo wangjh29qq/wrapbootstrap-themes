@@ -20,19 +20,21 @@
   <div class="navbar-inner">
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span10">
-          <a href="index.html">
-            <img class="brand" src="img/logo.png" alt=""></a>
 
+        <div class="span8">
+          <a href="index.html">
+            <img class="brand" src="img/logo.png" alt="">
+          </a>
+          
           <form class="form-search">
-            <input type="text" placeholder="Keywords" class="input-large search-query">
-            &nbsp;&nbsp;
-            <div class="btn-group">
-              <a class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#">
-                <span> <i class="icon-bell"></i>
-                </span>
-              </a>
-              <ul class="dropdown-menu" id="messages-box">
+            <input type="text" placeholder="keywords" class="input-medium search-query">
+            <button type="submit" class="btn">Search</button>
+
+              <div class="btn-group">
+                <a class="btn dropdown-toggle btn-warning" data-toggle="dropdown" href="#">
+                  <span><i class="icon-bell"></i></span>
+                </a>
+                <ul class="dropdown-menu" id="messages-box">
                   <li>
                     <img src="img/avatar2.jpg" alt="">
                     <span class="time">6 mintues ago</span><br>
@@ -55,64 +57,92 @@
                   </li>
                 </ul>
             </div>
-
-            <a href="profile.html" class="btn" id="btn-profile"> <i class="icon-user"></i>
-              Lisa Joe
-            </a>
           </form>
         </div>
-        
-        <div class="span2">
-          <a href="javascript:void(0)" class="btn btn-circle">Visit Website</a>
-          <a href="login.html" class="btn btn-circle"><i class="icon-off"></i></a>
-        </div>
-        
-        <div id="config-box">
-          <a href="javascript:void(0)" class="btn config-button"><i class="icon-cog"></i></a>
-          <div class="btn-group">
-                    <button class="btn"><i class="icon-refresh"></i> Menu Themes</button>
-                    <button data-toggle="dropdown" class="btn btn-inverse dropdown-toggle">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" id="menu_colors">
-                      <li><a href="#" data-color="pink">PINK</a></li>
-                      <li><a href="#" data-color="green">GREEN</a></li>
-                      <li><a href="#" data-color="grey">GREY</a></li>
-                      <li><a href="#" data-color="white">WHITE</a></li>
-                      <li><a href="#" data-color="orange">ORANGE</a></li>
-                      <li><a href="#" data-color="blue">BLUE</a></li>
-                      <li><a href="#" data-color="gold">GOLD</a></li>
-                      <li><a href="#" data-color="black">DEFAULT</a></li>
-                    </ul>
-                </div>
-                <h4>Backgournd:</h4>
-                <ul id="backgrounds">
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/1.jpg" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/2.jpg" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/3.jpg" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/4.jpg" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/5.jpg" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/6.jpg" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/7.jpg" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/8.jpg" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/9.jpg" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/10.jpg" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/11.jpg" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/12.jpg" alt=""></a></li>
-                </ul>
-                <h4>Menu Sub Trigger:</h4>
-                <ul id="menu-trigger">
-                  <li><a href="javascript:void(0)" class="btn" data-trigger="click">Click</a></li>
-                  <li><a href="javascript:void(0)" class="btn" data-trigger="mouseover">Hover</a></li>
-                </ul>
-                <h4>Menu Background:</h4>
-                <ul id="menu-backgrounds">
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/menu1.png" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/menu2.png" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/menu3.png" alt=""></a></li>
-                  <li><a href="javascript:void(0)"><img src="img/backgrounds/menu4.png" alt=""></a></li>
-                </ul>
-        </div>
+
+        <div class="span4">
+          <ul id="top-menu">
+            <li>
+              <a href="javascript:void(0)" class="btn"> 
+                <i class="icon-edit"></i>
+                <span>Notes</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="javascript:void(0)" class="btn">
+                <i class="icon-group"></i>
+                <span>Groups</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="btn">
+                <i class="icon-cogs"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="btn">
+                <i class="icon-eye-open"></i>
+                <span>Website</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="btn">
+                <i class="icon-off"></i>
+                <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>  
+
+      </div>
+
+      <div id="config-box">
+        <a href="javascript:void(0)" class="btn config-button"><i class="icon-cog"></i></a>
+        <div class="btn-group">
+                  <button class="btn"><i class="icon-refresh"></i> Menu Themes</button>
+                  <button data-toggle="dropdown" class="btn btn-inverse dropdown-toggle">
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" id="menu_colors">
+                    <li><a href="#" data-color="pink">PINK</a></li>
+                    <li><a href="#" data-color="green">GREEN</a></li>
+                    <li><a href="#" data-color="grey">GREY</a></li>
+                    <li><a href="#" data-color="white">WHITE</a></li>
+                    <li><a href="#" data-color="orange">ORANGE</a></li>
+                    <li><a href="#" data-color="blue">BLUE</a></li>
+                    <li><a href="#" data-color="gold">GOLD</a></li>
+                    <li><a href="#" data-color="black">DEFAULT</a></li>
+                  </ul>
+              </div>
+              <h4>Backgournd:</h4>
+              <ul id="backgrounds">
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/1.jpg" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/2.jpg" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/3.jpg" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/4.jpg" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/5.jpg" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/6.jpg" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/7.jpg" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/8.jpg" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/9.jpg" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/10.jpg" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/11.jpg" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/12.jpg" alt=""></a></li>
+              </ul>
+              <h4>Menu Sub Trigger:</h4>
+            <ul id="menu-trigger">
+              <li><a href="javascript:void(0)" class="btn" data-trigger="click">Click</a></li>
+              <li><a href="javascript:void(0)" class="btn" data-trigger="mouseover">Hover</a></li>
+            </ul>
+              <h4>Menu Background:</h4>
+              <ul id="menu-backgrounds">
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/menu1.png" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/menu2.png" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/menu3.png" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="img/backgrounds/menu4.png" alt=""></a></li>
+              </ul>
       </div>
 
     </div>
