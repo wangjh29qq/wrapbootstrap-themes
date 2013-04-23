@@ -78,9 +78,9 @@
     border-top: 1px solid rgba(0, 0, 0, @alpha);
 }
 
-.border-black (@color: #222222, @alpha: 0.2) {
-    border: 1px solid @color;
-    border: 1px solid rgba(0, 0, 0, @alpha);
+.border-black (@color: #222222, @alpha: 0.2, @width: 1px) {
+    border: @width solid @color;
+    border: @width solid rgba(0, 0, 0, @alpha);
 }
 
 .background-black (@color: #222222, @alpha: 0.2) {
