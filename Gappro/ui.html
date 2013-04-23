@@ -665,7 +665,7 @@
             </div>
             <!-- /widget-header -->
 
-            <div class="widget-content widget-content-small-box">
+            <div class="widget-content h150">
               <input type="text" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" data-items="4" data-provide="typeahead" style="margin: 0 auto;" class="span3">
               <ul class="typeahead dropdown-menu" style="top: 69px; left: 19px; display: none;">
                 <li data-value="South Carolina" class="active">
@@ -710,7 +710,7 @@
           <div class="widget">
             <div class="widget-header">
               <i class="icon-th-list"></i>
-              <h3>Tooltip and Popover</h3>
+              <h3>Popover</h3>
               <a data-widget-action="thumb"></a>
               <a data-widget-action="full"></a>
               <a data-widget-action="code"></a>
@@ -719,15 +719,7 @@
             </div>
             <!-- /widget-header -->
 
-            <div class="widget-content widget-content-big-box">
-              <h4>Tooltip Demo</h4>
-              <a href="#" data-toggle="tooltip" title="first tooltip">hover over me</a>
-              <br>
-              <a href="#" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</a>
-              <a href="#" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</a>
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</a>
-              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</a>
-
+            <div class="widget-content">
               <h4>Popover Demo</h4>
               <a data-content="And here's some amazing content. It's very engaging. right?" title="" data-toggle="popover" class="btn" href="#" data-original-title="A Title">Click to toggle popover</a>
 
@@ -744,7 +736,7 @@
       </div>
 
       <div class="row-fluid">
-        <div class="span12">
+        <div class="span6">
           <div class="widget">
             <div class="widget-header">
               <i class="icon-th-list"></i>
@@ -758,15 +750,31 @@
             <!-- /widget-header -->
 
             <div class="widget-content">
+              <h4>Attached to a field with hex format specified via options.</h4>
               <input type="text" id="cp1" class="span1 colorpicker" value="#8fff00">
-              <input type="text" data-color-format="rgba" id="cp2" value="rgb(0,194,255,0.78)" class="colorpicker"></div>
-              <!-- /widget-content --> 
-            </div>
-        </div>
-      </div>
 
-      <div class="row-fluid">
-        <div class="span12">
+              <h4>Attachet to a field with the rgba format specified via data tag.</h4>
+              <input type="text" data-color-format="rgba" id="cp2" value="rgb(0,194,255,0.78)" class="colorpicker">
+              
+              <h4>As component.</h4>
+              <div id="cp3" class="input-append color" data-color="rgb(255, 146, 180)" data-color-format="rgb">
+                <input type="text" class="span12" value="" >
+                <span class="add-on"><i style="background-color: rgb(255, 146, 180)"></i></span>
+              </div>
+
+              <h4>Changed Callback</h4>
+              <a data-color="rgb(255, 255, 255)" data-color-format="hex" id="cp4" class="btn small" href="#">Change background color</a>
+              <pre class="prettyprint lang-js linenums">
+$('#cp4').colorpicker().on('changeColor', function(ev) 
+{
+  $('#cp4').css('background-color', ev.color.toHex());
+});
+              </pre>
+            </div>  
+          </div>
+        </div>
+      
+        <div class="span6">
           <div class="widget">
             <div class="widget-header">
               <i class="icon-th-list"></i>
@@ -780,29 +788,28 @@
             <!-- /widget-header -->
 
             <div class="widget-content">
-              <div class="well">
-                <input type="text" id="dp1" value="02-16-2012" class="datepicker">
-                <input type="text" id="dp2" data-date-format="mm/dd/yy" value="02/16/12" class="datepicker"></div>
+              <h4>Attached to a field with the format specified via options.</h4>
+              <input type="text" id="dp1" value="02-16-2012" class="datepicker">
+              
+              <h4>Attachet to a field with the format specified via data tag.</h4>
+              <input type="text" id="dp2" data-date-format="mm/dd/yy" value="02/16/12" class="datepicker">
+              
+              <h4>As component.</h4>
+              <div data-date-format="dd-mm-yyyy" data-date="12-02-2012" id="dp3" class="input-append date">
+                <input type="text" readonly="" value="12-02-2012" size="16" class="span12">
+                <span class="add-on"><i class="icon-calendar"></i></span>
+              </div>
 
-              <div class="well">
-                <form class="form-horizontal">
-                  <fieldset>
-                    <div class="control-group">
-                      <label class="control-label" for="reservation">Reservation dates:</label>
-                      <div class="controls">
-                        <div class="input-prepend">
-                          <span class="add-on">
-                            <i class="icon-calendar"></i>
-                          </span>
-                          <input type="text" name="reservation" id="reservation" />
-                        </div>
-                      </div>
-                    </div>
-                  </fieldset>
-                </form>
+              <h4>Reservation dates:</h4>
+              <div class="input-prepend">
+                <span class="add-on">
+                  <i class="icon-calendar"></i>
+                </span>
+                <input type="text" name="reservation" id="reservation" />
               </div>
 
               <div>
+                <h4>Clockface</h4>
                 <input id="t1" value="2:30 PM" data-format="hh:mm A" class="input-small" type="text">
 
                 <div class="input-append">
@@ -824,7 +831,7 @@
       </div>
 
       <div class="row-fluid">
-        <div class="span12">
+        <div class="span6">
           <div class="widget">
             <div class="widget-header">
               <i class="icon-th-list"></i>
@@ -839,7 +846,7 @@
 
             <div class="widget-content">
               <div class="pagination">
-                <h3>Default</h3>
+                <h4>Default</h4>
                 <ul>
                   <li>
                     <a href="#">Prev</a>
@@ -865,8 +872,8 @@
                 </ul>
               </div>
                 
-              <div class="pagination pagination-centered">
-                <h3>Disabled &amp; Center</h3>
+              <div class="pagination">
+                <h4>Disabled</h4>
                 <ul>
                   <li class="disabled">
                     <a href="#">&laquo;</a>
@@ -893,7 +900,7 @@
               </div>
 
               <div class="pagination pagination-large">
-                <h3>Large</h3>
+                <h4>Large</h4>
                 <ul>
                   <li>
                     <a href="#">&laquo;</a>
@@ -913,7 +920,7 @@
                 </ul>
               </div>
               <div class="pagination">
-                <h3>Medium</h3>
+                <h4>Medium</h4>
                 <ul>
                   <li>
                     <a href="#">&laquo;</a>
@@ -939,7 +946,7 @@
                 </ul>
               </div>
               <div class="pagination pagination-small">
-                <h3>Small</h3>
+                <h4>Small</h4>
                 <ul>
                   <li>
                     <a href="#">&laquo;</a>
@@ -965,7 +972,7 @@
                 </ul>
               </div>
               <div class="pagination pagination-mini">
-                <h3>Mini</h3>
+                <h4>Mini</h4>
                 <ul>
                   <li>
                     <a href="#">&laquo;</a>
@@ -992,7 +999,7 @@
               </div>
 
               <div class="pagination">
-                <h3>With Icons</h3>
+                <h4>With Icons</h4>
                 <ul>
                   <li>
                     <a href="#"><i class="icon-arrow-left"></i></a>
@@ -1021,10 +1028,8 @@
             </div>
             <!-- /widget-content --> </div>
         </div>
-      </div>
 
-      <div class="row-fluid">
-        <div class="span4">
+        <div class="span6">
           <div class="widget">
             <div class="widget-header">
               <i class="icon-th-list"></i>
@@ -1077,9 +1082,7 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="span4">
           <div class="widget">
             <div class="widget-header">
               <i class="icon-th-list"></i>
@@ -1090,34 +1093,7 @@
               <div id="qrcode"></div>
             </div>
           </div>
-        </div>
 
-        <div class="span4">
-          <div class="widget">
-
-            <div class="widget-header">
-              <i class="icon-th-list"></i>
-              <h3>Colors Link</h3>
-              <a data-widget-action="close"></a>
-            </div>
-            <!-- /widget-header -->
-
-            <div class="widget-content">
-              <div>
-                <button type="reset" class="sexybutton sexysimple sexyblack">Black Button</button>
-                <button type="reset" class="sexybutton sexysimple sexymagenta">Magenta Button</button>
-                <button type="reset" class="sexybutton sexysimple sexyteal">Teal Button</button>
-                
-                <button type="reset" class="sexybutton sexysimple sexyred">Red Button</button>
-                <button type="reset" class="sexybutton sexysimple sexyorange">Orange Button</button>
-                <button type="reset" class="sexybutton sexysimple sexygreen">Green Button</button>
-                
-                <button type="reset" class="sexybutton sexysimple sexyblue">Blue Button</button>
-                <button type="reset" class="sexybutton sexysimple sexypurple">Purple Button</button>
-                <button type="reset" class="sexybutton sexysimple sexyyellow">Yellow Button</button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -1144,61 +1120,6 @@
         </div>
       </div>
       <!--/Cloud Words-->
-
-      <div class="row-fluid">
-        <div class="widget">
-          <div class="widget-header">
-            <i class="icon-th-list"></i>
-            <h3>Loaders Images</h3>
-            <a data-widget-action="thumb"></a>
-            <a data-widget-action="full"></a>
-            <a data-widget-action="code"></a>
-            <a data-widget-action="hide"></a>
-            <a data-widget-action="close"></a>
-          </div>
-          <div class="widget-content">
-            <img alt="" src="img/loaders/old/3drotation.gif">
-            <img alt="" src="img/loaders/old/arrows.gif">
-            <img alt="" src="img/loaders/old/bar.gif">
-            <img alt="" src="img/loaders/old/bar2.gif">
-            <img alt="" src="img/loaders/old/bar3.gif">
-            <img alt="" src="img/loaders/old/barCircle.gif">
-            <img alt="" src="img/loaders/old/bbal.gif">
-            <img alt="" src="img/loaders/old/bert.gif">
-            <img alt="" src="img/loaders/old/bert2.gif">
-            <img alt="" src="img/loaders/old/bigCircleBall.gif">
-            <img alt="" src="img/loaders/old/bigRoller.gif">
-            <img alt="" src="img/loaders/old/bigSnake.gif">
-            <img alt="" src="img/loaders/old/bigflower.gif">
-            <img alt="" src="img/loaders/old/cbal.gif">
-            <img alt="" src="img/loaders/old/circleBal.gif">
-            <img alt="" src="img/loaders/old/circleTickbox.gif">
-            <img alt="" src="img/loaders/old/clock.gif">
-            <img alt="" src="img/loaders/old/dripCircle.gif">
-            <img alt="" src="img/loaders/old/ecircle.gif">
-            <img alt="" src="img/loaders/old/facebook.gif">
-            <img alt="" src="img/loaders/old/flower.gif">
-            <img alt="" src="img/loaders/old/hypnotize.gif">
-            <img alt="" src="img/loaders/old/indicator.gif">
-            <img alt="" src="img/loaders/old/indicatorBig.gif">
-            <img alt="" src="img/loaders/old/indicatorBig2.gif">
-            <img alt="" src="img/loaders/old/indicatorLite.gif">
-            <img alt="" src="img/loaders/old/kit.gif">
-            <img alt="" src="img/loaders/old/pakman.gif">
-            <img alt="" src="img/loaders/old/pik.gif">
-            <img alt="" src="img/loaders/old/pk.gif">
-            <img alt="" src="img/loaders/old/radar.gif">
-            <img alt="" src="img/loaders/old/refresh.gif">
-            <img alt="" src="img/loaders/old/roller.gif">
-            <img alt="" src="img/loaders/old/smallWait.gif">
-            <img alt="" src="img/loaders/old/snake.gif">
-            <img alt="" src="img/loaders/old/squares.gif">
-            <img alt="" src="img/loaders/old/squaresCircle.gif">
-            <img alt="" src="img/loaders/old/wheel.gif">
-            <img alt="" src="img/loaders/old/wheel1.gif">
-          </div>
-        </div>
-      </div>
 
     </div>
   </div>

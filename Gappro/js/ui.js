@@ -66,8 +66,11 @@ $(document).ready(function() {
       e.preventDefault()
     })
 
-  $('.colorpicker').colorpicker();
-  $('.datepicker').datepicker();
+  $('.colorpicker, #cp1, #cp2, #cp3').colorpicker();
+  $('#cp4').colorpicker().on('changeColor', function(ev){
+    $('#cp4').css('background-color', ev.color.toHex());
+  });
+  $('.datepicker, #dp1, #dp2, #dp3').datepicker();
 
   $('#t1').clockface();  
   $('#t2').clockface({
@@ -95,6 +98,9 @@ $(document).ready(function() {
 
   // clouds
   $("#chat_words").jQCloud(word_list);
+
+  // pretty code
+  prettyPrint();
 });
 
 function step_progress(progress, current, final) {

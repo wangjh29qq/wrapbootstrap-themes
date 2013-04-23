@@ -324,13 +324,7 @@ load_fav_menus();
 
 // tooltip
 $("a[data-toggle=tooltip]").each(function() {
-	$(this).bind('mouseenter', function() {
-		$(this).tooltip('show');
-	});
-
-	$(this).bind('mouseleave', function() {
-		$(this).tooltip('hide');
-	});
+	// 
 });
   
 // popover 
