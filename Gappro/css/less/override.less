@@ -4,9 +4,24 @@
 
 .modal, .modal-footer { background-color: #272727; color: #999 }
 .modal-body { line-height: 20px; background-color: #343434; }
-.modal-header { .border-bottom; }
+.modal-header { 
+    .border-bottom; 
+    background-color: #222222;
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#1b1b1b));
+    background-image:-webkit-linear-gradient(#333333, #1b1b1b);
+    background-image:-moz-linear-gradient(#333333, #1b1b1b);
+    background-image:-o-linear-gradient(#333333, #1b1b1b);
+    background-image:linear-gradient(#272727, #1b1b1b);
+    color: #fff;
+
+    .top-rounded-corners(6px);
+}
 .modal-header button { color: #fff; }
-.modal-footer { border-top: none; box-shadow: none; }
+.modal-footer { 
+    border-top: none; 
+    box-shadow: none;
+    .bottom-rounded-corners(6px);
+}
 
 .dropdown-menu {
     .border-black;

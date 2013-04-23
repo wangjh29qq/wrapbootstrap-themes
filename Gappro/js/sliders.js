@@ -47,6 +47,23 @@ $(document).ready(function() {
     showButtonPanel: true,
     numberOfMonths: 3
   });
-  $( "#accordion" ).accordion();
-  $( "#tabs" ).tabs();
+  
+  $("#accordion").accordion();
+  $("#tabs").tabs();
+
+  $("#btn-confirm").bind('click', function() {
+    $("#dialog-confirm").dialog({
+    resizable: false,
+    height:140,
+    modal: true,
+    buttons: {
+      "Delete all items": function() {
+      $( this ).dialog( "close" );
+    },
+    Cancel: function() {
+      $( this ).dialog( "close" );
+      }
+    }
+  });
+  });
 });  

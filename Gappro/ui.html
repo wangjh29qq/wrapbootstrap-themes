@@ -696,7 +696,7 @@
 
           <div class="widget-content">
             <!-- Button to trigger modal -->
-            <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+            <a href="#myModal" role="button" class="btn" data-toggle="modal">demo modal</a>
 
             <!-- Modal -->
             <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog">
@@ -826,12 +826,15 @@
 
               <h4>Changed Callback</h4>
               <a data-color="rgb(255, 255, 255)" data-color-format="hex" id="cp4" class="btn small" href="#">Change background color</a>
-              <pre class="prettyprint lang-js linenums">
+              <h4>Callback Code</h4>
+              <div>
+                <pre class="prettyprint lang-js linenums">
 $('#cp4').colorpicker().on('changeColor', function(ev) 
 {
   $('#cp4').css('background-color', ev.color.toHex());
 });
-              </pre>
+                </pre>
+              </div>
             </div>  
           </div>
         </div>
@@ -1095,7 +1098,7 @@ $('#cp4').colorpicker().on('changeColor', function(ev)
           <div class="widget">
             <div class="widget-header">
               <i class="icon-th-list"></i>
-              <h3>Accordion Reading</h3>
+              <h3>Widget with Accordion</h3>
               <a data-widget-action="close"></a>
             </div>
             <!-- /widget-header -->
