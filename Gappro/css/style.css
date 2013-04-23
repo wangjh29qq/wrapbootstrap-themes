@@ -125,7 +125,7 @@ input[type="checkbox"]:checked:after{content:'\2714';font-size:0.75em;position:a
 #messages-box li img{width:30px;height:30px;float:left;margin-right:6px;-o-border-radius:200px;-ms-border-radius:200px;-moz-border-radius:200px;-webkit-border-radius:200px;border-radius:200px;}
 #top-menu{position:relative;margin-left:0px;list-style-type:none;overflow:hidden;margin-bottom:0px;margin-top:-18px;right:-30px;text-align:right;}
 #top-menu li{display:inline-block;border:1px solid #222222;border:1px solid rgba(0, 0, 0, 0.2);margin-left:-6px;}
-#top-menu li a{width:60px;height:60px;padding-top:4px;padding-left:4px;padding-right:4px;color:#ccc;text-align:center;-o-border-radius:0px;-ms-border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;border-radius:0px;}#top-menu li a:hover{color:#54a954;}
+#top-menu li a{width:60px;height:60px;padding-top:4px;padding-left:4px;padding-right:4px;color:#ccc;text-align:center;-o-border-radius:0px;-ms-border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;border-radius:0px;}#top-menu li a:hover{color:#fff;}
 #top-menu li a i{font-size:2em;display:block;margin:0 auto;}
 #icon-menu{padding:0px;margin-bottom:20px;background:url('../img/menu.png');}
 #icon-menu>ul{list-style:none;margin:0px;min-width:110px;}

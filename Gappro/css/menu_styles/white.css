@@ -13,3 +13,7 @@
 #main_wrapper {
 	border-top: 1px solid #ccc;
 }
+
+#top-menu li a:hover { 
+	color: #ccc;
+}

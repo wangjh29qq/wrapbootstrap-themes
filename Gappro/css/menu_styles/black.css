@@ -14,3 +14,7 @@
 #main_wrapper {
 	border-top: 1px solid #222222;
 }
+
+#top-menu li a:hover { 
+	color: #fff;
+}
