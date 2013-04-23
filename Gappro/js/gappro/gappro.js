@@ -146,14 +146,14 @@ $(".widget .widget-header > div > a[data-widget-action]").each(function() {
 		case 'config':
 			$(this).html('<i class="icon-cog"></i>');
 			$(this).bind('click', function() {
-				$("#" + $(this).attr("data-box")).modal();
+				$("#" + $(this).attr("data-widget-box")).modal();
 			});
 	        break;
 
 		case 'help':
 			$(this).html('<i class="icon-question-sign"></i>');
 			$(this).bind('click', function() {
-				$("#" + $(this).attr("data-box")).modal();
+				$("#" + $(this).attr("data-widget-box")).modal();
 			});
 	        break;
 	        
