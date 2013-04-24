@@ -107,15 +107,18 @@
     }
 }
 @media (max-width: 980px) {
-    #top-menu li a {
+    #top-menu li a,
+    #top-menu > li > .btn-group > a {
         width: 40px;
     }
 
-    #top-menu li a span { 
+    #top-menu > li > a > span,
+    #top-menu > li > .btn-group > a > span { 
         display: none;
     }
 
-    #top-menu li a i { 
+    #top-menu > li > a > i,
+    #top-menu > li > .btn-group > a > i { 
         vertical-align: middle;
         line-height: 60px;
     }
