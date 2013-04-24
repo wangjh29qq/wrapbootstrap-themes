@@ -48,6 +48,10 @@
         display: none !important;
     }
 
+    #icon-menu > ul li { 
+        border-bottom: none;
+    }
+
     #icon-menu ul {
         margin-left: 0px !important;
     }

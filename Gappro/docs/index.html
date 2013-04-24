@@ -18,9 +18,19 @@
 
 <h1>Documentation - Gappro Admin Theme Template V1.0</h1>
 <hr>
-<div class="lead">
-	Gappro is a admin template that can be used for any backed applications. It's not just a simple replacement of the user interface skins, but strengthen the uitilies of some basic in order to use conveniently. It's coming with black style and beautiful menus, including plenty of useful items, and all the plugin css file has cover to fit the current style. It's building based the bootstrap 2.3, but compatible with the bootstrap 2.2.
+
+<div class="row-fluid">
+	<div class="span3">
+		<img src="http://boostbob.gotoip4.com/themes/gappro/ads/ads.png" alt="">
+	</div>
+	<div class="span9">
+		<div class="lead">
+			Gappro is a responsive admin template that can be used for any backed applications. It's not just a simple replacement of the user interface skins, but strengthen the uitilies of some basic in order to use conveniently. It's coming with black style and beautiful menus, including plenty of useful items, and all the plugin css file has cover to fit the current style. It's building based the bootstrap 2.3, but compatible with the bootstrap 2.2.
+		</div>
+	</div>
 </div>
+
+<hr>
 
 <div class="alert alert-info">
 Thank you for purchasing this theme. 
@@ -99,6 +109,7 @@ If you have any questions, please feel free to contact me via contact link.
 				<li>Header Tabs</li>
 				<li>Widget Accordion</li>
 				<li>Widget Table</li>
+				<li>Widget Toolbar</li>
 				<li>Header Background</li>
 			</ul>
 		</li>
@@ -226,31 +237,31 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 		You can edit style.less, or edit style.css if you won't using less. There are 25 less files.
 	</p>
 	<ul>
-		<li>vars.less</li>
-		<li>functions.less</li>
-		<li>global.less</li>
-		<li>background_colors.less</li>
-		<li>bme.less</li>
-		<li>breadcrumbs.less</li>
-		<li>chat.less</li>
-		<li>circle_link.less</li>
-		<li>compare_box.less</li>
-		<li>faq.less</li>
-		<li>icon_menu.less</li>
-		<li>main_wrapper.less</li>
-		<li>merge_box.less</li>
-		<li>messages_box.less</li>
-		<li>navbar.less</li>
-		<li>override.less</li>
-		<li>plugins.less</li>
-		<li>status_box.less</li>
-		<li>style.less</li>
-		<li>todo.less</li>
-		<li>typo.less</li>
-		<li>widget.less</li>
-		<li>workspace.less</li>
-		<li>back_top.less</li>
-		<li>copyright.less</li>
+		<li>vars.less, variables for colors and others</li>
+		<li>functions.less, simple functions</li>
+		<li>style.less, gappro style file, include others less</li>
+		<li>global.less, global style</li>
+		<li>background_colors.less, backgrounds and background colors</li>
+		<li>bme.less, bootstrap makrdown editor</li>
+		<li>breadcrumbs.less, breadcrumb path</li>
+		<li>chat.less, chat ui</li>
+		<li>circle_link.less, quick link container and link style</li>
+		<li>compare_box.less, comapre by categories</li>
+		<li>faq.less, faq style and scripts</li>
+		<li>icon_menu.less, main menu</li>
+		<li>main_wrapper.less, main wapper container</li>
+		<li>merge_box.less, summary box with charts</li>
+		<li>messages_box.less, message container style</li>
+		<li>navbar.less, navigations</li>
+		<li>override.less, override booststrap style</li>
+		<li>plugins.less, some plugins style cover</li>
+		<li>status_box.less, compare by colors</li>
+		<li>todo.less, todo list widget</li>
+		<li>typo.less, typography</li>
+		<li>widget.less, widgets, widget table, widget tabs...</li>
+		<li>workspace.less, widget workspace</li>
+		<li>back_top.less, back to top</li>
+		<li>copyright.less, footer and copyright</li>
 	</ul>
 </div>	
 
@@ -285,7 +296,7 @@ drwxr-xr-x@ 56 bob  staff   1.9K  4  9 10:09 js
 			<td>768px</td> <td>1024 x 768</td> <td></td> <td></td> 
 		</tr>
 		<tr> 
-			<td>640px</td> <td>640 x 360</td> <td>topbar,workspace,breadcrumbs,menu expand/collapse/filter,widget thumb</td> <td></td> 
+			<td>640px</td> <td>640 x 360</td> <td>topbar,workspace,breadcrumbs,widget thumb</td> <td></td> 
 		</tr>
 		<tr> 
 			<td>360px</td> <td>640 x 360</td> <td>widget full,widget code</td> <td></td> 
@@ -379,6 +390,7 @@ var CONFIG = {
 		<li>logo</li>
 		<li>search box</li>
 		<li>favourite links, you can draggable menuitem to place here</li>
+		<li>Top Menu</li>
 	</ul>
 </div>
 
@@ -535,8 +547,35 @@ var CONFIG = {
 	</pre>
 </div>
 
+	<div id="box">
+		<h4>Box UI</h4>
+		The Box UI is a list for vertical design, can be combined into a variety of layout effect.
+		<pre class="prettyprint lang-html linenums">
+<ul class="box">
+	<!--simple-->
+	<li>content here</li>
+	<li>more...</li>
+</ul>	
+		</pre>
+
+		<pre class="prettyprint lang-html linenums">
+<ul class="box">
+	<!--complex-->
+	<li>
+		<div>
+			<img src="img/icons/applications.png" alt="">
+			<span class="green-text">System update #432</span>
+			<span class="sub pull-right">13/04/2013 08:00</span>
+		</div>
+		<div>Lorem ipsum Ut in minim dolore et ut ullamco id dolore esse dolor sit deserunt do in reprehenderit anim non.</div>
+		<div class="foot">Posted by <a href="javascript:void(0)">@lisa Joe</a></div>
+	</li>
+</ul>			
+		</pre>
+	</div>
+
 <div id="widget">
-	<h4>Widget <a href="top">TOP</a></h4>
+	<h4>Widget</h4>
 	<h5>Structure</h5>
 	<pre class="prettyprint lang-html linenums">
 <div class="widget">
@@ -620,6 +659,22 @@ var CONFIG = {
 	<!---->
 </div>	
 	</pre>
+
+	<h5>Widget Toolbar</h5>
+	<pre class="prettyprint lang-html linenums">
+<div class="widget-content">
+	<div class="widget-toolbar">
+		<a href="javascript:void(0)" class="btn"><i class="icon-minus"></i></a>
+		<a href="javascript:void(0)" class="btn"><i class="icon-plus"></i></a>
+		<span class="divider"></span>
+		<a href="javascript:void(0)" class="btn"><i class="icon-home"></i></a>
+		<a href="javascript:void(0)" class="btn"><i class="icon-folder-close"></i></a>
+		<span class="divider"></span>
+		<a href="javascript:void(0)" class="btn"><i class="icon-edit"></i></a>
+		<a href="javascript:void(0)" class="btn"><i class="icon-save"></i></a>
+		<a href="javascript:void(0)" class="btn"><i class="icon-trash"></i></a>
+</div>		
+	</pre>	
 
 	<h5>Header Background</h5>
 	<pre class="prettyprint lang-html linenums">

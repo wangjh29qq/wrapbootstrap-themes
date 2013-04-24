@@ -1,4 +1,6 @@
-Gappro is a admin template that can be used for any backed applications. It's not just a simple replacement of the user interface skins, but strengthen the uitilies of some basic in order to use conveniently. It's coming with black style and beautiful menus, including plenty of useful items, and all the plugin css file has cover to fit the current style. It's building based the bootstrap 2.3, but compatible with the bootstrap 2.2.
+Gappro is a responsive admin template that can be used for any backed applications. It's not just a simple replacement of the user interface skins, but strengthen the uitilies of some basic in order to use conveniently. It's coming with black style and beautiful menus, including plenty of useful items, and all the plugin css file has cover to fit the current style. It's building based the bootstrap 2.3, but compatible with the bootstrap 2.2.
+
+![asd](http://boostbob.gotoip4.com.img.800cdn.com/themes/gappro/ads/ads.png)
 
 #Menu Features
 
