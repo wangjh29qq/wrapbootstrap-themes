@@ -4,20 +4,22 @@
 	position: relative;
 	margin-left: 0px;
 	list-style-type: none;
-	overflow: hidden;
+	// for sub menus
+	// overflow: hidden;
 	margin-bottom: 0px;
 	margin-top: -18px;
 	right: -30px;
 	text-align: right;
 }
 
-#top-menu li {
+#top-menu > li {
 	display: inline-block;
 	.border-black;
 	margin-left: -6px;
 } 
 
-#top-menu li a {
+#top-menu > li > a,
+#top-menu > li > .btn-group > a {
 	width: 60px;
 	height: 60px;
 	padding-top: 4px;
@@ -32,8 +34,21 @@
 	}
 }
 
-#top-menu li a i { 
+#top-menu > li > a > i,
+#top-menu > li > .btn-group > a > i { 
 	font-size: 2em;
 	display: block;
 	margin: 0 auto;
+}
+
+#top-menu > li > .btn-group > a + .dropdown-menu {
+	text-align: left;
+	.rounded-corners(0px);
+}
+
+#top-menu > li > .btn-group .label {
+	position: relative;
+	right: -45px;
+	top: -50px;
+	float: left;
 }
