@@ -12,6 +12,7 @@ Gappro is a admin template that can be used for any backed applications. It's no
 
 #Widget Features
 
+* Toolbar layout
 * Defined actions by markup
 * Action - Place to workspace
 * Action - Show/hide
@@ -29,7 +30,7 @@ Gappro is a admin template that can be used for any backed applications. It's no
 #Forms Features
 
 * Form elements
-* 2 Editor(Bootstrap WYSIHTML5 Editor, Markdown editor)
+* 2 Editors(Bootstrap WYSIHTML5 Editor, Markdown editor)
 * Validator
 * Wizard
 * Editable elements
@@ -50,6 +51,7 @@ Gappro is a admin template that can be used for any backed applications. It's no
 
 #Other Features
 
+* 2 login Forms
 * VMap with leaderboard tables
 * Merge Box UI
 * Status Box UI
