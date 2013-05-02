@@ -10,6 +10,7 @@ Gappro is a responsive admin template that can be used for any backed applicatio
 * Sub Menus
 * Sub quick post
 * Sub quick widget
+* Top navigation menu
 * 7+ menu theme colors
 
 #Widget Features
@@ -61,7 +62,6 @@ Gappro is a responsive admin template that can be used for any backed applicatio
 * Chat UI
 * Mailbox UI
 * TODO UI
-* Contacts UI
 * jQuery UI support
 * Less support(include 25 less files)
 * Well documented

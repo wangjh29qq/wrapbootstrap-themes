@@ -275,13 +275,13 @@ var global_hover = null;
 $("#icon-menu > ul > li > a").each(function(){ hack_sub_menu($(this)); });
 function hack_sub_menu(menuitem){
 	menuitem.bind(CONFIG['menu_sub_trigger'], function(e) {
-		var sidebar_margin = $("#main_wrapper").css("margin-left");
-		var sidebar_padding = $("#main_wrapper").css("padding-left");
+		// var sidebar_margin = $("#main_wrapper").css("margin-left");
+		// var sidebar_padding = $("#main_wrapper").css("padding-left");
 		// var width = $(this).parent().width() * 1 + 
 		// 			sidebar_margin.replace("px","") * 1 + 
 		// 			sidebar_padding.replace("px", "") * 1;
 
-		var width = $(this).parent().width();
+		var width = $(this).parent().width() + 1;
 		
 		if($("#main_wrapper").width() <= 640) {
 			width = 30;
