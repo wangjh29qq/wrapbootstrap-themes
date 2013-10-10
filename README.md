@@ -1,2 +1,2 @@
 #wrapbootstrap-themes
-Themes for wrapbootstrap.com.
+Themes for practices.
