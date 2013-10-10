@@ -1,2 +1,2 @@
 #wrapbootstrap-themes
-Themes for practices.
+Themes for Practice & Learning.
